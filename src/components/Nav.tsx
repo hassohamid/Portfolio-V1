@@ -1,7 +1,7 @@
 export default function Nav() {
   return (
     <>
-      <div className="sticky ">
+      <div>
         <h1> NAV </h1>
       </div>
     </>
