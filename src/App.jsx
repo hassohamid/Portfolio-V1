@@ -1,5 +1,5 @@
 import "./App.css";
 
 export default function App() {
-  return;
+  return <main className="h-screen bg-black"></main>;
 }
