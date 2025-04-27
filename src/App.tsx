@@ -1,5 +1,6 @@
 import { ThemeProvider } from "./theme/ThemeProvider";
 import { Header } from "./layout/Header";
+import "./App.css";
 
 function App() {
   return (

@@ -36,10 +36,10 @@ export function Header() {
             </span>
           </p>
         </div>
-        <div className="flex gap-3 justify-center items-center">
-          <Button className="px-8 cursor-pointer">Contact me</Button>
-          <Heart size={20} className=" animate-pulse" />
-          <Button variant="outline" className="px-8 cursor-pointer">
+        <div className="flex gap-3 justify-center items-center ">
+          <Button className="px-6 cursor-pointer">Contact me</Button>
+          <Heart size={16} className=" animate-pulse hearteffect" />
+          <Button variant="outline" className="px-6 cursor-pointer ">
             View My Work
           </Button>
         </div>
