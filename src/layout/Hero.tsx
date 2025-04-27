@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="relative h-[700px] overflow-hidden flex flex-col justify-center items-center">
       <ParticlesBackground />
       <div className="z-10 flex flex-col items-center gap-4">
-        <Avatar className="size-32 ring-2 ring-white/10 ring-offset-2 ring-offset-background hover:ring-primary/20 ">
+        <Avatar className="size-32 ring-2 ring-white/10 ring-offset-2 ring-offset-background hover:ring-primary/20 transition-all duration-200 ">
           <AvatarImage src="av.jpg" alt="HASSO" />
           <AvatarFallback>HH</AvatarFallback>
         </Avatar>
