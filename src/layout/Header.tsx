@@ -8,20 +8,21 @@ export function Header() {
   return (
     <header className="relative h-[700px] overflow-hidden flex flex-col justify-center items-center">
       <ParticlesBackground />
-      <div className="z-11 flex flex-col items-center gap-6">
-        <Avatar className="size-35 border-2 bg-gradient-to-br from-blue-500 to-purple-500 p-[2px] dark:from-indigo-500 dark:to-purple-600">
-          <div className="h-full w-full rounded-full bg-background overflow-hidden">
-            <AvatarImage src="av.jpg" alt="HASSO" />
-            <AvatarFallback>HH</AvatarFallback>
-          </div>
+      <div className="z-11 flex flex-col items-center gap-4">
+        <Avatar className="size-32 ring-2 ring-white/10 ring-offset-2 ring-offset-background hover:ring-primary/20 transition-all duration-300">
+          <AvatarImage src="av.jpg" alt="HASSO" />
+          <AvatarFallback>HH</AvatarFallback>
         </Avatar>
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-2">hasso.</h1>
-          <p className="text-xl text-muted-foreground mb-3">
+          <h1 className="text-4xl font-bold mb-2 tracking-tight">hasso.</h1>
+          <div className="h-px w-12 bg-primary/30 mx-auto mb-3"></div>
+          <p className="text-xl text-muted-foreground/80 mb-3 font-light tracking-wide">
             Frontend Developer
           </p>
-          <p className="max-w-md text-center mb-6">
-            future-focused, detail-driven.
+          <p className="max-w-md text-center mb-6 text-muted-foreground/90 font-light tracking-wider">
+            <span className="text-primary/90">future-focused</span>
+            {" · "}
+            <span className="text-primary/90">detail-driven</span>
           </p>
         </div>
         <div className="flex gap-3 justify-center items-center">
