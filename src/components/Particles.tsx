@@ -41,7 +41,7 @@ export function ParticlesBackground() {
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
-      className="absolute inset-0 -z-10 h-full w-full"
+      className="absolute inset-0 z-10 h-full w-full"
       options={{
         background: {
           color: {

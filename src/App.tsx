@@ -4,7 +4,9 @@ import { Header } from "./layout/Header";
 function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <Header />
+      <div className="min-h-screen bg-background transition-colors duration-300">
+        <Header />
+      </div>
     </ThemeProvider>
   );
 }
