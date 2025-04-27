@@ -17,7 +17,7 @@ export default function Nav() {
     <>
       <DropdownMenu>
         <DropdownMenuTrigger>
-          <Button className="cursor-pointer" variant="ghost">
+          <Button className="cursor-pointer !transition-none" variant="ghost">
             <ArrowDown />
           </Button>
         </DropdownMenuTrigger>
