@@ -1,6 +1,7 @@
-import { ThemeProvider } from "./theme/ThemeProvider";
+import { ThemeProvider } from "@/theme/ThemeProvider";
 import { Header } from "@/layout/Header";
-import Hero from "./layout/Hero";
+import Hero from "@/layout/Hero";
+import About from "@/layout/About";
 import "./App.css";
 
 export default function App() {
@@ -10,6 +11,8 @@ export default function App() {
         <Header />
         <main>
           <Hero />
+          <About />
+          <About />
         </main>
       </div>
     </ThemeProvider>
