@@ -14,15 +14,15 @@ export default function Hero() {
         </Avatar>
         <div className="text-center space-y-4">
           <h1 className="text-5xl font-bold tracking-tight">
-            hasso<span className="text-gray-600">.</span>
+            hasso<span className="text-gray-400 ">.</span>
           </h1>
 
-          <div className="inline-flex items-center gap-2">
-            <div className="h-px w-6 bg-primary/40"></div>
-            <p className="text-lg text-muted-foreground/80 font-light">
-              Frontend Developer
+          <div className=" inline-block ">
+            <p className="text-foreground/90 text-sm font-mono tracking-wide px-2 py-0.5 rounded bg-primary/5 border border-primary/10">
+              <span className="text-primary">&lt;</span>
+              frontend<span className="text-primary/70">Dev</span>
+              <span className="text-primary">/&gt;</span>
             </p>
-            <div className="h-px w-6 bg-primary/40"></div>
           </div>
 
           <p className="max-w-md mx-auto text-muted-foreground/90 font-light tracking-wide">
