@@ -13,16 +13,27 @@ export function Header() {
           <AvatarImage src="av.jpg" alt="HASSO" />
           <AvatarFallback>HH</AvatarFallback>
         </Avatar>
-        <div className="text-center">
-          <h1 className="text-4xl font-bold mb-2 tracking-tight">hasso.</h1>
-          <div className="h-px w-12 bg-primary/30 mx-auto mb-3"></div>
-          <p className="text-xl text-muted-foreground/80 mb-3 font-light tracking-wide">
-            Frontend Developer
-          </p>
-          <p className="max-w-md text-center mb-6 text-muted-foreground/90 font-light tracking-wider">
-            <span className="text-primary/90">future-focused</span>
-            {" · "}
-            <span className="text-primary/90">detail-driven</span>
+        <div className="text-center space-y-4">
+          <h1 className="text-5xl font-bold tracking-tight">
+            hasso<span className="text-primary">.</span>
+          </h1>
+
+          <div className="inline-flex items-center gap-2">
+            <div className="h-px w-6 bg-primary/40"></div>
+            <p className="text-lg text-muted-foreground/80 font-light">
+              Frontend Developer
+            </p>
+            <div className="h-px w-6 bg-primary/40"></div>
+          </div>
+
+          <p className="max-w-md mx-auto text-muted-foreground/90 font-light tracking-wide">
+            <span className="text-primary/90 hover:text-primary transition-colors duration-300">
+              future-focused
+            </span>
+            <span className="mx-2 text-primary/50">•</span>
+            <span className="text-primary/90 hover:text-primary transition-colors duration-300">
+              detail-driven
+            </span>
           </p>
         </div>
         <div className="flex gap-3 justify-center items-center">
