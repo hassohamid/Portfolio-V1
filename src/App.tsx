@@ -1,5 +1,12 @@
-import "./App.css";
+import { ThemeProvider } from "./theme/ThemeProvider";
+import { Header } from "./layout/Header";
 
-export default function App() {
-  return <h1 className="text-2xl"> Test </h1>;
+function App() {
+  return (
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <Header />
+    </ThemeProvider>
+  );
 }
+
+export default App;
