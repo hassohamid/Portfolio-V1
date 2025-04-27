@@ -80,10 +80,10 @@ export function ParticlesBackground() {
             value: theme === "dark" ? 100 : 80, // More stars in dark mode
           },
           opacity: {
-            value: { min: 0.1, max: theme === "dark" ? 0.9 : 0.7 }, // Higher opacity for more visible stars
+            value: { min: 0.1, max: theme === "dark" ? 0.85 : 0.7 }, // Slightly reduced max opacity for dark mode
             animation: {
               enable: true,
-              speed: 0.2, // Slow animation for subtle twinkling
+              speed: 0.2,
               minimumValue: 0.1,
               sync: false,
             },

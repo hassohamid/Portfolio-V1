@@ -14,7 +14,7 @@ export default function Hero() {
         </Avatar>
         <div className="text-center space-y-4">
           <h1 className="text-5xl font-bold tracking-tight">
-            hasso<span className="text-primary">.</span>
+            hasso<span className="text-gray-600">.</span>
           </h1>
 
           <div className="inline-flex items-center gap-2">
