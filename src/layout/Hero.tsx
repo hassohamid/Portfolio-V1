@@ -12,12 +12,12 @@ export default function Hero() {
           <AvatarImage src="av.jpg" alt="HASSO" />
           <AvatarFallback>HH</AvatarFallback>
         </Avatar>
-        <div className="text-center space-y-4">
+        <div className="text-center space-y-4 transition-all duration-300">
           <h1 className="text-5xl font-bold tracking-tight">
             hasso<span className="text-gray-400 ">.</span>
           </h1>
 
-          <div className=" inline-block ">
+          <div className=" inline-block transition-all duration-300">
             <p className="text-foreground/90 text-sm font-mono tracking-wide px-2 py-0.5 rounded bg-primary/5 border border-primary/10">
               <span className="text-primary">&lt;</span>
               frontend<span className="text-primary/70">Dev</span>
@@ -35,7 +35,7 @@ export default function Hero() {
             </span>
           </p>
         </div>
-        <div className="flex gap-3 justify-center items-center">
+        <div className="flex gap-3 justify-center items-center transition-all duration-300">
           <Button className="px-6 cursor-pointer">Contact me</Button>
           <Heart size={16} className="animate-pulse hearteffect" />
           <Button variant="outline" className="px-6 cursor-pointer">
