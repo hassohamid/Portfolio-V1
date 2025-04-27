@@ -6,7 +6,7 @@ import "./App.css";
 export default function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="min-h-screen bg-background transition-all duration-300 ">
+      <div className="min-h-screen bg-background transition-colors duration-300 ">
         <Header />
         <main>
           <Hero />
