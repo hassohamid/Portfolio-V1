@@ -1,5 +1,5 @@
-import { ParticlesBackground } from "/src/components/Particles";
-import { Avatar, AvatarFallback, AvatarImage } from "/src/components/ui/avatar";
+import { ParticlesBackground } from "@/components/Particles";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { ModeToggle } from "../theme/ModeToggle";
 import { Button } from "@/components/ui/button";
 import { Heart } from "lucide-react";
