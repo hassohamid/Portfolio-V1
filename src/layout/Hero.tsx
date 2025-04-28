@@ -49,7 +49,7 @@ export default function Hero() {
           </Button>
           <Heart size={16} className="animate-pulse hearteffect" />
           <Button variant="outline" className="px-5 sm:px-6 cursor-pointer  ">
-            View My Work
+            <a href="#projects">View My Work</a>
           </Button>
         </div>
       </div>
