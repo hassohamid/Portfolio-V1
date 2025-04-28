@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
-import { useTheme } from "@/theme/ThemeProvider";
 import { ModeToggle } from "@/theme/ModeToggle";
 import {
   DropdownMenu,
@@ -12,8 +11,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 export default function Nav() {
-  const { theme } = useTheme();
-
   return (
     <nav className="flex items-center gap-4">
       <div className="hidden md:flex items-center gap-4">
@@ -39,10 +36,6 @@ export default function Nav() {
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent>
-            <DropdownMenuLabel>
-              {theme === "dark" ? "🖤" : "🤍"}
-            </DropdownMenuLabel>
-            <DropdownMenuSeparator />
             <DropdownMenuItem asChild>
               <a href="#about" className="cursor-pointer">
                 About
