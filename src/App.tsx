@@ -5,6 +5,7 @@ import Hero from "@/layout/Hero";
 import About from "@/layout/About";
 import { Footer } from "@/layout/Footer";
 import Stack from "@/layout/Stack";
+import Projects from "@/layout/Projects";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Hero />
           <About />
           <Stack />
+          <Projects />
         </main>
         <Footer />
       </div>
