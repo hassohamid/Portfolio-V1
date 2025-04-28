@@ -18,9 +18,9 @@ export default function Stack() {
               return (
                 <div
                   key={tech.name}
-                  className="flex flex-col items-center justify-center p-3 sm:p-5 rounded-lg bg-background border border-border/20 transition-all duration-200 hover:border-border/40 group"
+                  className="flex flex-col items-center justify-center p-3 sm:p-5 rounded-lg bg-background border border-border/20  hover:border-border/40 group"
                 >
-                  <div className="p-2 sm:p-3 rounded-md mb-2 sm:mb-3 transition-all duration-200 group-hover:bg-opacity-15">
+                  <div className="p-2 sm:p-3 rounded-md mb-2 sm:mb-3  group-hover:bg-opacity-15">
                     <Icon
                       size={32}
                       style={{
