@@ -39,7 +39,7 @@ export default function Hero() {
           </p>
         </div>
         <div className="flex gap-3 justify-center items-center ">
-          <Button className="px-5 sm:px-6 cursor-pointer  ">
+          <Button asChild className="px-5 sm:px-6 cursor-pointer  ">
             <a
               href="#contact"
               className="flex justify-center items-center gap-1 "
@@ -48,7 +48,11 @@ export default function Hero() {
             </a>
           </Button>
           <Heart size={16} className="animate-pulse hearteffect" />
-          <Button variant="outline" className="px-5 sm:px-6 cursor-pointer  ">
+          <Button
+            asChild
+            variant="outline"
+            className="px-5 sm:px-6 cursor-pointer  "
+          >
             <a href="#projects">View My Work</a>
           </Button>
         </div>
