@@ -5,7 +5,10 @@ import { Heart } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative h-[600px] overflow-hidden flex flex-col justify-center items-center">
+    <section
+      className="relative h-[600px] overflow-hidden flex flex-col justify-center items-center"
+      id="intro"
+    >
       <ParticlesBackground />
       <div className="z-10 flex flex-col items-center gap-4">
         <Avatar className="size-32 ring-2 ring-white/10 ring-offset-2 ring-offset-background hover:ring-primary/20 transition-all duration-200 ">
