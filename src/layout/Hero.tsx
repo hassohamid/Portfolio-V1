@@ -1,7 +1,7 @@
 import { ParticlesBackground } from "@/components/Particles";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { Heart } from "lucide-react";
+import { Heart, ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -39,9 +39,16 @@ export default function Hero() {
           </p>
         </div>
         <div className="flex gap-3 justify-center items-center ">
-          <Button className="px-6 cursor-pointer ">Get in Touch</Button>
+          <Button className="px-5 sm:px-6 cursor-pointer  ">
+            <a
+              href="#contact"
+              className="flex justify-center items-center gap-1 "
+            >
+              Get in Touch <ArrowRight size={16} />
+            </a>
+          </Button>
           <Heart size={16} className="animate-pulse hearteffect" />
-          <Button variant="outline" className="px-6 cursor-pointer ">
+          <Button variant="outline" className="px-5 sm:px-6 cursor-pointer  ">
             View My Work
           </Button>
         </div>
