@@ -2,6 +2,7 @@ import { ThemeProvider } from "@/theme/ThemeProvider";
 import { Header } from "@/layout/Header";
 import Hero from "@/layout/Hero";
 import About from "@/layout/About";
+import { Footer } from "@/layout/Footer";
 import "./App.css";
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
           <About />
           <About />
         </main>
+        <Footer />
       </div>
     </ThemeProvider>
   );
