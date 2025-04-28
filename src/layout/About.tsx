@@ -39,7 +39,6 @@ export default function About() {
             <Button variant="outline" className="mr-4">
               Download Resume
             </Button>
-            <Button>Get in Touch</Button>
           </div>
         </div>
       </div>

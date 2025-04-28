@@ -1,9 +1,10 @@
+import "@/App.css";
 import { ThemeProvider } from "@/theme/ThemeProvider";
 import { Header } from "@/layout/Header";
 import Hero from "@/layout/Hero";
 import About from "@/layout/About";
 import { Footer } from "@/layout/Footer";
-import "./App.css";
+import Stack from "@/layout/Stack";
 
 export default function App() {
   return (
@@ -13,7 +14,7 @@ export default function App() {
         <main>
           <Hero />
           <About />
-          <About />
+          <Stack />
         </main>
         <Footer />
       </div>
