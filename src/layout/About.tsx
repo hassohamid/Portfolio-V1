@@ -4,9 +4,9 @@ import { Download } from "lucide-react";
 export default function About() {
   return (
     <section id="about" className="py-20 bg-background">
-      <div className="container mx-auto px-16">
+      <div className="container mx-auto px-12 md:px-14">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center relative inline-block">
+          <h2 className="text-3xl font-bold relative mb-8 inline-block">
             About Me
             <div className="absolute -bottom-2 left-0 h-1 w-full bg-primary/20 rounded-full">
               <div className="h-full w-1/3 bg-primary rounded-full"></div>

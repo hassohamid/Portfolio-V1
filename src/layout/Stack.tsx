@@ -3,8 +3,8 @@ import { technologies } from "@/data/Technologies";
 export default function Stack() {
   return (
     <section id="stack" className="py-20 bg-[#f8f8f8] dark:bg-[#111111]">
-      <div className="container mx-auto px-6 md:px-14">
-        <div className="max-w-4xl mx-auto p-4 md:p-8 lg:p-12">
+      <div className="container mx-auto px-12 md:px-14">
+        <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold relative mb-8 inline-block">
             Tech Stack
             <div className="absolute -bottom-2 left-0 h-1 w-full bg-primary/20 rounded-full">
