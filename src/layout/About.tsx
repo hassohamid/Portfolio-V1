@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
 
 export default function About() {
   return (
@@ -36,8 +37,9 @@ export default function About() {
           </div>
 
           <div className="mt-8 flex justify-center">
-            <Button variant="outline" className="mr-4">
+            <Button variant="outline" className="cursor-pointer">
               Download Resume
+              <Download />
             </Button>
           </div>
         </div>
