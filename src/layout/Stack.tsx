@@ -15,11 +15,10 @@ export default function Stack() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6 mt-8">
             {technologies.map((tech) => {
               const Icon = tech.icon;
-
               return (
                 <div
                   key={tech.name}
-                  className="flex flex-col items-center justify-center p-3 sm:p-5 rounded-lg bg-background/80 border border-border/20 transition-all duration-200 hover:border-border/40 group"
+                  className="flex flex-col items-center justify-center p-3 sm:p-5 rounded-lg bg-background border border-border/20 transition-all duration-200 hover:border-border/40 group"
                 >
                   <div className="p-2 sm:p-3 rounded-md mb-2 sm:mb-3 transition-all duration-200 group-hover:bg-opacity-15">
                     <Icon

@@ -12,11 +12,17 @@ export const technologies = [
   { name: "ReactJS", icon: RiReactjsFill, color: "#61DAFB" },
   { name: "JavaScript", icon: RiJavascriptFill, color: "#F7DF1E" },
   { name: "TailwindCSS", icon: RiTailwindCssFill, color: "#06B6D4" },
-  { name: "NextJS", icon: RiNextjsFill, color: "#000000" },
+  {
+    name: "NextJS",
+    icon: RiNextjsFill,
+  },
   { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
   { name: "MUI", icon: SiMui, color: "#007FFF" },
-  { name: "shadcn", icon: SiShadcnui, color: "#000000" },
+  { name: "shadcn", icon: SiShadcnui },
   { name: "chakra", icon: SiChakraui, color: "#319795" },
   { name: "Bootstrap", icon: BiLogoBootstrap, color: "#7952B3" },
-  { name: "Three.js", icon: TbBrandThreejs, color: "#000000" },
+  {
+    name: "Three.js",
+    icon: TbBrandThreejs,
+  },
 ];
