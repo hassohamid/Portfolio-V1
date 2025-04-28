@@ -39,14 +39,9 @@ export default function Hero() {
           </p>
         </div>
         <div className="flex gap-3 justify-center items-center ">
-          <Button className="px-6 cursor-pointer !transition-none">
-            Contact me
-          </Button>
+          <Button className="px-6 cursor-pointer ">Contact me</Button>
           <Heart size={16} className="animate-pulse hearteffect" />
-          <Button
-            variant="outline"
-            className="px-6 cursor-pointer !transition-none"
-          >
+          <Button variant="outline" className="px-6 cursor-pointer ">
             View My Work
           </Button>
         </div>

@@ -13,15 +13,24 @@ export default function Nav() {
   return (
     <nav className="flex items-center gap-4">
       <div className="hidden md:flex items-center gap-4">
-        <a href="#about" className="hover:text-primary relative py-1 group">
+        <a
+          href="#about"
+          className="hover:text-foreground/80 text-foreground/60  relative py-1 group"
+        >
           About
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out"></span>
         </a>
-        <a href="#stack" className="hover:text-primary relative py-1 group">
+        <a
+          href="#stack"
+          className="hover:text-foreground/80 text-foreground/60 relative py-1 group"
+        >
           Stack
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out"></span>
         </a>
-        <a href="#projects" className="hover:text-primary relative py-1 group">
+        <a
+          href="#projects"
+          className="hover:text-foreground/80 text-foreground/60 relative py-1 group"
+        >
           Projects
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out"></span>
         </a>
@@ -36,7 +45,7 @@ export default function Nav() {
           </DropdownMenuTrigger>
           <DropdownMenuContent>
             <DropdownMenuItem asChild>
-              <a href="#about" className="cursor-pointer">
+              <a href="#about" className="cursor-pointer ">
                 About
               </a>
             </DropdownMenuItem>
