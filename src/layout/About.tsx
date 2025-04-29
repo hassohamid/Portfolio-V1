@@ -6,11 +6,9 @@ export default function About() {
     <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-12 md:px-14">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold relative mb-8 inline-block">
+          <h2 className="text-3xl font-bold mb-8 pb-2 relative">
             About Me
-            <div className="absolute -bottom-2 left-0 h-1 w-full bg-primary/20 rounded-full">
-              <div className="h-full w-1/3 bg-primary rounded-full"></div>
-            </div>
+            <span className="absolute bottom-0 left-0 w-12 border-b-3 rounded-full border-primary/50"></span>
           </h2>
 
           <div className="space-y-6 text-muted-foreground/90">
