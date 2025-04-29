@@ -1,7 +1,7 @@
 import { ParticlesBackground } from "@/components/Particles";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { Heart, ArrowRight } from "lucide-react";
+import { Heart, ArrowRight, BadgeCheck } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -16,11 +16,12 @@ export default function Hero() {
           <AvatarFallback>HH</AvatarFallback>
         </Avatar>
         <div className="text-center space-y-4 ">
-          <h1 className="text-5xl font-bold tracking-tight">
-            hasso<span className="text-gray-400 ">.</span>
+          <h1 className="text-4xl font-bold tracking-tight flex items-center justify-center">
+            hasso
+            <BadgeCheck className="ml-2 mt-1" />
           </h1>
 
-          <div className=" inline-block ">
+          <div className="inline-block">
             <p className="text-foreground/90 text-sm font-mono tracking-wide px-2 py-0.5 rounded bg-primary/5 border border-primary/10">
               <span className="text-primary">&lt;</span>
               frontend<span className="text-primary/70">Dev</span>
