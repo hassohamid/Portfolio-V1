@@ -1,7 +1,17 @@
 import { ParticlesBackground } from "@/components/Particles";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { Heart, ArrowRight, BadgeCheck } from "lucide-react";
+import { Heart, ArrowRight, BadgeCheck, Mail } from "lucide-react";
+import SocialLinks from "@/components/SocialLinks";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
 
 export default function Hero() {
   return (
@@ -40,14 +50,31 @@ export default function Hero() {
           </p>
         </div>
         <div className="flex gap-3 justify-center items-center ">
-          <Button asChild className="px-5 sm:px-6 cursor-pointer  ">
-            <a
-              href="#contact"
-              className="flex justify-center items-center gap-1 "
-            >
-              Get in Touch <ArrowRight size={16} />
-            </a>
-          </Button>
+          <Drawer>
+            <DrawerTrigger className="flex justify-center items-center gap-1">
+              <Button className="px-5 sm:px-6 cursor-pointer">
+                Get in Touch <ArrowRight size={16} />
+              </Button>
+            </DrawerTrigger>
+            <DrawerContent className="flex justify-center items-center text-center ">
+              <DrawerHeader>
+                <DrawerTitle></DrawerTitle>
+                <DrawerDescription className="flex items-center justify-center gap-2 mt-2 p-2 bg-primary/5 rounded-lg hover:bg-primary/10 transition-all">
+                  <Mail size={15} className="text-primary" />
+                  <a
+                    href="mailto:contact@hasso.io"
+                    className="hover:text-primary transition-colors"
+                  >
+                    contact@hasso.io
+                  </a>
+                </DrawerDescription>
+              </DrawerHeader>
+              <DrawerFooter>
+                <SocialLinks />
+              </DrawerFooter>
+            </DrawerContent>
+          </Drawer>
+
           <Heart size={16} className="animate-pulse hearteffect" />
           <Button
             asChild
