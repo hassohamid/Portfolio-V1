@@ -4,7 +4,13 @@ import {
   RiTailwindCssFill,
   RiNextjsFill,
 } from "react-icons/ri";
-import { SiTypescript, SiShadcnui, SiChakraui, SiMui } from "react-icons/si";
+import {
+  SiTypescript,
+  SiShadcnui,
+  SiChakraui,
+  SiMui,
+  SiHtml5,
+} from "react-icons/si";
 import { BiLogoBootstrap } from "react-icons/bi";
 import { TbBrandThreejs } from "react-icons/tb";
 
@@ -25,4 +31,5 @@ export const technologies = [
     name: "Three.js",
     icon: TbBrandThreejs,
   },
+  { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
 ];
