@@ -59,13 +59,13 @@ export default function Hero() {
             <DrawerContent className="flex justify-center items-center text-center ">
               <DrawerHeader>
                 <DrawerTitle></DrawerTitle>
-                <DrawerDescription className="flex items-center justify-center gap-2 mt-2 p-2 bg-primary/5 rounded-lg hover:bg-primary/10 transition-all">
+                <DrawerDescription className="flex items-center justify-center gap-2 mt-2 p-2  ">
                   <Mail size={15} className="text-primary" />
                   <a
                     href="mailto:contact@hasso.io"
                     className="hover:text-primary transition-colors"
                   >
-                    contact@hasso.io
+                    hello@hasso.io
                   </a>
                 </DrawerDescription>
               </DrawerHeader>
