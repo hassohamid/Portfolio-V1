@@ -64,9 +64,9 @@ export default function Projects() {
           {ProjectList.map((project) => (
             <CarouselItem
               key={project.name}
-              className="md:basis-1/2 lg:basis-1/3"
+              className="md:basis-1/2 lg:basis-1/2"
             >
-              <Card className="h-full flex flex-col overflow-hidden  bg-[#f8f8f8] dark:bg-[#111111] pt-0 ">
+              <Card className="h-full flex flex-col overflow-hidden rounded-none dark:bg-[#080808] pt-0 ">
                 <div className="relative overflow-hidden">
                   <Dialog>
                     <DialogTrigger>
