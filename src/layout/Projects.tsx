@@ -38,6 +38,14 @@ export default function Projects() {
       id="projects"
       className="py-20 container mx-auto px-12 md:px-14 relative overflow-hidden"
     >
+      <div
+        className="absolute top-0 right-20   w-50 h-50 pointer-events-none opacity-3 dark:opacity-2 dark:invert dark:brightness-200 dark:contrast-125"
+        style={{
+          backgroundImage: `url("jigsaw.svg")`,
+          backgroundRepeat: "repeat",
+          backgroundSize: "200px auto",
+        }}
+      ></div>
       <div className="mb-16 text-center">
         <div className="relative inline-block mb-6">
           <span className="text-6xl font-black text-muted/40 absolute -top-4 left-1/2 -translate-x-1/2">
