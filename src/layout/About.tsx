@@ -36,12 +36,6 @@ export default function About() {
               commit to web development, where I could shape every aspect of a
               project from the ground up.
             </p>
-
-            <p className="leading-relaxed">
-              We live in a very exciting time for the tech world as there are so
-              many new things coming out especially with AI. This only inspires
-              me and motivates me to explore and become better at my craft.
-            </p>
           </div>
 
           <AlertDialog>
@@ -67,7 +61,7 @@ export default function About() {
                   className="cursor-pointer rounded-full  "
                 >
                   <a
-                    href="/public/ENG.pdf"
+                    href="/ENG.pdf"
                     download
                     className="flex justify-center items-center gap-1"
                   >
@@ -79,7 +73,7 @@ export default function About() {
                   className="cursor-pointer rounded-full "
                 >
                   <a
-                    href="/public/SWE.pdf"
+                    href="/SWE.pdf"
                     download
                     className="flex justify-center items-center gap-1"
                   >
