@@ -10,6 +10,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
+import { toast } from "sonner";
 
 export default function About() {
   return (
@@ -59,6 +60,12 @@ export default function About() {
                 <AlertDialogAction
                   asChild
                   className="cursor-pointer rounded-full  "
+                  onClick={() =>
+                    toast.success("Thank you for your interest in my work!", {
+                      icon: "📄",
+                      duration: 3000,
+                    })
+                  }
                 >
                   <a
                     href="/ENG.pdf"
@@ -71,6 +78,12 @@ export default function About() {
                 <AlertDialogAction
                   asChild
                   className="cursor-pointer rounded-full "
+                  onClick={() =>
+                    toast.success("Thank you for your interest in my work!", {
+                      icon: "📄",
+                      duration: 3000,
+                    })
+                  }
                 >
                   <a
                     href="/SWE.pdf"

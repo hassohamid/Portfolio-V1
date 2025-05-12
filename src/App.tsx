@@ -6,6 +6,7 @@ import About from "@/layout/About";
 import { Footer } from "@/layout/Footer";
 import Stack from "@/layout/Stack";
 import Projects from "@/layout/Projects";
+import { Toaster } from "./components/ui/sonner";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Projects />
         </main>
         <Footer />
+        <Toaster />
       </div>
     </ThemeProvider>
   );
