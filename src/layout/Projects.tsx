@@ -46,7 +46,7 @@ export default function Projects() {
               key={project.name}
               className="md:basis-1/2 lg:basis-1/3"
             >
-              <Card className="h-full flex flex-col overflow-hidden  bg-[#f8f8f8] dark:bg-[#111111]">
+              <Card className="h-full flex flex-col overflow-hidden  bg-[#f8f8f8] dark:bg-[#111111] pt-0 ">
                 <div className="relative overflow-hidden">
                   <Dialog>
                     <DialogTrigger>
@@ -89,18 +89,18 @@ export default function Projects() {
                   </div>
                 </div>
 
-                <CardHeader className="px-4 pt-4 pb-0">
+                <CardHeader className="px-4 pt-2 ">
                   <CardTitle className="text-xl font-bold">
                     {project.name}
                   </CardTitle>
                 </CardHeader>
 
                 <CardContent className="flex-grow px-4 pt-2">
-                  <CardDescription className="line-clamp-2 mb-4">
+                  <CardDescription className=" mb-4">
                     {project.description}
                   </CardDescription>
 
-                  <div className="flex flex-wrap gap-2 mt-auto">
+                  <div className="flex flex-wrap gap-2 ">
                     {project.technologies.map((tech, index) => (
                       <Badge
                         key={index}
