@@ -87,9 +87,7 @@ export default function Projects() {
 
                     <DialogContent className="!w-full sm:!max-w-[70vw]   p-0 overflow-hidden border-0 !max-w-[96vw] ">
                       <DialogHeader className=" flex justify-center items-center py-2">
-                        <p className="text-xs font-medium tracking-wide text-foreground/70 pt-2 ">
-                          Hey you! Try out this page via the LIVE button 👀
-                        </p>
+                        <p className=" pt-2 "></p>
                       </DialogHeader>
                       <img src={project.img} alt={project.name} />
                     </DialogContent>
@@ -98,7 +96,7 @@ export default function Projects() {
                   <div className="absolute top-3 right-3">
                     <Button
                       asChild
-                      variant="secondary"
+                      variant="default"
                       size="sm"
                       className="rounded-full shadow-md"
                     >
