@@ -57,8 +57,8 @@ export default function Projects() {
                       />
                     </DialogTrigger>
 
-                    <DialogContent className="!w-full !max-w-[70vw]  p-0 overflow-hidden border-0  ">
-                      <DialogHeader className="flex justify-center items-center py-2">
+                    <DialogContent className="!w-full sm:!max-w-[70vw]   p-0 overflow-hidden border-0 !max-w-[96vw] ">
+                      <DialogHeader className=" flex justify-center items-center py-2">
                         <p className="text-xs font-medium tracking-wide text-foreground/70 pt-2 ">
                           Hey you! Try out this page via the LIVE button 👀
                         </p>
