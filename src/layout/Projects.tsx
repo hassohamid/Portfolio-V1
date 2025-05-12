@@ -18,8 +18,9 @@ import { Badge } from "@/components/ui/badge";
 import {
   Dialog,
   DialogContent,
-  DialogHeader,
   DialogTrigger,
+  DialogClose,
+  DialogHeader,
 } from "@/components/ui/dialog";
 
 export default function Projects() {
@@ -52,15 +53,18 @@ export default function Projects() {
                     <DialogTrigger>
                       <img
                         src={project.img}
-                        className="cursor-pointer  transition-transform duration-300 hover:scale-105"
+                        className="cursor-pointer transition-transform duration-300 hover:scale-105 "
                         alt={project.name}
                       />
                     </DialogTrigger>
 
-                    <DialogContent className="max-w-5xl pt-10 overflow-hidden ">
-                      <DialogHeader>
-                        <img src={project.img} alt={project.name} />
+                    <DialogContent className="!w-full !max-w-[70vw]  p-0 overflow-hidden border-0  ">
+                      <DialogHeader className="flex justify-center items-center py-2">
+                        <p className="text-xs font-medium tracking-wide text-foreground/70 pt-2 ">
+                          Hey you! Try out this page via the LIVE button 👀
+                        </p>
                       </DialogHeader>
+                      <img src={project.img} alt={project.name} />
                     </DialogContent>
                   </Dialog>
 
