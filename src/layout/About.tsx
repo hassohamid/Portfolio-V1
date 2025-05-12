@@ -59,7 +59,7 @@ export default function About() {
                   <AlertDialogDescription>
                     The resume will be downloaded in PDF-format.
                   </AlertDialogDescription>
-                  <AlertDialogCancel className="absolute top-2 right-2 text-xs cursor-pointer h-3 w-2">
+                  <AlertDialogCancel className="absolute top-2 right-2 text-xs cursor-pointer h-4 w-4 p-2.5">
                     X
                   </AlertDialogCancel>
                 </AlertDialogHeader>
