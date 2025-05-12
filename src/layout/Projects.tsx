@@ -1,4 +1,6 @@
 import { ProjectList } from "@/data/ProjectList";
+import AutoPlay from "embla-carousel-autoplay";
+import { useRef } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -23,23 +25,41 @@ import {
 } from "@/components/ui/dialog";
 
 export default function Projects() {
+  const autoplayPlugin = useRef(
+    AutoPlay({
+      delay: 3000,
+      stopOnInteraction: true,
+      stopOnMouseEnter: false,
+    })
+  );
+
   return (
     <section
       id="projects"
-      className="py-20 container mx-auto px-12 md:px-14 relative"
+      className="py-20 container mx-auto px-12 md:px-14 relative overflow-hidden"
     >
-      <div className="mb-12 text-center">
-        <h2 className="text-xl text-muted-foreground uppercase tracking-widest mb-2 relative inline-block">
-          MY CRAFT
-          <span className="absolute -bottom-2 left-1/4 right-1/4 h-0.5 border-b-2 rounded-full border-primary/50"></span>
-        </h2>
-
-        <p className="text-muted-foreground mt-4 max-w-lg mx-auto">
-          A collection of projects I've built using modern web technologies
+      <div className="mb-16 text-center">
+        <div className="relative inline-block mb-6">
+          <span className="text-6xl font-black text-muted/40 absolute -top-4 left-1/2 -translate-x-1/2">
+            04
+          </span>
+          <h2 className="text-xl text-foreground uppercase tracking-widest font-medium relative z-10">
+            My Craft
+          </h2>
+        </div>
+        <p className="text-muted-foreground max-w-lg mx-auto text-base border-l-2 border-primary/30 pl-4 py-1 inline-block">
+          A collection of projects I've built
         </p>
       </div>
 
-      <Carousel className="m-2 mt-10">
+      <Carousel
+        className="m-2 mt-10"
+        plugins={[autoplayPlugin.current]}
+        opts={{
+          loop: true,
+          align: "start",
+        }}
+      >
         <CarouselContent>
           {ProjectList.map((project) => (
             <CarouselItem
