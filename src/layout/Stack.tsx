@@ -1,36 +1,110 @@
 import { technologies } from "@/data/Technologies";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Card } from "@/components/ui/card";
 
 export default function Stack() {
   return (
-    <section id="stack" className="py-20 bg-[#f8f8f8] dark:bg-[#111111]">
-      <div className="container mx-auto px-12 md:px-14">
-        <div className="max-w-3xl mx-auto">
+    <section
+      id="stack"
+      className="py-20 bg-[#f8f8f8] dark:bg-[#111111] min-h-[630px]"
+    >
+      <div className="container mx-auto px-12 sm:px-12 md:px-14">
+        <div className="max-w-3xl mx-auto ">
           <h2 className="text-3xl font-bold mb-8 pb-2 relative">
             Tech Stack
-            <span className="absolute bottom-0 left-0 w-12 border-b-3 rounded-full border-primary/50"></span>
+            <span className="absolute bottom-0 left-0 w-12 border-b-2 rounded-full border-primary/50"></span>
           </h2>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6 mt-8">
-            {technologies.map((tech) => {
-              const Icon = tech.icon;
-              return (
-                <div
-                  key={tech.name}
-                  className="flex flex-col items-center justify-center p-3 sm:p-5 rounded-lg bg-background border border-border/20  hover:border-border/40 group"
-                >
-                  <div className="p-2 sm:p-3 rounded-md mb-2 sm:mb-3  group-hover:bg-opacity-15">
-                    <Icon
-                      size={32}
-                      style={{
-                        color: tech.color,
-                      }}
+          <Tabs defaultValue="frontend" className="flex flex-col">
+            <TabsList className="self-center gap-2 sm:gap-8 p-1 dark:bg-neutral-900 mb-6">
+              <TabsTrigger
+                className="cursor-pointer text-xs sm:text-sm"
+                value="frontend"
+              >
+                Frontend
+              </TabsTrigger>
+              <TabsTrigger
+                className="cursor-pointer text-xs sm:text-sm"
+                value="backend"
+              >
+                Backend
+              </TabsTrigger>
+              <TabsTrigger
+                className="cursor-pointer text-xs sm:text-sm"
+                value="ui"
+              >
+                UI/UX
+              </TabsTrigger>
+              <TabsTrigger
+                className="cursor-pointer text-xs sm:text-sm"
+                value="tools"
+              >
+                Tools
+              </TabsTrigger>
+            </TabsList>
+
+            <Card className="p-4   ">
+              <TabsContent value="frontend" className="flex flex-wrap gap-3   ">
+                {technologies.frontend.map((tech) => (
+                  <div
+                    key={tech.name}
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 "
+                  >
+                    <tech.icon
+                      className="h-5 w-5"
+                      style={{ color: tech.color }}
                     />
+                    <span className="text-sm">{tech.name}</span>
                   </div>
-                  <h3 className="text-sm font-medium">{tech.name}</h3>
-                </div>
-              );
-            })}
-          </div>
+                ))}
+              </TabsContent>
+
+              <TabsContent value="backend" className="flex flex-wrap gap-3">
+                {technologies.backend.map((tech) => (
+                  <div
+                    key={tech.name}
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105"
+                  >
+                    <tech.icon
+                      className="h-5 w-5"
+                      style={{ color: tech.color }}
+                    />
+                    <span className="text-sm">{tech.name}</span>
+                  </div>
+                ))}
+              </TabsContent>
+
+              <TabsContent value="ui" className="flex flex-wrap gap-3">
+                {technologies.ui.map((tech) => (
+                  <div
+                    key={tech.name}
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105"
+                  >
+                    <tech.icon
+                      className="h-5 w-5"
+                      style={{ color: tech.color }}
+                    />
+                    <span className="text-sm">{tech.name}</span>
+                  </div>
+                ))}
+              </TabsContent>
+
+              <TabsContent value="tools" className="flex flex-wrap gap-3">
+                {technologies.tools.map((tech) => (
+                  <div
+                    key={tech.name}
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105"
+                  >
+                    <tech.icon
+                      className="h-5 w-5"
+                      style={{ color: tech.color }}
+                    />
+                    <span className="text-sm">{tech.name}</span>
+                  </div>
+                ))}
+              </TabsContent>
+            </Card>
+          </Tabs>
         </div>
       </div>
     </section>
