@@ -43,11 +43,14 @@ export default function Stack() {
               </TabsTrigger>
             </TabsList>
 
-            <Card className="p-6 h-full overflow-y-auto">
-              <TabsContent value="frontend" className="flex flex-wrap gap-3  ">
+            <Card className="p-6 ">
+              <TabsContent
+                value="frontend"
+                className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 "
+              >
                 {technologies.frontend.map((tech) => (
                   <div
-                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 w-full md:w-40 border-l-3 "
+                    className="flex items-center gap-1 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 border-l-3 "
                     style={{
                       borderLeftColor: [
                         "Next.js",
@@ -59,19 +62,22 @@ export default function Stack() {
                     }}
                   >
                     <tech.icon
-                      className="h-5 w-5"
+                      className="h-4 w-4 sm:h-5 sm:w-5"
                       style={{ color: tech.color }}
                     />
-                    <span className="text-sm ">{tech.name}</span>
+                    <span className="text-[10px] sm:text-sm">{tech.name}</span>
                   </div>
                 ))}
               </TabsContent>
 
-              <TabsContent value="backend" className="flex flex-wrap gap-3">
+              <TabsContent
+                value="backend"
+                className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4"
+              >
                 {technologies.backend.map((tech) => (
                   <div
                     key={tech.name}
-                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 border-l-3 w-full md:w-40"
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 border-l-3 "
                     style={{
                       borderLeftColor: ["Express.js"].includes(tech.name)
                         ? "var(--foreground)"
@@ -79,37 +85,43 @@ export default function Stack() {
                     }}
                   >
                     <tech.icon
-                      className="h-5 w-5"
+                      className="h-4 w-4 sm:h-5 sm:w-5"
                       style={{ color: tech.color }}
                     />
-                    <span className="text-sm">{tech.name}</span>
+                    <span className="text-[10px] sm:text-sm">{tech.name}</span>
                   </div>
                 ))}
               </TabsContent>
 
-              <TabsContent value="ui" className="flex flex-wrap gap-3">
+              <TabsContent
+                value="ui"
+                className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4"
+              >
                 {technologies.ui.map((tech) => (
                   <div
                     key={tech.name}
-                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 w-full md:w-40 border-l-3"
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105  border-l-3"
                     style={{
                       borderLeftColor: tech.color,
                     }}
                   >
                     <tech.icon
-                      className="h-5 w-5"
+                      className="h-4 w-4 sm:h-5 sm:w-5"
                       style={{ color: tech.color }}
                     />
-                    <span className="text-sm">{tech.name}</span>
+                    <span className="text-[10px] sm:text-sm">{tech.name}</span>
                   </div>
                 ))}
               </TabsContent>
 
-              <TabsContent value="tools" className="flex flex-wrap gap-3">
+              <TabsContent
+                value="tools"
+                className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4"
+              >
                 {technologies.tools.map((tech) => (
                   <div
                     key={tech.name}
-                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 w-full md:w-40 border-l-3"
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105  border-l-3"
                     style={{
                       borderLeftColor: ["GitHub", "Vercel"].includes(tech.name)
                         ? "var(--foreground)"
@@ -117,10 +129,10 @@ export default function Stack() {
                     }}
                   >
                     <tech.icon
-                      className="h-5 w-5"
+                      className="h-4 w-4 sm:h-5 sm:w-5"
                       style={{ color: tech.color }}
                     />
-                    <span className="text-sm">{tech.name}</span>
+                    <span className="text-[10px] sm:text-sm">{tech.name}</span>
                   </div>
                 ))}
               </TabsContent>
