@@ -14,7 +14,7 @@ export default function Expertise() {
         className="flex
        gap-10 text-muted-foreground/60 p-3 items-center text-xs tracking-wider "
       >
-        <h1 className="hover:border-b-2 "> USER FRIENDLY </h1>
+        <h1> USER FRIENDLY </h1>
         <Diamond size={13} strokeWidth={1} />
         <h1> RESPONSIVE </h1>
         <Diamond size={13} strokeWidth={1} />
