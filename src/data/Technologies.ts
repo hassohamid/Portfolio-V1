@@ -26,6 +26,7 @@ import {
   SiCanva,
   SiClerk,
   SiPostman,
+  SiShopify,
 } from "react-icons/si";
 import { BiLogoBootstrap } from "react-icons/bi";
 import { TbBrandThreejs } from "react-icons/tb";
@@ -60,6 +61,7 @@ export const technologies = {
     { name: "Figma", icon: SiFigma, color: "#F24E1E" },
     { name: "Canva", icon: SiCanva, color: "#00C4CC" },
     { name: "Motion", icon: SiFramer, color: "#0055FF" },
+    { name: "Shopify", icon: SiShopify, color: "#7AB55C" },
   ],
 
   tools: [

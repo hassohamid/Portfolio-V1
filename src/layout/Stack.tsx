@@ -50,7 +50,7 @@ export default function Stack() {
               >
                 {technologies.frontend.map((tech) => (
                   <div
-                    className="flex items-center gap-1 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 border-l-3 "
+                    className="flex items-center gap-1 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm  hover:border-l-7 transition-all ease-out  border-l-3 cursor-pointer overflow-hidden "
                     style={{
                       borderLeftColor: [
                         "Next.js",
@@ -77,7 +77,7 @@ export default function Stack() {
                 {technologies.backend.map((tech) => (
                   <div
                     key={tech.name}
-                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 border-l-3 "
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm hover:border-l-7 transition-all ease-out  border-l-3 overflow-hidden cursor-pointer "
                     style={{
                       borderLeftColor: ["Express.js"].includes(tech.name)
                         ? "var(--foreground)"
@@ -100,7 +100,7 @@ export default function Stack() {
                 {technologies.ui.map((tech) => (
                   <div
                     key={tech.name}
-                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105  border-l-3"
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm hover:border-l-7 transition-all ease-out   border-l-3 overflow-hidden cursor-pointer"
                     style={{
                       borderLeftColor: tech.color,
                     }}
@@ -121,7 +121,7 @@ export default function Stack() {
                 {technologies.tools.map((tech) => (
                   <div
                     key={tech.name}
-                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105  border-l-3"
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm hover:border-l-7 transition-all ease-out  border-l-3 overflow-hidden cursor-pointer"
                     style={{
                       borderLeftColor: ["GitHub", "Vercel"].includes(tech.name)
                         ? "var(--foreground)"
