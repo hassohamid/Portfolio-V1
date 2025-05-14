@@ -8,7 +8,7 @@ export default function Expertise() {
       speed={30}
       gradientColor="#393939
 "
-      className="bg-[#f8f8f8] dark:bg-[#111111] "
+      className="bg-[#f8f8f8] dark:bg-[#111111] border-t-1 border-b-1"
     >
       <div
         className="flex
