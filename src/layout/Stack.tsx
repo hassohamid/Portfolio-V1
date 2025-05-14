@@ -43,11 +43,11 @@ export default function Stack() {
               </TabsTrigger>
             </TabsList>
 
-            <Card className="p-6">
-              <TabsContent value="frontend" className="flex flex-wrap gap-3">
+            <Card className="p-6 h-full overflow-y-auto">
+              <TabsContent value="frontend" className="flex flex-wrap gap-3  ">
                 {technologies.frontend.map((tech) => (
                   <div
-                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 w-full md:w-40 border-l-3"
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 w-full md:w-40 border-l-3 "
                     style={{
                       borderLeftColor: [
                         "Next.js",
@@ -62,7 +62,7 @@ export default function Stack() {
                       className="h-5 w-5"
                       style={{ color: tech.color }}
                     />
-                    <span className="text-sm">{tech.name}</span>
+                    <span className="text-sm ">{tech.name}</span>
                   </div>
                 ))}
               </TabsContent>
@@ -71,7 +71,7 @@ export default function Stack() {
                 {technologies.backend.map((tech) => (
                   <div
                     key={tech.name}
-                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 w-40 border-l-3"
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 border-l-3 w-full md:w-40"
                     style={{
                       borderLeftColor: ["Express.js"].includes(tech.name)
                         ? "var(--foreground)"
@@ -91,7 +91,7 @@ export default function Stack() {
                 {technologies.ui.map((tech) => (
                   <div
                     key={tech.name}
-                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 w-40 border-l-3"
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 w-full md:w-40 border-l-3"
                     style={{
                       borderLeftColor: tech.color,
                     }}
@@ -109,7 +109,7 @@ export default function Stack() {
                 {technologies.tools.map((tech) => (
                   <div
                     key={tech.name}
-                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 w-40 border-l-3"
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 w-full md:w-40 border-l-3"
                     style={{
                       borderLeftColor: ["GitHub", "Vercel"].includes(tech.name)
                         ? "var(--foreground)"
