@@ -7,6 +7,7 @@ import { Footer } from "@/layout/Footer";
 import Stack from "@/layout/Stack";
 import Projects from "@/layout/Projects";
 import { Toaster } from "./components/ui/sonner";
+import BeyondCode from "@/layout/BeyondCode";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <About />
           <Stack />
           <Projects />
+          <BeyondCode />
         </main>
         <Footer />
         <Toaster />

@@ -51,7 +51,7 @@ export default function Projects() {
           <span className="text-6xl font-black text-muted/40 absolute -top-4 left-1/2 -translate-x-1/2">
             0{ProjectList.length}
           </span>
-          <h2 className="text-xl text-foreground uppercase tracking-widest font-medium relative z-10">
+          <h2 className="text-xl text-foreground uppercase tracking-widest font-medium relative z-10 pr-2">
             My Craft
           </h2>
         </div>
