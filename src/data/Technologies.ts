@@ -32,10 +32,10 @@ import { TbBrandThreejs } from "react-icons/tb";
 
 export const technologies = {
   frontend: [
-    { name: "ReactJS", icon: RiReactjsFill, color: "#61DAFB" },
+    { name: "React", icon: RiReactjsFill, color: "#61DAFB" },
     { name: "JavaScript", icon: RiJavascriptFill, color: "#F7DF1E" },
     { name: "TailwindCSS", icon: RiTailwindCssFill, color: "#06B6D4" },
-    { name: "NextJS", icon: RiNextjsFill },
+    { name: "Next.js", icon: RiNextjsFill },
     { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
     { name: "Material UI", icon: SiMui, color: "#007FFF" },
     { name: "shadcn", icon: SiShadcnui },
@@ -46,8 +46,8 @@ export const technologies = {
   ],
 
   backend: [
-    { name: "NodeJS", icon: SiNodedotjs, color: "#339933" },
-    { name: "ExpressJS", icon: SiExpress },
+    { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
+    { name: "Express.js", icon: SiExpress },
     { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
     { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
     { name: "Supabase", icon: SiSupabase, color: "#3ECF8E" },
@@ -59,7 +59,7 @@ export const technologies = {
   ui: [
     { name: "Figma", icon: SiFigma, color: "#F24E1E" },
     { name: "Canva", icon: SiCanva, color: "#00C4CC" },
-    { name: "Motion.dev", icon: SiFramer, color: "#0055FF" },
+    { name: "Motion", icon: SiFramer, color: "#0055FF" },
   ],
 
   tools: [

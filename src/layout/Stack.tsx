@@ -15,8 +15,8 @@ export default function Stack() {
             <span className="absolute bottom-0 left-0 w-12 border-b-2 rounded-full border-primary/50"></span>
           </h2>
 
-          <Tabs defaultValue="frontend" className="flex flex-col">
-            <TabsList className="self-center gap-2 sm:gap-8 p-1 dark:bg-neutral-900 mb-6">
+          <Tabs defaultValue="frontend">
+            <TabsList className="  dark:bg-neutral-950 w-full ">
               <TabsTrigger
                 className="cursor-pointer text-xs sm:text-sm"
                 value="frontend"
@@ -43,12 +43,20 @@ export default function Stack() {
               </TabsTrigger>
             </TabsList>
 
-            <Card className="p-4   ">
-              <TabsContent value="frontend" className="flex flex-wrap gap-3   ">
+            <Card className="p-6">
+              <TabsContent value="frontend" className="flex flex-wrap gap-3">
                 {technologies.frontend.map((tech) => (
                   <div
-                    key={tech.name}
-                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 "
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 w-full md:w-40 border-l-3"
+                    style={{
+                      borderLeftColor: [
+                        "Next.js",
+                        "Three.js",
+                        "shadcn",
+                      ].includes(tech.name)
+                        ? "var(--foreground)"
+                        : tech.color,
+                    }}
                   >
                     <tech.icon
                       className="h-5 w-5"
@@ -63,7 +71,12 @@ export default function Stack() {
                 {technologies.backend.map((tech) => (
                   <div
                     key={tech.name}
-                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105"
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 w-40 border-l-3"
+                    style={{
+                      borderLeftColor: ["Express.js"].includes(tech.name)
+                        ? "var(--foreground)"
+                        : tech.color,
+                    }}
                   >
                     <tech.icon
                       className="h-5 w-5"
@@ -78,7 +91,10 @@ export default function Stack() {
                 {technologies.ui.map((tech) => (
                   <div
                     key={tech.name}
-                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105"
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 w-40 border-l-3"
+                    style={{
+                      borderLeftColor: tech.color,
+                    }}
                   >
                     <tech.icon
                       className="h-5 w-5"
@@ -93,7 +109,12 @@ export default function Stack() {
                 {technologies.tools.map((tech) => (
                   <div
                     key={tech.name}
-                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105"
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm transition-transform hover:scale-105 w-40 border-l-3"
+                    style={{
+                      borderLeftColor: ["GitHub", "Vercel"].includes(tech.name)
+                        ? "var(--foreground)"
+                        : tech.color,
+                    }}
                   >
                     <tech.icon
                       className="h-5 w-5"
