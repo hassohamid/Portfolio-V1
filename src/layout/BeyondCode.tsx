@@ -1,7 +1,7 @@
 import { PiBracketsAngleFill } from "react-icons/pi";
 import {
   Card,
-  Cardtitle,
+  CardTitle,
   CardContent,
   CardDescription,
   CardHeader,
@@ -25,7 +25,15 @@ export default function BeyondCode() {
       </div>
       <div className="container max-w-5xl mx-auto">
         <div className="flex justify-center gap-2 p-2">
-          <Card className="w-2/3 rounded-none "></Card>
+          <Card className="w-2/3 rounded-none ">
+            <CardHeader>
+              <CardTitle> Title </CardTitle>
+              <CardDescription> Desc </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p> Text here </p>
+            </CardContent>
+          </Card>
           <Card className=" w-full rounded-none"> </Card>
         </div>
         <div className=" p-2 ">

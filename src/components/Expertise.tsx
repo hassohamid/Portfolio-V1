@@ -7,6 +7,7 @@ export default function Expertise() {
       autoFill
       gradient
       gradientWidth={70}
+      speed={30}
       gradientColor="#393939
 "
       className="bg-[#f8f8f8] dark:bg-[#111111] "
