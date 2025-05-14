@@ -42,8 +42,9 @@ export const technologies = {
     { name: "shadcn", icon: SiShadcnui },
     { name: "Chakra UI", icon: SiChakraui, color: "#319795" },
     { name: "Bootstrap", icon: BiLogoBootstrap, color: "#7952B3" },
-    { name: "Three.js", icon: TbBrandThreejs },
     { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
+    { name: "Three.js", icon: TbBrandThreejs },
+    { name: "Motion", icon: SiFramer, color: "#0055FF" },
   ],
 
   backend: [
@@ -60,7 +61,7 @@ export const technologies = {
   ui: [
     { name: "Figma", icon: SiFigma, color: "#F24E1E" },
     { name: "Canva", icon: SiCanva, color: "#00C4CC" },
-    { name: "Motion", icon: SiFramer, color: "#0055FF" },
+
     { name: "Shopify", icon: SiShopify, color: "#7AB55C" },
   ],
 

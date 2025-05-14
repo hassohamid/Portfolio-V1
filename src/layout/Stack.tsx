@@ -50,7 +50,7 @@ export default function Stack() {
               >
                 {technologies.frontend.map((tech) => (
                   <div
-                    className="flex items-center gap-1 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm  hover:border-l-7 transition-all ease-out  border-l-3 cursor-pointer overflow-hidden "
+                    className="flex items-center gap-1 bg-background/80 border border-border/40  px-3 rounded-lg shadow-sm  hover:border-l-7 transition-all ease-out  border-l-3 cursor-pointer overflow-hidden py-3"
                     style={{
                       borderLeftColor: [
                         "Next.js",
@@ -62,10 +62,10 @@ export default function Stack() {
                     }}
                   >
                     <tech.icon
-                      className="h-4 w-4 sm:h-5 sm:w-5"
+                      className="h-4 w-4 sm:h-5 sm:w-5 "
                       style={{ color: tech.color }}
                     />
-                    <span className="text-[10px] sm:text-sm">{tech.name}</span>
+                    <span className="text-[10px] sm:text-sm ">{tech.name}</span>
                   </div>
                 ))}
               </TabsContent>
@@ -77,7 +77,7 @@ export default function Stack() {
                 {technologies.backend.map((tech) => (
                   <div
                     key={tech.name}
-                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm hover:border-l-7 transition-all ease-out  border-l-3 overflow-hidden cursor-pointer "
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm hover:border-l-7 transition-all ease-out  border-l-3 overflow-hidden cursor-pointer py-3"
                     style={{
                       borderLeftColor: ["Express.js"].includes(tech.name)
                         ? "var(--foreground)"
@@ -100,7 +100,7 @@ export default function Stack() {
                 {technologies.ui.map((tech) => (
                   <div
                     key={tech.name}
-                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm hover:border-l-7 transition-all ease-out   border-l-3 overflow-hidden cursor-pointer"
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm hover:border-l-7 transition-all ease-out   border-l-3 overflow-hidden cursor-pointer py-3"
                     style={{
                       borderLeftColor: tech.color,
                     }}
@@ -121,7 +121,7 @@ export default function Stack() {
                 {technologies.tools.map((tech) => (
                   <div
                     key={tech.name}
-                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm hover:border-l-7 transition-all ease-out  border-l-3 overflow-hidden cursor-pointer"
+                    className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm hover:border-l-7 transition-all ease-out  border-l-3 overflow-hidden cursor-pointer py-3"
                     style={{
                       borderLeftColor: ["GitHub", "Vercel"].includes(tech.name)
                         ? "var(--foreground)"
