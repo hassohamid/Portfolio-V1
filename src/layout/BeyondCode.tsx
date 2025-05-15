@@ -5,7 +5,6 @@ import {
   CardContent,
   CardDescription,
   CardHeader,
-  CardFooter,
 } from "@/components/ui/card";
 import { ScanFace } from "lucide-react";
 import { Interests } from "@/data/Interests";
@@ -70,23 +69,9 @@ export default function BeyondCode() {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.3, duration: 0.5 }}
                 >
-                  <p className="mb-4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Exercitationem officia enim provident et tenetur magnam
-                    expedita facilis blanditiis, itaque laboriosam id, sequi
-                    suscipit hic recusandae deserunt ad eos eveniet adipisci.
-                  </p>
+                  <p className="mb-4">idk</p>
                 </motion.div>
               </CardContent>
-              <CardFooter>
-                <blockquote className="border-l-4 border-primary/40 pl-4 italic">
-                  "Whether you think you can, or you think you can't, you're
-                  right."
-                  <footer className="text-xs text-muted-foreground mt-1">
-                    — Henry Ford
-                  </footer>
-                </blockquote>
-              </CardFooter>
             </Card>
             <Card className="w-full rounded-lg border border-border/20 shadow-sm backdrop-blur-sm bg-background/80">
               <CardHeader className="relative ">
