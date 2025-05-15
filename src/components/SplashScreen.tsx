@@ -14,7 +14,7 @@ export default function SplashScreen({
     const text = textRef.current;
     if (!text) return;
 
-    const textContent = "> initializing..."; // Changed from "accessing"
+    const textContent = "> initializing";
     text.innerHTML = "";
 
     [...textContent].forEach((letter) => {
