@@ -7,12 +7,14 @@ export default function SplashScreen({
 }: {
   onComplete: () => void;
 }) {
-  const splashRef = useRef(null);
-  const textRef = useRef(null);
+  const splashRef = useRef<HTMLDivElement>(null);
+  const textRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
     const text = textRef.current;
-    const textContent = "> accesing...";
+    if (!text) return;
+
+    const textContent = "> initializing..."; // Changed from "accessing"
     text.innerHTML = "";
 
     [...textContent].forEach((letter) => {
@@ -65,7 +67,7 @@ export default function SplashScreen({
     >
       <h1
         ref={textRef}
-        className="text-white text-7xl font-bold tracking-wider"
+        className="text-foreground/70 font-black text-7xl  tracking-wider"
       ></h1>
     </div>
   );
