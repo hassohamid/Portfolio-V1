@@ -4,3 +4,13 @@
   color: rgb(255, 53, 154);
   transition: 0.6s;
 }
+
+.react-photo-album--masonry img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.react-photo-album--masonry img:hover {
+  transform: translateY(-5px);
+}
