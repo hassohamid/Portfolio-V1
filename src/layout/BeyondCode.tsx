@@ -48,8 +48,10 @@ export default function BeyondCode() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1, duration: 0.5 }}
               >
-                <CardTitle className="text-2xl  tracking-widest p-1">
-                  <Badge className="p-2 ">GET TO KNOW ME</Badge>
+                <CardTitle className="text-2xl  tracking-widest ">
+                  <Badge className="p-2 dark:bg-yellow-500">
+                    GET TO KNOW ME
+                  </Badge>
                 </CardTitle>
                 <CardDescription className="mt-2">
                   Who am I outside the techy world?
