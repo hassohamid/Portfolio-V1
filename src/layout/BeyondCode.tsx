@@ -22,7 +22,7 @@ export default function BeyondCode() {
         id="BeyondCode"
         className="py-30 bg-[#f8f8f8] dark:bg-[#111111] "
       >
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center pb-10">
           <h1 className="mb-4 text-sm text-muted-foreground/50 tracking-widest">
             INSIGHT
           </h1>
