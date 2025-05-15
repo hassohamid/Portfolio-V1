@@ -38,7 +38,7 @@ export default function Nav() {
           href="#BeyondCode"
           className="hover:text-foreground/80 text-foreground/60 relative py-1 group"
         >
-          Life
+          Insight
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out"></span>
         </a>
       </div>
@@ -71,7 +71,7 @@ export default function Nav() {
             <DropdownMenuSeparator />
             <DropdownMenuItem asChild>
               <a href="#BeyondCode" className="cursor-pointer">
-                Life
+                Insight
               </a>
             </DropdownMenuItem>
           </DropdownMenuContent>

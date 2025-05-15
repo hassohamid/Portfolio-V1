@@ -20,11 +20,11 @@ export default function BeyondCode() {
     <>
       <section
         id="BeyondCode"
-        className="py-20 bg-[#f8f8f8] dark:bg-[#111111] "
+        className="py-30 bg-[#f8f8f8] dark:bg-[#111111] "
       >
         <div className="flex flex-col items-center">
           <h1 className="mb-4 text-sm text-muted-foreground/50 tracking-widest">
-            MY LIFE
+            INSIGHT
           </h1>
           <h1 className="text-3xl text-center font-bold mb-4 flex items-center gap-1  ">
             Beyond the <span className="text-muted-foreground/70  ">Code</span>

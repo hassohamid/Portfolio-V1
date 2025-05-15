@@ -8,7 +8,7 @@ export default function Stack() {
     <>
       <section
         id="stack"
-        className="py-20 bg-[#f8f8f8] dark:bg-[#111111] min-h-[650px] sm:min-h-[500px] relative   "
+        className="py-30 bg-[#f8f8f8] dark:bg-[#111111] min-h-[650px] sm:min-h-[500px] relative   "
       >
         <div className="container mx-auto px-12 sm:px-12 md:px-14">
           <div className="max-w-3xl mx-auto ">

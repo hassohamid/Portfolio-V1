@@ -65,7 +65,7 @@ export default function Hero() {
                     href="mailto:¨hello@hasso.io"
                     className="hover:text-primary transition-colors"
                   >
-                    hello@hasso.io
+                    hassohamid@hotmail.com
                   </a>
                 </DrawerDescription>
               </DrawerHeader>
@@ -81,7 +81,7 @@ export default function Hero() {
             variant="outline"
             className="px-5 sm:px-6 cursor-pointer  "
           >
-            <a href="#projects">View My Work</a>
+            <a href="#projects">View My Craft</a>
           </Button>
         </div>
       </div>

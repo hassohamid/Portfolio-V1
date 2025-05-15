@@ -14,7 +14,7 @@ import { toast } from "sonner";
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-background">
+    <section id="about" className="py-25 bg-background">
       <div className="container mx-auto px-12 md:px-14">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 pb-2 relative">
