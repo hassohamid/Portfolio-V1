@@ -8,22 +8,30 @@ import Stack from "@/layout/Stack";
 import Projects from "@/layout/Projects";
 import { Toaster } from "./components/ui/sonner";
 import BeyondCode from "@/layout/BeyondCode";
+import { useState } from "react";
+import SplashScreen from "./components/SplashScreen";
 
 export default function App() {
+  const [showSplash, setShowSplash] = useState(true);
+
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="min-h-screen bg-background transition-colors ">
-        <Header />
-        <main>
-          <Hero />
-          <About />
-          <Stack />
-          <Projects />
-          <BeyondCode />
-        </main>
-        <Footer />
-        <Toaster />
-      </div>
-    </ThemeProvider>
+    <>
+      {showSplash && <SplashScreen onComplete={() => setShowSplash(false)} />}
+
+      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <div className="min-h-screen bg-background transition-colors ">
+          <Header />
+          <main>
+            <Hero />
+            <About />
+            <Stack />
+            <Projects />
+            <BeyondCode />
+          </main>
+          <Footer />
+          <Toaster />
+        </div>
+      </ThemeProvider>
+    </>
   );
 }
