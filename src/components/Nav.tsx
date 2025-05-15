@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
+import { AlignRight } from "lucide-react";
 import { ModeToggle } from "@/theme/ModeToggle";
 import {
   DropdownMenu,
@@ -47,7 +47,7 @@ export default function Nav() {
         <DropdownMenu>
           <DropdownMenuTrigger>
             <Button className="cursor-pointer !transition-none" variant="ghost">
-              <ArrowDown />
+              <AlignRight />
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent>

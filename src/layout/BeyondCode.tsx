@@ -134,7 +134,7 @@ export default function BeyondCode() {
           </motion.div>
         </div>
       </section>
-      <div className="py-10 px-5 sm:px-20 md:px-30">
+      <div className="pt-10 px-5 sm:px-20 md:px-30 pb-20">
         <Gallery />
       </div>
     </>
