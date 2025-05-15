@@ -23,7 +23,7 @@ export default function BeyondCode() {
         className="py-20 bg-[#f8f8f8] dark:bg-[#111111] "
       >
         <div className="flex flex-col items-center">
-          <h1 className="mb-4 text-sm text-muted-foreground/50 tracking-wider">
+          <h1 className="mb-4 text-sm text-muted-foreground/50 tracking-widest">
             MY LIFE
           </h1>
           <h1 className="text-3xl text-center font-bold mb-4 flex items-center gap-1  ">
@@ -42,7 +42,7 @@ export default function BeyondCode() {
             transition={{ duration: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 p-4 sm:justify-center"
           >
-            <Card className="w-full sm:w-2/3 rounded-lg border border-border/20 shadow-sm backdrop-blur-sm bg-background/80">
+            <Card className="w-full rounded-lg border border-border/20 shadow-sm backdrop-blur-sm bg-background/80">
               <CardHeader className="relative">
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
@@ -60,7 +60,7 @@ export default function BeyondCode() {
                 </motion.div>
                 <FaRegCommentAlt
                   className="text-primary/70 absolute top-3 right-6 "
-                  size={24}
+                  size={22}
                 />
               </CardHeader>
               <CardContent>
@@ -92,7 +92,7 @@ export default function BeyondCode() {
               <CardHeader className="relative ">
                 <ScanFace
                   className="text-primary/70 absolute top-3 right-6"
-                  size={24}
+                  size={22}
                 />
 
                 <motion.div
@@ -110,7 +110,7 @@ export default function BeyondCode() {
                   </CardDescription>
                 </motion.div>
               </CardHeader>
-              <CardContent className="grid grid-cols-3 sm:grid-cols-4 gap-4 p-4">
+              <CardContent className="grid grid-cols-3 sm:grid-cols-2  gap-4 p-4">
                 {Interests.map((interest, index) => {
                   return (
                     <motion.div
@@ -149,7 +149,7 @@ export default function BeyondCode() {
           </motion.div>
         </div>
       </section>
-      <div className="p-10">
+      <div className="py-10 px-5 sm:px-20 md:px-30">
         <Gallery />
       </div>
     </>
