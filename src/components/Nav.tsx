@@ -2,14 +2,16 @@ import { Button } from "@/components/ui/button";
 import { AlignRight } from "lucide-react";
 import { ModeToggle } from "@/theme/ModeToggle";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose,
+} from "@/components/ui/sheet";
+import { useState } from "react";
 
 export default function Nav() {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="flex items-center gap-4">
       <div className="hidden md:flex items-center gap-4">
@@ -42,40 +44,50 @@ export default function Nav() {
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out"></span>
         </a>
       </div>
-
       <div className="md:hidden">
-        <DropdownMenu>
-          <DropdownMenuTrigger>
+        <Sheet onOpenChange={setOpen} open={open}>
+          <SheetTrigger asChild>
             <Button className="cursor-pointer !transition-none" variant="ghost">
               <AlignRight />
             </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuItem asChild>
-              <a href="#about" className="cursor-pointer ">
+          </SheetTrigger>
+
+          <SheetContent side="right" className="w-[200px] sm:w-[250px] ">
+            <div className="flex flex-col justify-center h-full gap-4 px-3  ">
+              <p className="text-xs text-muted-foreground/50 tracking-wider px-4">
+                GO TO
+              </p>
+              <a
+                onClick={() => setOpen(false)}
+                href="#about"
+                className=" px-4 py-2 hover:bg-primary/5 rounded-md transition-all duration-200 text-foreground/70 uppercase tracking-wide "
+              >
                 About
               </a>
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem asChild>
-              <a href="#stack" className="cursor-pointer">
+              <a
+                onClick={() => setOpen(false)}
+                href="#stack"
+                className=" px-4 py-2 hover:bg-primary/5 rounded-md transition-all duration-200 text-foreground/70 uppercase tracking-wide "
+              >
                 Stack
               </a>
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem asChild>
-              <a href="#projects" className="cursor-pointer">
+              <a
+                onClick={() => setOpen(false)}
+                href="#projects"
+                className="px-4 py-2 hover:bg-primary/5 rounded-md transition-all duration-200 text-foreground/70 uppercase tracking-wide "
+              >
                 Projects
               </a>
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem asChild>
-              <a href="#BeyondCode" className="cursor-pointer">
+              <a
+                onClick={() => setOpen(false)}
+                href="#BeyondCode"
+                className=" px-4 py-2 hover:bg-primary/5 rounded-md transition-all duration-200 text-foreground/70 uppercase tracking-wide "
+              >
                 Insight
               </a>
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+            </div>
+          </SheetContent>
+        </Sheet>
       </div>
       <ModeToggle />
     </nav>
