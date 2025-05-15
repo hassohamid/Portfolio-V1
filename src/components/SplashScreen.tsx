@@ -67,7 +67,7 @@ export default function SplashScreen({
     >
       <h1
         ref={textRef}
-        className="text-foreground/70 font-black text-7xl  tracking-wider"
+        className="text-white/60 font-black text-7xl  tracking-wider"
       ></h1>
     </div>
   );
