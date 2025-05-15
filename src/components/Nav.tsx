@@ -1,12 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { AlignRight } from "lucide-react";
 import { ModeToggle } from "@/theme/ModeToggle";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-  SheetClose,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
 
 export default function Nav() {
