@@ -45,9 +45,7 @@ export default function BeyondCode() {
                 transition={{ delay: 0.1, duration: 0.5 }}
               >
                 <CardTitle className="text-2xl  tracking-widest ">
-                  <Badge className="p-2 bg-teal-400 text-black">
-                    GET TO KNOW ME
-                  </Badge>
+                  <Badge className="p-2 bg-teal-400 ">GET TO KNOW ME</Badge>
                 </CardTitle>
                 <CardDescription className="mt-2">
                   Who am I outside the techy world?
@@ -96,7 +94,7 @@ export default function BeyondCode() {
                 transition={{ delay: 0.2, duration: 0.5 }}
               >
                 <CardTitle className="text-2xl text-foreground/90 tracking-widest font-bold">
-                  <Badge className="p-2 bg-teal-400 text-black">
+                  <Badge className="p-2 bg-teal-400 ">
                     HOBBIES & INTERESTS
                   </Badge>
                 </CardTitle>
@@ -105,7 +103,7 @@ export default function BeyondCode() {
                 </CardDescription>
               </motion.div>
             </CardHeader>
-            <CardContent className="grid grid-cols-4 sm:grid-cols-4 gap-4 p-4">
+            <CardContent className="grid grid-cols-3 sm:grid-cols-4 gap-4 p-4">
               {Interests.map((interest, index) => {
                 return (
                   <motion.div

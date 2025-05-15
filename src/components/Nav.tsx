@@ -34,6 +34,13 @@ export default function Nav() {
           Projects
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out"></span>
         </a>
+        <a
+          href="#BeyondCode"
+          className="hover:text-foreground/80 text-foreground/60 relative py-1 group"
+        >
+          Life
+          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out"></span>
+        </a>
       </div>
 
       <div className="md:hidden">
@@ -61,10 +68,15 @@ export default function Nav() {
                 Projects
               </a>
             </DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem asChild>
+              <a href="#BeyondCode" className="cursor-pointer">
+                Life
+              </a>
+            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
-
       <ModeToggle />
     </nav>
   );
