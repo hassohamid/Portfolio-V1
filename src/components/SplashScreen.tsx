@@ -1,4 +1,5 @@
-// components/SplashScreen.tsx
+// This part is made by AI. This just inspired me to learn GSAP in the future.
+
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
@@ -75,7 +76,7 @@ export default function SplashScreen({
     >
       <h1
         ref={textRef}
-        className="text-white/60 font-black text-xl sm:text-5xl  tracking-wider"
+        className="text-white/60 font-black text-xl sm:text-4xl  tracking-wider"
       ></h1>
     </div>
   );
