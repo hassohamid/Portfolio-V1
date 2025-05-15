@@ -11,6 +11,14 @@ export default function SplashScreen({
   const textRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
+    document.body.classList.add("overflow-hidden");
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, []);
+
+  useEffect(() => {
     const text = textRef.current;
     if (!text) return;
 
