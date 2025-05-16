@@ -115,12 +115,10 @@ export default function SplashScreen({
           className="text-white/90 font-light text-3xl tracking-[0.2em] uppercase opacity-0"
         >
           HELLO
-        </div>
-
-        <div className="w-40 h-[1px] bg-black/20 dark:bg-white/10 mt-1 rounded-full overflow-hidden">
+        </div>        <div className="w-40 h-[2px] bg-black/20 dark:bg-white/10 mt-1 rounded-full overflow-hidden">
           <div
             ref={progressRef}
-            className="h-full bg-gradient-to-r from-primary/80 to-primary"
+            className="h-full bg-gradient-to-r from-[#4F46E5]/80 to-[#4F46E5] dark:from-primary/80 dark:to-primary"
           ></div>
         </div>
       </div>
