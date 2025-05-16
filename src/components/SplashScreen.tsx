@@ -33,8 +33,6 @@ export default function SplashScreen({
         setTimeout(onComplete, 300);
       },
     });
-
-    // Animate the dots appearing one by one
     const dots = dotsRef.current.children;
     tl.fromTo(
       dots,
@@ -48,23 +46,26 @@ export default function SplashScreen({
       }
     );
 
-    // Animate the text appearing
+    tl.to(dotsRef.current, {
+      opacity: 0,
+      duration: 0.3,
+      ease: "power2.in",
+    });
+
     tl.fromTo(
       textRef.current,
       {
         opacity: 0,
-        y: 20,
+        y: 10,
       },
       {
         opacity: 1,
         y: 0,
-        duration: 0.7,
+        duration: 0.5,
         ease: "power3.out",
-      },
-      "-=0.3"
+      }
     );
 
-    // Animate the progress bar filling
     tl.fromTo(
       progressRef.current,
       { width: "0%" },
@@ -76,17 +77,14 @@ export default function SplashScreen({
       "-=0.2"
     );
 
-    // Add a small pause at the end
     tl.to({}, { duration: 0.5 });
 
-    // Fade out everything
     tl.to([textRef.current, progressRef.current, dotsRef.current], {
       opacity: 0,
       duration: 0.5,
       ease: "power2.in",
     });
 
-    // Slide out the splash screen
     tl.to(
       splashRef.current,
       {
@@ -106,26 +104,23 @@ export default function SplashScreen({
       }}
     >
       <div className="relative flex flex-col items-center justify-center gap-8 px-4">
-        {/* Animated dots */}
-        <div ref={dotsRef} className="flex gap-2 mb-2">
+        <div ref={dotsRef} className="flex gap-2 mb-2 absolute">
           {[...Array(3)].map((_, i) => (
             <div key={i} className="h-2 w-2 rounded-full bg-primary/80"></div>
           ))}
         </div>
 
-        {/* Entering text */}
         <div
           ref={textRef}
-          className="text-white/90 font-light text-3xl tracking-[0.2em] uppercase"
+          className="text-white/90 font-light text-3xl tracking-[0.2em] uppercase opacity-0"
         >
           HELLO
         </div>
 
-        {/* Progress bar */}
-        <div className="w-40 h-[1px] bg-white/10 mt-1 rounded-full overflow-hidden">
+        <div className="w-40 h-[1px] bg-black/20 dark:bg-white/10 mt-1 rounded-full overflow-hidden">
           <div
             ref={progressRef}
-            className="h-full bg-gradient-to-r from-primary/50 to-primary"
+            className="h-full bg-gradient-to-r from-primary/80 to-primary"
           ></div>
         </div>
       </div>
