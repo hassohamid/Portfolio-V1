@@ -12,6 +12,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 export default function Hero() {
   return (
@@ -21,10 +22,21 @@ export default function Hero() {
     >
       <ParticlesBackground />
       <div className="z-10 flex flex-col items-center gap-4">
-        <Avatar className="size-32 ring-2 ring-white/10 ring-offset-2 ring-offset-background hover:ring-primary/20 transition-all duration-200 ">
-          <AvatarImage src="8.jpg" alt="HASSO" />
-          <AvatarFallback>HH</AvatarFallback>
-        </Avatar>
+        <Dialog>
+          <DialogTrigger>
+            <Avatar className="size-32 ring-2 ring-white/10 ring-offset-2 ring-offset-background hover:ring-primary/20 transition-all duration-200 cursor-pointer">
+              <AvatarImage src="8.jpg" alt="HASSO" />
+              <AvatarFallback>HH</AvatarFallback>
+            </Avatar>
+          </DialogTrigger>
+          <DialogContent className="p-0  border-0 rounded-full ">
+            <img
+              src="8.jpg"
+              alt="HASSO"
+              className="rounded-full w-full h-full "
+            />
+          </DialogContent>
+        </Dialog>
         <div className="text-center space-y-4 ">
           <h1 className="text-4xl font-bold tracking-tight flex items-center justify-center">
             hasso

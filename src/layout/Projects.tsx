@@ -86,10 +86,7 @@ export default function Projects() {
                         />
                       </DialogTrigger>
 
-                      <DialogContent className="!w-full sm:!max-w-[70vw]   p-0 overflow-hidden border-0 !max-w-[96vw] ">
-                        <DialogHeader className=" flex justify-center items-center py-2">
-                          <p className=" pt-2 "></p>
-                        </DialogHeader>
+                      <DialogContent className="!w-full sm:!max-w-[70vw]   p-0 overflow-hidden border-0 !max-w-[96vw]  ">
                         <img src={project.img} alt={project.name} />
                       </DialogContent>
                     </Dialog>
