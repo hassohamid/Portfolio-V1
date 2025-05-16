@@ -16,7 +16,7 @@ import {
 export default function Hero() {
   return (
     <section
-      className="relative h-[600px] overflow-hidden flex flex-col justify-center items-center"
+      className="relative h-[650px] overflow-hidden flex flex-col justify-center items-center"
       id="intro"
     >
       <ParticlesBackground />

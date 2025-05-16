@@ -10,9 +10,15 @@ import { Toaster } from "./components/ui/sonner";
 import BeyondCode from "@/layout/BeyondCode";
 import { useState } from "react";
 import SplashScreen from "./components/SplashScreen";
+import { useEffect } from "react";
+import { SmoothScroll } from "./lib/scroll";
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
+
+  useEffect(() => {
+    SmoothScroll();
+  }, []);
 
   return (
     <>
