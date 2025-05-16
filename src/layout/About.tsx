@@ -25,17 +25,17 @@ export default function About() {
           <div className="space-y-6 text-muted-foreground/90">
             <p className="leading-relaxed">
               I’m Hasso, a Fullstack Developer with a true passion for Frontend
-              and UX/UI design. My enthusiasm for crafting intuitive, beautiful
+              and UX/UI design. My enthusiasm for crafting modern, beautiful
               interfaces began when I first experimented with HTML and CSS—I
               loved the feeling of being “in control” of every detail.
             </p>
 
             <p className="leading-relaxed">
               Early in my career, I built e-commerce sites on Shopify. While I
-              enjoyed the work, I found the platform limiting and longed for the
-              freedom to bring any idea to life. That drive led me to fully
-              commit to web development, where I could shape every aspect of a
-              project from the ground up.
+              enjoyed the work, I found the platform kinda limiting and wanted
+              to be able to build anything that comes to mind. That drive led me
+              to fully commit to web development, where I could shape every
+              aspect of a project from the ground up.
             </p>
           </div>
 

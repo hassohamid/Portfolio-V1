@@ -46,7 +46,7 @@ export default function Hero() {
             </span>
             <span className="mx-2 text-primary/50">•</span>
             <span className="text-primary/90 hover:text-primary">
-              detail-driven
+              quality-obsessed
             </span>
           </p>
         </div>
@@ -76,7 +76,7 @@ export default function Hero() {
             </DrawerContent>
           </Drawer>
 
-          <Heart size={16} className="animate-pulse hearteffect" />
+          <Heart size={16} className=" animate-pulse hearteffect" />
           <Button
             asChild
             variant="outline"
