@@ -5,7 +5,7 @@ export const Photos = [
     height: 140,
   },
   {
-    src: "1.png",
+    src: "1.jpg",
     width: 100,
     height: 130,
   },
