@@ -17,7 +17,12 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+  DialogHeader,
+} from "@/components/ui/dialog";
 
 export default function Projects() {
   const autoplayPlugin = useRef(
@@ -81,7 +86,10 @@ export default function Projects() {
                         />
                       </DialogTrigger>
 
-                      <DialogContent className="!w-full sm:!max-w-[70vw]   p-0 overflow-hidden border-0 !max-w-[96vw]  ">
+                      <DialogContent className="!w-full sm:!max-w-[70vw]   p-0 overflow-hidden border-0 !max-w-[96vw] ">
+                        <DialogHeader className=" flex justify-center items-center py-2">
+                          <p className=" pt-2 "></p>
+                        </DialogHeader>
                         <img src={project.img} alt={project.name} />
                       </DialogContent>
                     </Dialog>
