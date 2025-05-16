@@ -2,7 +2,6 @@ import Lenis from "@studio-freight/lenis";
 
 export function SmoothScroll() {
   const lenis = new Lenis({
-    syncTouch: true,
     anchors: true,
   } as any);
 
