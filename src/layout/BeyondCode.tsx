@@ -16,7 +16,6 @@ import { ScanFace } from "lucide-react";
 import { Interests } from "@/data/Interests";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
-
 import { FaRegCommentAlt } from "react-icons/fa";
 import Gallery from "@/components/Gallery";
 
@@ -135,10 +134,10 @@ export default function BeyondCode() {
                 >
                   <Accordion type="single" collapsible>
                     <AccordionItem value="item 1">
-                      <AccordionTrigger className="cursor-pointer">
+                      <AccordionTrigger className="flex items-center cursor-pointer">
                         My go-to productivity hack?
                       </AccordionTrigger>
-                      <AccordionContent>
+                      <AccordionContent className="leading-relaxed tracking-tight ">
                         I might sound crazy but when I feel like I'm falling
                         behind, I drink half a Redbull and nap for 15-30 min.
                         It's actually a real thing, called "The Coffee Nap".
@@ -149,7 +148,7 @@ export default function BeyondCode() {
                       <AccordionTrigger className="cursor-pointer">
                         Three apps I can't live without?
                       </AccordionTrigger>
-                      <AccordionContent>
+                      <AccordionContent className="leading-relaxed tracking-tight ">
                         I don't really know about not being able to LIVE without
                         them but they definitely make my life easier - Spotify,
                         Notes & Discord.
@@ -159,7 +158,7 @@ export default function BeyondCode() {
                       <AccordionTrigger className="cursor-pointer">
                         Early bird or night owl?
                       </AccordionTrigger>
-                      <AccordionContent>
+                      <AccordionContent className="leading-relaxed tracking-tight ">
                         When I'm in my "training phase" I'd definitely say early
                         bird. However when I work with something I truly enjoy
                         then most definitely a night owl. I also feel more
@@ -170,7 +169,7 @@ export default function BeyondCode() {
                       <AccordionTrigger className="cursor-pointer">
                         The most beautiful place I've ever visited?
                       </AccordionTrigger>
-                      <AccordionContent>
+                      <AccordionContent className="leading-relaxed tracking-tight ">
                         Phi Phi Islands in Thailand. Felt like a dream!
                       </AccordionContent>
                     </AccordionItem>
@@ -178,7 +177,7 @@ export default function BeyondCode() {
                       <AccordionTrigger className="cursor-pointer">
                         My favorite movie?
                       </AccordionTrigger>
-                      <AccordionContent>
+                      <AccordionContent className="leading-relaxed tracking-tight ">
                         One that I will never forget is Whiplash (2014). There
                         wasn't a second where I didn't feel the crazy tension it
                         brought. Amazing movie!
@@ -188,7 +187,7 @@ export default function BeyondCode() {
                       <AccordionTrigger className="cursor-pointer">
                         Goals I want to achieve?
                       </AccordionTrigger>
-                      <AccordionContent>
+                      <AccordionContent className="leading-relaxed tracking-tight ">
                         Beating 3km under 12 minutes.
                       </AccordionContent>
                     </AccordionItem>
