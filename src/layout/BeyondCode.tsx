@@ -40,12 +40,7 @@ export default function BeyondCode() {
         </div>
 
         <div className="container max-w-8xl mx-auto ">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 p-4 sm:justify-center"
-          >
+          <div className="flex flex-col sm:flex-row gap-4 p-4 sm:justify-center">
             <Card className="w-full rounded-lg border border-border/20 shadow-sm backdrop-blur-sm bg-background/80">
               <CardHeader className="relative ">
                 <ScanFace
@@ -53,20 +48,14 @@ export default function BeyondCode() {
                   size={22}
                 />
 
-                <motion.div
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2, duration: 0.5 }}
-                >
-                  <CardTitle className="text-2xl text-foreground/90 tracking-widest font-bold">
-                    <Badge className="p-2 dark:bg-teal-400  font-bold ">
-                      HOBBIES & INTERESTS
-                    </Badge>
-                  </CardTitle>
-                  <CardDescription className="mt-2">
-                    A big part of my life consists of
-                  </CardDescription>
-                </motion.div>
+                <CardTitle className="text-2xl text-foreground/90 tracking-widest font-bold">
+                  <Badge className="p-2 dark:bg-teal-400  font-bold ">
+                    HOBBIES & INTERESTS
+                  </Badge>
+                </CardTitle>
+                <CardDescription className="mt-2">
+                  A big part of my life consists of
+                </CardDescription>
               </CardHeader>
               <CardContent className="grid grid-cols-3 sm:grid-cols-2  gap-4 p-4">
                 {Interests.map((interest, index) => {
@@ -106,96 +95,84 @@ export default function BeyondCode() {
             </Card>
             <Card className="w-full rounded-lg border border-border/20 shadow-sm backdrop-blur-sm bg-background/80">
               <CardHeader className="relative">
-                <motion.div
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1, duration: 0.5 }}
-                >
-                  <CardTitle className="text-2xl  tracking-widest ">
-                    <Badge className="p-2 dark:bg-teal-400  font-bold ">
-                      GET TO KNOW ME
-                    </Badge>
-                  </CardTitle>
-                  <CardDescription className="mt-2">
-                    Who am I outside the techy world?
-                  </CardDescription>
-                </motion.div>
+                <CardTitle className="text-2xl  tracking-widest ">
+                  <Badge className="p-2 dark:bg-teal-400  font-bold ">
+                    GET TO KNOW ME
+                  </Badge>
+                </CardTitle>
+                <CardDescription className="mt-2">
+                  Who am I outside the techy world?
+                </CardDescription>
+
                 <FaRegCommentAlt
                   className="text-primary/70 absolute top-3 right-6 "
                   size={22}
                 />
               </CardHeader>
               <CardContent>
-                <motion.div
-                  className="prose prose-sm dark:prose-invert"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.3, duration: 0.5 }}
-                >
-                  <Accordion type="single" collapsible>
-                    <AccordionItem value="item 1">
-                      <AccordionTrigger className="flex items-center cursor-pointer">
-                        My go-to productivity hack?
-                      </AccordionTrigger>
-                      <AccordionContent className="leading-relaxed tracking-tight ">
-                        I might sound crazy but when I feel like I'm falling
-                        behind, I drink half a Redbull and nap for 15-30 min.
-                        It's actually a real thing, called "The Coffee Nap".
-                        Makes me super concentrated for longer periods 😁
-                      </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item 2">
-                      <AccordionTrigger className="cursor-pointer">
-                        Three apps I can't live without?
-                      </AccordionTrigger>
-                      <AccordionContent className="leading-relaxed tracking-tight ">
-                        I don't really know about not being able to LIVE without
-                        them but they definitely make my life easier - Spotify,
-                        Notes & Discord.
-                      </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item 3">
-                      <AccordionTrigger className="cursor-pointer">
-                        Early bird or night owl?
-                      </AccordionTrigger>
-                      <AccordionContent className="leading-relaxed tracking-tight ">
-                        When I'm in my "training phase" I'd definitely say early
-                        bird. However when I work with something I truly enjoy
-                        then most definitely a night owl. I also feel more
-                        productive during nights.
-                      </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item 4">
-                      <AccordionTrigger className="cursor-pointer">
-                        The most beautiful place I've ever visited?
-                      </AccordionTrigger>
-                      <AccordionContent className="leading-relaxed tracking-tight ">
-                        Phi Phi Islands in Thailand. Felt like a dream!
-                      </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item 5">
-                      <AccordionTrigger className="cursor-pointer">
-                        My favorite movie?
-                      </AccordionTrigger>
-                      <AccordionContent className="leading-relaxed tracking-tight ">
-                        One that I will never forget is Whiplash (2014). There
-                        wasn't a second where I didn't feel the crazy tension it
-                        brought. Amazing movie!
-                      </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item 6">
-                      <AccordionTrigger className="cursor-pointer">
-                        Goals I want to achieve?
-                      </AccordionTrigger>
-                      <AccordionContent className="leading-relaxed tracking-tight ">
-                        Beating 3km under 12 minutes.
-                      </AccordionContent>
-                    </AccordionItem>
-                  </Accordion>
-                </motion.div>
+                <Accordion type="single" collapsible>
+                  <AccordionItem value="item 1">
+                    <AccordionTrigger className="flex items-center cursor-pointer">
+                      My go-to productivity hack?
+                    </AccordionTrigger>
+                    <AccordionContent className="leading-relaxed tracking-tight ">
+                      I might sound crazy but when I feel like I'm falling
+                      behind, I drink half a Redbull and nap for 15-30 min. It's
+                      actually a real thing, called "The Coffee Nap". Makes me
+                      super concentrated for longer periods 😁
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item 2">
+                    <AccordionTrigger className="cursor-pointer">
+                      Three apps I can't live without?
+                    </AccordionTrigger>
+                    <AccordionContent className="leading-relaxed tracking-tight ">
+                      I don't really know about not being able to LIVE without
+                      them but they definitely make my life easier - Spotify,
+                      Notes & Discord.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item 3">
+                    <AccordionTrigger className="cursor-pointer">
+                      Early bird or night owl?
+                    </AccordionTrigger>
+                    <AccordionContent className="leading-relaxed tracking-tight ">
+                      When I'm in my "training phase" I'd definitely say early
+                      bird. However when I work with something I truly enjoy
+                      then most definitely a night owl. I also feel more
+                      productive during nights.
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item 4">
+                    <AccordionTrigger className="cursor-pointer">
+                      The most beautiful place I've ever visited?
+                    </AccordionTrigger>
+                    <AccordionContent className="leading-relaxed tracking-tight ">
+                      Phi Phi Islands in Thailand. Felt like a dream!
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item 5">
+                    <AccordionTrigger className="cursor-pointer">
+                      My favorite movie?
+                    </AccordionTrigger>
+                    <AccordionContent className="leading-relaxed tracking-tight ">
+                      One that I will never forget is Whiplash (2014). There
+                      wasn't a second where I didn't feel the crazy tension it
+                      brought. Amazing movie!
+                    </AccordionContent>
+                  </AccordionItem>
+                  <AccordionItem value="item 6">
+                    <AccordionTrigger className="cursor-pointer">
+                      Goals I want to achieve?
+                    </AccordionTrigger>
+                    <AccordionContent className="leading-relaxed tracking-tight ">
+                      Beating 3km under 12 minutes.
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
         </div>
       </section>
       <div className="pt-10 px-5 sm:px-20 md:px-30 pb-20">
