@@ -42,7 +42,7 @@ export default function Hero() {
 
           <p className="max-w-md mx-auto text-muted-foreground/90 font-light tracking-wide">
             <span className="text-primary/90 hover:text-primary ">
-              future-focused
+              future-ready
             </span>
             <span className="mx-2 text-primary/50">•</span>
             <span className="text-primary/90 hover:text-primary">
@@ -52,9 +52,10 @@ export default function Hero() {
         </div>
         <div className="flex gap-3 justify-center items-center ">
           <Drawer>
-            <DrawerTrigger className="flex justify-center items-center gap-1">
-              <Button className="px-5 sm:px-6 cursor-pointer">
-                Get in Touch <ArrowRight size={16} />
+            <DrawerTrigger className="flex justify-center items-center gap-1 ">
+              <Button className="!px-5 cursor-pointer">
+                Let's Talk
+                <ArrowRight size={16} />
               </Button>
             </DrawerTrigger>
             <DrawerContent className="flex justify-center items-center text-center ">
