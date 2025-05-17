@@ -32,7 +32,7 @@ export default function Nav() {
           <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out"></span>
         </a>
         <a
-          href="#BeyondCode"
+          href="#insight"
           className="hover:text-foreground/80 text-foreground/60 relative py-1 group"
         >
           Insight
@@ -75,7 +75,7 @@ export default function Nav() {
               </a>
               <a
                 onClick={() => setOpen(false)}
-                href="#BeyondCode"
+                href="#insight"
                 className=" px-4 py-2 hover:bg-primary/5 rounded-md transition-all duration-200 text-foreground/70 uppercase tracking-wide "
               >
                 Insight
