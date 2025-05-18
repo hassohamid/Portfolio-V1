@@ -22,11 +22,4 @@ export const ProjectList = [
     deployment: "https://be-webshop-2025-fe-eight.vercel.app/",
     technologies: ["JavaScript", "Bootstrap", "NodeJS", "Express", "Supabase"],
   },
-  {
-    name: "Hometown Cutz",
-    description: "Booking platform to schedule haircuts and grooming services.",
-    img: "HTCutz.png",
-    deployment: "https://hometown-cutz.vercel.app/",
-    technologies: ["JavaScript", "CSS", "HTML"],
-  },
 ];
