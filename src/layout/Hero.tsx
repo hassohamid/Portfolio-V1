@@ -53,12 +53,12 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center justify-center gap-3 mt-8 pt-6 border-t ">
+            <div className="flex  items-center justify-center gap-3 mt-8 pt-6 border-t ">
               <Drawer>
                 <DrawerTrigger>
                   <Button
                     variant="outline"
-                    className=" cursor-pointer sm:!px-8 !px-4 "
+                    className=" cursor-pointer sm:!px-8 !px-4 !py-5 "
                   >
                     <span>Let's Talk</span>
                     <ArrowRight size={16} className="ml-2" />
@@ -89,7 +89,11 @@ export default function Hero() {
                 />
               </div>
 
-              <Button asChild variant="outline" className=" !px-3  sm:!px-8  ">
+              <Button
+                asChild
+                variant="outline"
+                className=" !px-4 sm:!px-8  !py-5 "
+              >
                 <a href="#projects">View My Work</a>
               </Button>
             </div>
