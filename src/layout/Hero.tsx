@@ -1,7 +1,7 @@
 import { ParticlesBackground } from "@/components/Particles";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { Heart, ArrowRight, BadgeCheck, Mail, Code } from "lucide-react";
+import { Heart, ArrowRight, BadgeCheck, Mail } from "lucide-react";
 import SocialLinks from "@/components/SocialLinks";
 import {
   Drawer,
@@ -20,17 +20,17 @@ export default function Hero() {
     >
       <ParticlesBackground />
 
-      <div className="container mx-auto px-4 z-10">
+      <div className="container mx-auto px-4 z-10 sm:px-15">
         <div className="max-w-3xl mx-auto">
           <div className="sm:dark:bg-black/5 backdrop-blur-xs  sm:border-l p-6 md:p-8  ">
-            <div className="flex flex-col sm:flex-row items-center gap-8">
-              <Avatar className="size-32 md:size-36 ring-2 ring-white/10 ring-offset-2 ring-offset-background hover:ring-primary/20 transition-all duration-200  ">
+            <div className="flex flex-col sm:flex-row items-center gap-8 ">
+              <Avatar className="size-32 sm:size-36 ring-2 ring-white/10 ring-offset-2 ring-offset-background hover:ring-primary/20 transition-all duration-200  ">
                 <AvatarImage src="8.jpg" alt="HASSO" />
                 <AvatarFallback>HH</AvatarFallback>
               </Avatar>
 
               <div className="flex flex-col items-center space-y-1 ">
-                <h1 className="text-4xl md:text-5xl font-bold tracking-tight flex items-center justify-center sm:justify-start gap-2">
+                <h1 className="text-4xl sm:text-5xl font-bold tracking-tight flex items-center justify-center sm:justify-start gap-2">
                   hasso
                   <BadgeCheck className="text-primary size-6 md:size-7" />
                 </h1>
@@ -40,14 +40,11 @@ export default function Hero() {
                     BASED IN STOCKHOLM
                   </h1>
 
-                  <div
-                    className=" flex items-center gap-1.5 px-3 py-1 rounded-md bg-primary/10
-                    border-primary text-sm"
-                  >
-                    <Code size={14} className="text-primary" />
-                    <span className=" font-medium text-primary font-mono">
-                      Frontend Developer
+                  <div className="inline-flex items-center px-2.5 py-1 rounded-md bg-muted/30">
+                    <span className="text-primary/90 mr-1.5 font-mono text-xs opacity-70">
+                      role
                     </span>
+                    <span className="font-mono text-sm">frontendDeveloper</span>
                   </div>
                 </div>
               </div>
