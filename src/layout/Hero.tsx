@@ -1,14 +1,7 @@
 import { ParticlesBackground } from "@/components/Particles";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import {
-  Heart,
-  ArrowRight,
-  BadgeCheck,
-  Mail,
-  Code,
-  MapPin,
-} from "lucide-react";
+import { Heart, ArrowRight, BadgeCheck, Mail, Code } from "lucide-react";
 import SocialLinks from "@/components/SocialLinks";
 import {
   Drawer,
