@@ -9,7 +9,7 @@ export default function Logo() {
         <img
           src={theme === "dark" ? "Dark.svg" : "Light.svg"}
           alt="Logo"
-          className="w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12 cursor-pointer "
+          className="w-10 h-10  lg:w-15 lg:h-15 cursor-pointer "
         />
       </a>
     </>
