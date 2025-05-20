@@ -37,7 +37,7 @@ export default function Projects() {
     <>
       <section
         id="projects"
-        className=" py-30 container mx-auto px-12 md:px-14 relative overflow-hidden"
+        className="container  mx-auto max-w-9xl  py-30  relative overflow-hidden "
       >
         <div
           className="absolute top-0 right-0 sm:right-20 w-50 h-50 pointer-events-none opacity-3 dark:opacity-3 dark:invert dark:brightness-200 dark:contrast-125"
@@ -47,7 +47,7 @@ export default function Projects() {
             backgroundSize: "200px auto",
           }}
         ></div>
-        <div className="mb-16 text-center">
+        <div className="mb-16 px-7 text-center">
           <div className="relative inline-block mb-6">
             <span className="text-6xl font-black text-muted/40 absolute -top-4 left-1/2 -translate-x-1/2">
               0{ProjectList.length}
@@ -73,7 +73,7 @@ export default function Projects() {
             {ProjectList.map((project) => (
               <CarouselItem
                 key={project.name}
-                className="md:basis-1/2 lg:basis-1/2"
+                className="sm:basis-full md:basis-1/2 lg:basis-1/3"
               >
                 <Card className="h-full flex flex-col overflow-hidden rounded-none dark:bg-[#080808] pt-0 ">
                   <div className="relative overflow-hidden">
@@ -81,7 +81,7 @@ export default function Projects() {
                       <DialogTrigger>
                         <img
                           src={project.img}
-                          className="cursor-pointer transition-transform duration-300 hover:scale-105 "
+                          className="cursor-pointer transition-transform duration-300 hover:scale-105  "
                           alt={project.name}
                         />
                       </DialogTrigger>
@@ -143,9 +143,9 @@ export default function Projects() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className="flex justify-center gap-4 mt-8">
+          <div className="flex justify-center gap-4 mt-12">
             <CarouselPrevious className="static cursor-pointer" />
-            <CarouselNext className="static cursor-pointer" />
+            <CarouselNext className="static cursor-pointer " />
           </div>
         </Carousel>
       </section>

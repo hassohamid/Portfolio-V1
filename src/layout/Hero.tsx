@@ -15,12 +15,12 @@ import {
 export default function Hero() {
   return (
     <section
-      className="relative min-h-[calc(100dvh-94px)] overflow-hidden flex items-center py-12"
+      className="relative min-h-[800px] overflow-hidden flex items-center py-12"
       id="intro"
     >
       <ParticlesBackground />
 
-      <div className="container mx-auto px-4 z-10 sm:px-15">
+      <div className="container mx-auto max-w-8xl px-4 z-10 sm:px-15">
         <div className="max-w-3xl mx-auto">
           <div className="sm:dark:bg-black/5 backdrop-blur-xs sm:border-l p-6 md:p-8  ">
             <div className="flex flex-col sm:flex-row items-center gap-8 relative ">

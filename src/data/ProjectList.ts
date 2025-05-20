@@ -22,4 +22,19 @@ export const ProjectList = [
     deployment: "https://be-webshop-2025-fe-eight.vercel.app/",
     technologies: ["JavaScript", "Bootstrap", "NodeJS", "Express", "Supabase"],
   },
+  {
+    name: "Portfolio",
+    description:
+      "Personal portfolio site to showcase my projects and professional journey.",
+    img: "Portfolio.png",
+    deployment: "https://hassohamid.com",
+    technologies: [
+      "React",
+      "TypeScript",
+      "shadcn",
+      "GSAP",
+      "TailwindCSS",
+      "Motion",
+    ],
+  },
 ];

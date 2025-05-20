@@ -36,7 +36,7 @@ export default function BeyondCode() {
           </p> */}
         </div>
 
-        <div className="container max-w-8xl mx-auto ">
+        <div className="container max-w-9xl mx-auto ">
           <div className="flex flex-col sm:flex-row gap-4 p-4 sm:justify-center">
             <Card className="w-full rounded-lg border border-border/20 shadow-sm backdrop-blur-sm bg-background/80">
               <CardHeader className="relative ">
@@ -172,7 +172,7 @@ export default function BeyondCode() {
           </div>
         </div>
       </section>
-      <div className="pt-10 px-5 sm:px-20 md:px-30 pb-20">
+      <div className="pt-10 pb-20 container max-w-9xl mx-auto sm:px-0 px-5 ">
         <Gallery />
       </div>
     </>
