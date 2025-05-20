@@ -22,7 +22,7 @@ import Gallery from "@/components/Gallery";
 export default function BeyondCode() {
   return (
     <>
-      <section id="insight" className="py-30 bg-[#f8f8f8] dark:bg-[#111111] ">
+      <section id="insight" className="py-30 bg-[#f8f8f8] dark:bg-[#0e0e0e]">
         <div className="flex flex-col items-center pb-10">
           <h1 className="mb-4 text-sm text-muted-foreground/50 tracking-widest">
             INSIGHT
