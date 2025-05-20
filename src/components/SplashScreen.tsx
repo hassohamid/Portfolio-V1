@@ -106,19 +106,19 @@ export default function SplashScreen({
       <div className="relative flex flex-col items-center justify-center gap-8 px-4">
         <div ref={dotsRef} className="flex gap-2 mb-2 absolute">
           {[...Array(3)].map((_, i) => (
-            <div key={i} className="h-2 w-2 rounded-full bg-primary/80"></div>
+            <div key={i} className="h-2 w-2 rounded-full bg-white/30"></div>
           ))}
         </div>
-
         <div
           ref={textRef}
           className="text-white/90 font-light text-3xl tracking-[0.2em] uppercase opacity-0"
         >
           HELLO
-        </div>        <div className="w-40 h-[2px] bg-black/20 dark:bg-white/10 mt-1 rounded-full overflow-hidden">
+        </div>{" "}
+        <div className="w-40 h-[2px] bg-black/20 dark:bg-white/10 mt-1 rounded-full overflow-hidden">
           <div
             ref={progressRef}
-            className="h-full bg-gradient-to-r from-[#4F46E5]/80 to-[#4F46E5] dark:from-primary/80 dark:to-primary"
+            className="h-full bg-gradient-to-r from-white/80 to-white"
           ></div>
         </div>
       </div>
