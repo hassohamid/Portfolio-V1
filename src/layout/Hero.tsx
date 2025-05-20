@@ -22,7 +22,7 @@ export default function Hero() {
 
       <div className="container mx-auto max-w-8xl px-4 z-10 sm:px-15">
         <div className="max-w-3xl mx-auto">
-          <div className="sm:dark:bg-black/5 backdrop-blur-xs sm:border-l p-6 md:p-8  ">
+          <div className="dark:bg-background/50 backdrop-blur-xs sm:border-l p-6 md:p-8  ">
             <div className="flex flex-col sm:flex-row items-center gap-8 relative ">
               <Avatar className="size-32 sm:size-36 ring-2 ring-white/10 ring-offset-2 ring-offset-background hover:ring-primary/20 transition-all duration-200  ">
                 <AvatarImage src="8.jpg" alt="HASSO" />
