@@ -1,7 +1,7 @@
 import { ParticlesBackground } from "@/components/Particles";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
-import { Heart, ArrowRight, BadgeCheck, Mail } from "lucide-react";
+import { Heart, ArrowRight, BadgeCheck, Mail, Fingerprint } from "lucide-react";
 import SocialLinks from "@/components/SocialLinks";
 import {
   Drawer,
@@ -22,8 +22,8 @@ export default function Hero() {
 
       <div className="container mx-auto px-4 z-10 sm:px-15">
         <div className="max-w-3xl mx-auto">
-          <div className="sm:dark:bg-black/5 backdrop-blur-xs  sm:border-l p-6 md:p-8  ">
-            <div className="flex flex-col sm:flex-row items-center gap-8 ">
+          <div className="sm:dark:bg-black/5 backdrop-blur-xs sm:border-l p-6 md:p-8  ">
+            <div className="flex flex-col sm:flex-row items-center gap-8 relative ">
               <Avatar className="size-32 sm:size-36 ring-2 ring-white/10 ring-offset-2 ring-offset-background hover:ring-primary/20 transition-all duration-200  ">
                 <AvatarImage src="8.jpg" alt="HASSO" />
                 <AvatarFallback>HH</AvatarFallback>
@@ -47,6 +47,9 @@ export default function Hero() {
                     <span className="font-mono text-sm">frontendDeveloper</span>
                   </div>
                 </div>
+              </div>
+              <div className="hidden md:block absolute top-3 right-2">
+                <Fingerprint size={35} strokeWidth={1} />
               </div>
             </div>
 
