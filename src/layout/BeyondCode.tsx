@@ -172,7 +172,7 @@ export default function BeyondCode() {
           </div>
         </div>
       </section>
-      <div className="pt-10 pb-20 container max-w-9xl mx-auto sm:px-0 px-5 ">
+      <div className="pt-10 pb-20 container max-w-9xl mx-auto sm:px-2  px-5 ">
         <Gallery />
       </div>
     </>
