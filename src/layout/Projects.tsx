@@ -49,13 +49,13 @@ export default function Projects() {
         ></div>
         <div className="mb-16 px-4 text-center">
           <div className="relative mb-8">
-            <h2 className="text-5xl sm:text-7xl  font-extrabold tracking-tight">
+            <h2 className="text-5xl   font-extrabold tracking-tight">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50">
                 MY
               </span>
               <span className="text-foreground">PROJECTS</span>
             </h2>
-            <div className="w-24 h-1 bg-primary mx-auto mt-6"></div>
+            <div className="w-24 h-0.5 bg-primary mx-auto mt-6"></div>
           </div>
         </div>
 
