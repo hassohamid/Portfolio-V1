@@ -3,37 +3,28 @@ import { Diamond } from "lucide-react";
 
 export default function Expertise() {
   return (
-    <Marquee
-      autoFill
-      speed={30}
-      gradientColor="#393939
-"
-      className="bg-[#f8f8f8] dark:bg-[#111111] border-t-1 border-b-1"
-    >
-      <div
-        className="flex
-       gap-10 text-muted-foreground/60 p-3 items-center text-xs tracking-wider "
-      >
-        <h1> USER FRIENDLY </h1>
-        <Diamond size={13} strokeWidth={1} />
-        <h1> RESPONSIVE </h1>
-        <Diamond size={13} strokeWidth={1} />
-        <h1> MINIMALIST </h1>
-        <Diamond size={13} strokeWidth={1} />
-        <h1> INTERACTIVE </h1>
-        <Diamond size={13} strokeWidth={1} />
-        <h1> PERFOMANT </h1>
-        <Diamond size={13} strokeWidth={1} />
-        <h1> MODERN </h1>
-        <Diamond size={13} strokeWidth={1} />
-        <h1> SECURE </h1>
-        <Diamond size={13} strokeWidth={1} />
-        <h1> SCALABLE </h1>
-        <Diamond size={13} strokeWidth={1} />
-        <h1> MAINTAINABLE </h1>
-        <Diamond size={13} strokeWidth={1} />
-        <h1> SEARCH OPTIMIZED </h1>
-        <Diamond size={13} strokeWidth={1} />
+    <Marquee autoFill speed={30} className="py-4">
+      <div className="flex gap-10 text-muted-foreground/70 items-center text-xs tracking-wider">
+        <h1 className="font-medium"> USER FRIENDLY </h1>
+        <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
+        <h1 className="font-medium"> RESPONSIVE </h1>
+        <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
+        <h1 className="font-medium"> MINIMALIST </h1>
+        <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
+        <h1 className="font-medium"> INTERACTIVE </h1>
+        <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
+        <h1 className="font-medium"> PERFORMANT </h1>
+        <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
+        <h1 className="font-medium"> MODERN </h1>
+        <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
+        <h1 className="font-medium"> SECURE </h1>
+        <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
+        <h1 className="font-medium"> SCALABLE </h1>
+        <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
+        <h1 className="font-medium"> MAINTAINABLE </h1>
+        <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
+        <h1 className="font-medium"> SEARCH OPTIMIZED </h1>
+        <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
         <h1></h1>
       </div>
     </Marquee>
