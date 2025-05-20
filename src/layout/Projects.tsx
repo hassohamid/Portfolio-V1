@@ -37,7 +37,7 @@ export default function Projects() {
     <>
       <section
         id="projects"
-        className="container  mx-auto max-w-9xl  py-30  relative overflow-hidden "
+        className="container  mx-auto max-w-9xl  py-30 px-3 sm:px-0  relative overflow-hidden "
       >
         <div
           className="absolute top-0 right-0 sm:right-20 w-50 h-50 pointer-events-none opacity-3 dark:opacity-3 dark:invert dark:brightness-200 dark:contrast-125"
@@ -75,7 +75,7 @@ export default function Projects() {
                 key={project.name}
                 className="sm:basis-full md:basis-1/2 lg:basis-1/3"
               >
-                <Card className="h-full flex flex-col overflow-hidden rounded-none dark:bg-[#080808] pt-0 ">
+                <Card className="h-full flex flex-col overflow-hidden rounded-none dark:bg-[#080808] pt-0   ">
                   <div className="relative overflow-hidden">
                     <Dialog>
                       <DialogTrigger>
