@@ -86,11 +86,15 @@ export default function Projects() {
                         />
                       </DialogTrigger>
 
-                      <DialogContent className="!w-full sm:!max-w-[70vw]   p-0 overflow-hidden border-0 !max-w-[96vw] ">
+                      <DialogContent className=" max-w-[85vw] md:max-w-[75vw] lg:max-w-[65vw] p-0 overflow-hidden border-0  ">
                         <DialogHeader className=" flex justify-center items-center py-2">
                           <p className=" pt-2 "></p>
                         </DialogHeader>
-                        <img src={project.img} alt={project.name} />
+                        <img
+                          src={project.img}
+                          alt={project.name}
+                          className="w-full h-auto object-contain"
+                        />
                       </DialogContent>
                     </Dialog>
 
