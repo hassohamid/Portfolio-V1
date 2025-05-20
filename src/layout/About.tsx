@@ -17,20 +17,26 @@ export default function About() {
     <section id="about" className="py-25 bg-background">
       <div className="container mx-auto px-12 md:px-14">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 pb-2 relative">
-            About Me
-            <span className="absolute bottom-0 left-0 w-12 border-b-3 rounded-full border-primary/50"></span>
-          </h2>
+          <div className="border-b border-border/40 pb-1 mb-6 flex items-center justify-between ">
+            <div className="flex items-center gap-1.5">
+              <div className="w-3 h-3 rounded-full bg-red-500 opacity-50 hover:opacity-100 cursor-pointer"></div>
+              <div className="w-3 h-3 rounded-full bg-yellow-500 opacity-50 hover:opacity-100 cursor-pointer"></div>
+              <div className="w-3 h-3 rounded-full bg-green-500 opacity-50 hover:opacity-100 cursor-pointer"></div>
+            </div>
+            <div className="text-xs text-muted-foreground ">about_me.md</div>
+            <div></div>
+          </div>
 
-          <div className="space-y-6 text-muted-foreground/90">
-            <p className="leading-relaxed">
-              I’m Hasso, a Fullstack Developer with a love for Frontend and
-              UX/UI design. My enthusiasm for crafting modern, beautiful
-              interfaces began when I first experimented with HTML and CSS—I
-              loved the feeling of being “in control” of every detail.
+          <div className="pt-2 pb-8 space-y-4 ">
+            <p className="leading-relaxed text-muted-foreground/90">
+              I'm <span className="text-primary ">Hasso</span>, a Fullstack
+              Developer with a love for Frontend and UX/UI design. My enthusiasm
+              for crafting modern, beautiful interfaces began when I first
+              experimented with HTML and CSS—I loved the feeling of being "in
+              control" of every detail.
             </p>
 
-            <p className="leading-relaxed">
+            <p className="leading-relaxed text-muted-foreground/90">
               Early in my career, I built e-commerce sites on Shopify. While I
               enjoyed the work, I found the platform kinda limiting and wanted
               to be able to build anything that comes to mind. That drive led me

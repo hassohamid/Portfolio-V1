@@ -49,15 +49,15 @@ export default function Projects() {
         ></div>
         <div className="mb-16 px-7 text-center">
           <div className="relative inline-block mb-6">
-            <span className="text-6xl font-black text-muted/40 absolute -top-4 left-1/2 -translate-x-1/2">
+            <span className="text-6xl font-black text-muted/30 absolute -top-4 left-1/2 -translate-x-1/2">
               0{ProjectList.length}
             </span>
             <h2 className="text-xl text-foreground uppercase tracking-widest font-medium relative z-10 pr-2">
-              My Craft
+              Projects
             </h2>
           </div>
           <p className="text-muted-foreground max-w-lg mx-auto text-base border-l-2 border-primary/30 pl-4 py-1 inline-block">
-            A collection of projects I've built
+            My creations
           </p>
         </div>
 
