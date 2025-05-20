@@ -47,18 +47,16 @@ export default function Projects() {
             backgroundSize: "200px auto",
           }}
         ></div>
-        <div className="mb-16 px-7 text-center">
-          <div className="relative inline-block mb-6">
-            <span className="text-6xl font-black text-muted/30 absolute -top-4 left-1/2 -translate-x-1/2">
-              0{ProjectList.length}
-            </span>
-            <h2 className="text-xl text-foreground uppercase tracking-widest font-medium relative z-10 pr-2">
-              Projects
+        <div className="mb-16 px-4 text-center">
+          <div className="relative mb-8">
+            <h2 className="text-5xl sm:text-7xl  font-extrabold tracking-tight">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50">
+                MY
+              </span>
+              <span className="text-foreground">PROJECTS</span>
             </h2>
+            <div className="w-24 h-1 bg-primary mx-auto mt-6"></div>
           </div>
-          <p className="text-muted-foreground max-w-lg mx-auto text-base border-l-2 border-primary/30 pl-4 py-1 inline-block">
-            My creations
-          </p>
         </div>
 
         <Carousel

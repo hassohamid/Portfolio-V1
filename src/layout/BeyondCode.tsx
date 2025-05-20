@@ -23,17 +23,14 @@ export default function BeyondCode() {
   return (
     <>
       <section id="insight" className="py-30 bg-[#f8f8f8] dark:bg-[#0e0e0e]">
-        <div className="flex flex-col items-center pb-10">
-          <h1 className="mb-4 text-sm text-muted-foreground/50 tracking-widest">
+        <div className="flex flex-col items-center pb-10 pt-8">
+          <h1 className="mb-4 text-sm text-muted-foreground/50 tracking-widest ">
             INSIGHT
           </h1>
-          <h1 className="text-3xl text-center font-bold mb-4 flex items-center gap-1  ">
+          <h1 className="text-4xl sm:text-5xl text-center font-bold mb-4 flex items-center gap-1 ">
             Beyond the <span className="text-muted-foreground/70  ">Code</span>
             <PiBracketsAngleFill />
           </h1>
-          {/* <p className="text-center text-sm text-muted-foreground mb-4 ">
-          Learn more about me and what I like to do.
-          </p> */}
         </div>
 
         <div className="container max-w-9xl mx-auto ">

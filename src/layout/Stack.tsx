@@ -12,18 +12,16 @@ export default function Stack() {
       >
         <div className="container mx-auto px-6 sm:px-8 md:px-10 relative z-10">
           <div className="max-w-5xl mx-auto">
-            <div className="mb-12 md:mb-16 px-4 text-center">
-              <div className="relative inline-block mb-6">
-                <span className="text-6xl font-black text-muted/20 absolute -top-4 left-1/2 -translate-x-1/2">
-                  TECH
-                </span>
-                <h2 className="text-xl text-foreground uppercase tracking-widest font-medium relative z-10 pr-2">
-                  Tech Stack
+            <div className="mb-16 px-4 text-center">
+              <div className="relative mb-8">
+                <h2 className="text-5xl sm:text-7xl  font-extrabold tracking-tight">
+                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50">
+                    TECH
+                  </span>
+                  <span className="text-foreground">STACK</span>
                 </h2>
+                <div className="w-24 h-1 bg-primary mx-auto mt-6"></div>
               </div>
-              <p className="text-muted-foreground max-w-lg mx-auto text-base border-l-2 border-primary/30 pl-4 py-1 inline-block">
-                My infinity stones
-              </p>
             </div>
 
             <Tabs defaultValue="frontend">
@@ -62,7 +60,7 @@ export default function Stack() {
                 >
                   {technologies.frontend.map((tech) => (
                     <div
-                      className="flex items-center py-4 sm:py-5 gap-1 bg-background/80 border border-border/40  px-3 rounded-lg shadow-sm  hover:border-l-7   transition-all ease-out  border-l-3 cursor-pointer overflow-hidden  "
+                      className="flex items-center py-4 sm:py-5 gap-1 bg-background/80 border border-border/40  px-3 rounded-lg shadow-sm  hover:border-l-7   transition-all ease-out  border-l-3 cursor-pointer overflow-hidden"
                       style={{
                         borderLeftColor: [
                           "Next.js",
