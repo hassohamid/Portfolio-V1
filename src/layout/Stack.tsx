@@ -45,7 +45,7 @@ export default function Stack() {
                 </TabsTrigger>
               </TabsList>
 
-              <Card className="p-6 ">
+              <Card className="p-6 border-2 border-dotted shadow-none rounded-none ">
                 <TabsContent
                   value="frontend"
                   className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 "
