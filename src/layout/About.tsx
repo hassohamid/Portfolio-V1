@@ -48,7 +48,10 @@ export default function About() {
           <AlertDialog>
             <div className="mt-8 flex justify-center">
               <AlertDialogTrigger>
-                <Button variant="outline" className="cursor-pointer">
+                <Button
+                  variant="outline"
+                  className="cursor-pointer border-2 border-dashed "
+                >
                   Download Resume
                   <Download />
                 </Button>
