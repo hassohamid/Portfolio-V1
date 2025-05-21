@@ -27,7 +27,7 @@ export default function About() {
             <div></div>
           </div>
 
-          <div className="pt-2 text-center pb-8 space-y-4 ">
+          <div className="pt-2 pb-8 space-y-4 ">
             <p className="leading-loose text-muted-foreground/90">
               I'm <span className="text-primary ">Hasso</span>, a Fullstack
               Developer with a love for Frontend and UX/UI design. My enthusiasm
