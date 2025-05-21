@@ -1,9 +1,15 @@
 import { Badge } from "./ui/badge";
+import { motion } from "motion/react";
 
 export default function Pointers() {
   return (
     <div className="mt-15 md:mt-1 pt-8 border-t border-border/30">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
+        className="grid grid-cols-2 md:grid-cols-4 gap-4"
+      >
         <div className="flex flex-col items-center justify-center p-4 text-center">
           <span className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
             1+
@@ -37,7 +43,7 @@ export default function Pointers() {
             On-time Delivery
           </span>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

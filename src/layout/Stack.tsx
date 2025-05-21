@@ -2,6 +2,7 @@ import { technologies } from "@/data/Technologies";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Expertise from "@/components/Expertise";
 import Pointers from "@/components/Pointers";
+import { motion } from "motion/react";
 
 export default function Stack() {
   return (
@@ -10,7 +11,12 @@ export default function Stack() {
         id="stack"
         className="py-24 md:py-32 relative overflow-hidden bg-[#f8f8f8] dark:bg-[#0e0e0e]"
       >
-        <div className="container mx-auto px-6 sm:px-8 md:px-10 relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 90 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="container mx-auto px-6 sm:px-8 md:px-10 relative z-10"
+        >
           <div className="max-w-5xl mx-auto">
             <div className="mb-16 px-4 text-center">
               <div className="relative mb-8">
@@ -58,8 +64,15 @@ export default function Stack() {
                   value="frontend"
                   className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 "
                 >
-                  {technologies.frontend.map((tech) => (
-                    <div
+                  {technologies.frontend.map((tech, index) => (
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{
+                        delay: index * 0.05,
+                        duration: 0.3,
+                        ease: "easeOut",
+                      }}
                       className="flex items-center py-4 sm:py-5 gap-1 bg-background/80 border border-border/40  px-3 rounded-lg shadow-sm  hover:border-l-7   transition-all ease-out  border-l-3 cursor-pointer overflow-hidden"
                       style={{
                         borderLeftColor: [
@@ -78,15 +91,22 @@ export default function Stack() {
                       <span className="text-[10px] sm:text-sm ">
                         {tech.name}
                       </span>
-                    </div>
+                    </motion.div>
                   ))}
                 </TabsContent>
                 <TabsContent
                   value="backend"
                   className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 "
                 >
-                  {technologies.backend.map((tech) => (
-                    <div
+                  {technologies.backend.map((tech, index) => (
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{
+                        delay: index * 0.05,
+                        duration: 0.3,
+                        ease: "easeOut",
+                      }}
                       key={tech.name}
                       className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm hover:border-l-7 transition-all ease-out  border-l-3 overflow-hidden cursor-pointer py-4 sm:py-5"
                       style={{
@@ -102,7 +122,7 @@ export default function Stack() {
                       <span className="text-[10px] sm:text-sm">
                         {tech.name}
                       </span>
-                    </div>
+                    </motion.div>
                   ))}
                 </TabsContent>
 
@@ -110,8 +130,15 @@ export default function Stack() {
                   value="ui"
                   className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4"
                 >
-                  {technologies.ui.map((tech) => (
-                    <div
+                  {technologies.ui.map((tech, index) => (
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{
+                        delay: index * 0.05,
+                        duration: 0.3,
+                        ease: "easeOut",
+                      }}
                       key={tech.name}
                       className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm hover:border-l-7 transition-all ease-out   border-l-3 overflow-hidden cursor-pointer py-4 sm:py-5"
                       style={{
@@ -125,7 +152,7 @@ export default function Stack() {
                       <span className="text-[10px] sm:text-sm">
                         {tech.name}
                       </span>
-                    </div>
+                    </motion.div>
                   ))}
                 </TabsContent>
 
@@ -133,8 +160,15 @@ export default function Stack() {
                   value="tools"
                   className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4"
                 >
-                  {technologies.tools.map((tech) => (
-                    <div
+                  {technologies.tools.map((tech, index) => (
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{
+                        delay: index * 0.05,
+                        duration: 0.3,
+                        ease: "easeOut",
+                      }}
                       key={tech.name}
                       className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm hover:border-l-7 transition-all ease-out  border-l-3 overflow-hidden cursor-pointer py-4 sm:py-5"
                       style={{
@@ -152,7 +186,7 @@ export default function Stack() {
                       <span className="text-[10px] sm:text-sm">
                         {tech.name}
                       </span>
-                    </div>
+                    </motion.div>
                   ))}
                 </TabsContent>
               </div>
@@ -160,7 +194,7 @@ export default function Stack() {
 
             <Pointers />
           </div>
-        </div>
+        </motion.div>
       </section>
       <Expertise />
     </>
