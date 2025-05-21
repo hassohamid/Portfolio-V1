@@ -50,7 +50,7 @@ export default function About() {
               <AlertDialogTrigger>
                 <Button
                   variant="outline"
-                  className="cursor-pointer border-2 border-dashed "
+                  className="cursor-pointer border-2 border-dashed dark:bg-background !px-5 rounded-none  "
                 >
                   Download Resume
                   <Download />
