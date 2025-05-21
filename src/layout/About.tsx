@@ -27,8 +27,8 @@ export default function About() {
             <div></div>
           </div>
 
-          <div className="pt-2 pb-8 space-y-4 ">
-            <p className="leading-relaxed text-muted-foreground/90">
+          <div className="pt-2 text-center pb-8 space-y-4 ">
+            <p className="leading-loose text-muted-foreground/90">
               I'm <span className="text-primary ">Hasso</span>, a Fullstack
               Developer with a love for Frontend and UX/UI design. My enthusiasm
               for crafting modern, beautiful interfaces began when I first
@@ -36,7 +36,7 @@ export default function About() {
               control" of every detail.
             </p>
 
-            <p className="leading-relaxed text-muted-foreground/90">
+            <p className="leading-loose text-muted-foreground/90">
               Early in my career, I built e-commerce sites on Shopify. While I
               enjoyed the work, I found the platform kinda limiting and wanted
               to be able to build anything that comes to mind. That drive led me
@@ -46,11 +46,11 @@ export default function About() {
           </div>
 
           <AlertDialog>
-            <div className="mt-8 flex justify-center">
+            <div className="mt-15 flex justify-center">
               <AlertDialogTrigger>
                 <Button
                   variant="outline"
-                  className="cursor-pointer border-2 border-dashed dark:bg-background !px-5 rounded-none  "
+                  className="cursor-pointer border-2 border-dashed dark:bg-background !px-5 rounded-none hover:!bg-transparent hover:text-primary/90 "
                 >
                   Download Resume
                   <Download />
