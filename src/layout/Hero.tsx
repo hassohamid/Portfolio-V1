@@ -29,7 +29,7 @@ export default function Hero() {
                   src="Goku.webp"
                   alt="HASSO"
                   loading="eager"
-                  className="w-full h-full object-cover"
+                  className=" object-cover pointer-events-none"
                 />
                 <AvatarFallback>HH</AvatarFallback>
               </Avatar>
