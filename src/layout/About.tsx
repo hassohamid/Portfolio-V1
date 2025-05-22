@@ -29,18 +29,28 @@ export default function About() {
 
           <div className="pt-2 pb-8 space-y-4 ">
             <p className="leading-loose text-muted-foreground/90">
-              I'm <span className="text-primary ">Hasso</span>, a Frontend
-              Developer specializing in UI design and crafting engaging user
-              experiences with great attention to detail. My enthusiasm for
-              crafting modern, beautiful interfaces began when I first
-              experimented with HTML and CSS—I loved the feeling of being "in
-              control" of every detail.
+              I'm <span className="text-primary">Hasso</span>, a{" "}
+              <span className="text-primary/90">Frontend Developer</span>{" "}
+              specializing in <span className="text-primary/80">UI design</span>{" "}
+              and crafting engaging user experiences with great attention to
+              detail. It all began when I first experimented with{" "}
+              <span className="text-primary/80">HTML</span> and{" "}
+              <span className="text-primary/80">CSS</span>—I loved the feeling
+              of being "in control" of every detail.
             </p>
 
             <p className="leading-loose text-muted-foreground/90">
-              Early in my career, I built e-commerce sites on Shopify. I enjoyed
-              it, but found the platform limiting. That pushed me to dive deeper
-              into web development, where I could build anything I imagined.
+              Early in my career, I built e-commerce sites on{" "}
+              <span className="text-primary/80">Shopify</span>. I enjoyed it,
+              but found the platform limiting. That pushed me to dive into web
+              development, where I could build anything my way.
+            </p>
+
+            <p className="leading-loose text-muted-foreground/90">
+              When coding, my favorite go-to stack is{" "}
+              <span className="font-medium text-primary/90">React</span>,{" "}
+              <span className="font-medium text-primary/90">TailwindCSS</span> &{" "}
+              <span className="font-medium text-primary/90">shadcn</span>.
             </p>
           </div>
 

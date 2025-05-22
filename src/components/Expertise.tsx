@@ -17,8 +17,6 @@ export default function Expertise() {
         <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
         <h1 className="font-medium"> MODERN </h1>
         <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
-        <h1 className="font-medium"> SECURE </h1>
-        <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
         <h1 className="font-medium"> SCALABLE </h1>
         <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
         <h1 className="font-medium"> MAINTAINABLE </h1>
