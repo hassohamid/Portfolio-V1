@@ -43,17 +43,17 @@ export function ParticlesBackground() {
           move: {
             enable: true,
             outModes: {
-              default: "out",
+              default: "bounce",
             },
             random: true,
-            speed: isDark ? 0.2 : 0.3,
+            speed: 0.6,
           },
           number: {
             density: {
               enable: true,
               area: 800,
             },
-            value: isDark ? 100 : 80,
+            value: isDark ? 30 : 40,
           },
           opacity: {
             value: { min: 0.1, max: isDark ? 0.85 : 0.7 },

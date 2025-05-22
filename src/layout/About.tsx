@@ -29,19 +29,18 @@ export default function About() {
 
           <div className="pt-2 pb-8 space-y-4 ">
             <p className="leading-loose text-muted-foreground/90">
-              I'm <span className="text-primary ">Hasso</span>, a Fullstack
-              Developer with a love for Frontend and UX/UI design. My enthusiasm
-              for crafting modern, beautiful interfaces began when I first
+              I'm <span className="text-primary ">Hasso</span>, a Frontend
+              Developer specializing in UI design and crafting engaging user
+              experiences with great attention to detail. My enthusiasm for
+              crafting modern, beautiful interfaces began when I first
               experimented with HTML and CSS—I loved the feeling of being "in
               control" of every detail.
             </p>
 
             <p className="leading-loose text-muted-foreground/90">
-              Early in my career, I built e-commerce sites on Shopify. While I
-              enjoyed the work, I found the platform kinda limiting and wanted
-              to be able to build anything that comes to mind. That drive led me
-              to fully commit to web development, where I could shape every
-              aspect of a project exactly the way I want.
+              Early in my career, I built e-commerce sites on Shopify. I enjoyed
+              it, but found the platform limiting. That pushed me to dive deeper
+              into web development, where I could build anything I imagined.
             </p>
           </div>
 
@@ -50,7 +49,7 @@ export default function About() {
               <AlertDialogTrigger>
                 <Button
                   variant="outline"
-                  className="cursor-pointer border-2 border-dashed dark:bg-background !px-5 rounded-none hover:!bg-transparent hover:text-primary/90 "
+                  className="cursor-pointer border-2 border-dashed   dark:bg-background !px-5 rounded-none hover:!bg-transparent hover:text-primary/90  shadow-none"
                 >
                   Download Resume
                   <Download />

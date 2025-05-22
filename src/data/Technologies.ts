@@ -9,11 +9,9 @@ import {
   SiShadcnui,
   SiChakraui,
   SiMui,
-  SiHtml5,
   SiFigma,
   SiGithub,
   SiTrello,
-  SiFirebase,
   SiSupabase,
   SiJira,
   SiDiscord,
@@ -29,7 +27,6 @@ import {
   SiShopify,
 } from "react-icons/si";
 import { BiLogoBootstrap } from "react-icons/bi";
-import { TbBrandThreejs } from "react-icons/tb";
 
 export const technologies = {
   frontend: [
@@ -42,8 +39,6 @@ export const technologies = {
     { name: "shadcn", icon: SiShadcnui },
     { name: "Chakra UI", icon: SiChakraui, color: "#319795" },
     { name: "Bootstrap", icon: BiLogoBootstrap, color: "#7952B3" },
-    { name: "HTML5", icon: SiHtml5, color: "#E34F26" },
-    { name: "Three.js", icon: TbBrandThreejs },
     { name: "Motion", icon: SiFramer, color: "#0055FF" },
   ],
 
@@ -53,7 +48,6 @@ export const technologies = {
     { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
     { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
     { name: "Supabase", icon: SiSupabase, color: "#3ECF8E" },
-    { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
     { name: "Clerk", icon: SiClerk, color: "#6C47FF" },
     { name: "Postman", icon: SiPostman, color: "#FF6C37" },
   ],
