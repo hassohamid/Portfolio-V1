@@ -86,7 +86,7 @@ export default function About() {
                   }
                 >
                   <a
-                    href="/ENG.pdf"
+                    href="ResumeENG.pdf"
                     download
                     className="flex justify-center items-center gap-1"
                   >
@@ -104,7 +104,7 @@ export default function About() {
                   }
                 >
                   <a
-                    href="/SWE.pdf"
+                    href="ResumeSWE.pdf"
                     download
                     className="flex justify-center items-center gap-1"
                   >
