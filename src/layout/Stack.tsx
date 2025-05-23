@@ -62,7 +62,7 @@ export default function Stack() {
               <div className="min-h-[360px]">
                 <TabsContent
                   value="frontend"
-                  className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 "
+                  className="grid grid-cols-2 gap-3 sm:grid-cols-3 "
                 >
                   {technologies.frontend.map((tech, index) => (
                     <motion.div
@@ -96,7 +96,7 @@ export default function Stack() {
                 </TabsContent>
                 <TabsContent
                   value="backend"
-                  className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 "
+                  className="grid grid-cols-2 gap-3 sm:grid-cols-3  "
                 >
                   {technologies.backend.map((tech, index) => (
                     <motion.div
@@ -128,7 +128,7 @@ export default function Stack() {
 
                 <TabsContent
                   value="ui"
-                  className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4"
+                  className="grid grid-cols-2 gap-3 sm:grid-cols-3 "
                 >
                   {technologies.ui.map((tech, index) => (
                     <motion.div
@@ -158,7 +158,7 @@ export default function Stack() {
 
                 <TabsContent
                   value="tools"
-                  className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4"
+                  className="grid grid-cols-2 gap-3 sm:grid-cols-3 "
                 >
                   {technologies.tools.map((tech, index) => (
                     <motion.div
