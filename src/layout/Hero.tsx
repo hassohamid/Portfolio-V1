@@ -65,7 +65,7 @@ export default function Hero() {
                     variant="outline"
                     className=" cursor-pointer sm:!px-8 !px-5 !py-5 "
                   >
-                    <span>Let's Talk</span>
+                    <span>Say Hello</span>
                     <ArrowRight size={16} className="ml-1 " />
                   </Button>
                 </DrawerTrigger>
@@ -99,7 +99,7 @@ export default function Hero() {
                 variant="outline"
                 className=" !px-5 sm:!px-8  !py-5 "
               >
-                <a href="#projects">View My Work</a>
+                <a href="#projects">Peek Inside</a>
               </Button>
             </div>
           </div>
