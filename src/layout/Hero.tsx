@@ -63,7 +63,7 @@ export default function Hero() {
                 <DrawerTrigger>
                   <Button
                     variant="outline"
-                    className=" cursor-pointer sm:!px-8 !px-5 !py-5 "
+                    className=" cursor-pointer sm:!px-8 !px-5 !py-5 dark:bg-background "
                   >
                     <span>Say Hello</span>
                     <ArrowRight size={16} className="ml-1 " />
@@ -97,7 +97,7 @@ export default function Hero() {
               <Button
                 asChild
                 variant="outline"
-                className=" !px-5 sm:!px-8  !py-5 "
+                className=" !px-5 sm:!px-8  !py-5 dark:bg-background "
               >
                 <a href="#projects">Peek Inside</a>
               </Button>
