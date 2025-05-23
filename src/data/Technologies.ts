@@ -22,7 +22,6 @@ import {
   SiCanva,
   SiClerk,
   SiPostman,
-  SiShopify,
 } from "react-icons/si";
 
 export const technologies = {
