@@ -111,10 +111,10 @@ export default function SplashScreen({
         </div>
         <div
           ref={textRef}
-          className="text-white/90 font-light text-3xl tracking-[0.2em] uppercase opacity-0"
+          className="text-white/90 text-xl text-center text-wide  "
         >
-          HELLO
-        </div>{" "}
+          ENTERING
+        </div>
         <div className="w-40 h-[2px] bg-black/20 dark:bg-white/10 mt-1 rounded-full overflow-hidden">
           <div
             ref={progressRef}

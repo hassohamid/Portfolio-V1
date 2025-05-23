@@ -33,7 +33,7 @@ export default function Pointers() {
             20+
           </span>
           <span className="text-xs md:text-sm text-muted-foreground mt-1">
-            Tech Stack Coverage
+            Technologies Explored
           </span>
         </div>
 
