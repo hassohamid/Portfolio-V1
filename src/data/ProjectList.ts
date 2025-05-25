@@ -35,7 +35,7 @@ export const ProjectList = [
     description:
       "AI-powered SaaS platform that automatically transforms 9 uploaded photos into aesthetically optimized Instagram feed layouts",
     img: "GridAI.png",
-    deployment: "https://hassohamid.com",
+    deployment: "https://grid-ai-mu.vercel.app/",
     technologies: [
       "React",
       "TypeScript",
