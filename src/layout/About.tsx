@@ -34,14 +34,14 @@ export default function About() {
               specializing in <span className="text-primary/80">UI design</span>{" "}
               and crafting engaging user experiences with great attention to
               detail. It all began when I first experimented with{" "}
-              <span className="text-primary/80">HTML</span> and{" "}
-              <span className="text-primary/80">CSS</span>—I loved the feeling
+              <span className="text-primary/90">HTML</span> and{" "}
+              <span className="text-primary/90">CSS</span>. I loved the feeling
               of being "in control" of every detail.
             </p>
 
             <p className="leading-loose text-muted-foreground/90">
               Early in my career, I built e-commerce sites on{" "}
-              <span className="text-primary/80">Shopify</span>. I enjoyed it,
+              <span className="text-primary/90">Shopify</span>. I enjoyed it,
               but found the platform limiting. That pushed me to dive into web
               development, where I could build anything my way.
             </p>

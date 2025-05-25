@@ -15,7 +15,7 @@ import {
 export default function Hero() {
   return (
     <section
-      className="relative min-h-[calc(100dvh-94px)] overflow-hidden flex items-center py-12"
+      className="relative overflow-hidden flex items-center py-24 md:py-32 lg:py-40"
       id="intro"
     >
       <ParticlesBackground />
