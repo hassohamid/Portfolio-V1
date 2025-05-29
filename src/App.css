@@ -1,12 +1,5 @@
 @import "locomotive-scroll/dist/locomotive-scroll.css";
 
-.hearteffect:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  color: rgb(255, 53, 154);
-  transition: 0.6s;
-}
-
 .react-photo-album--masonry img {
   border-radius: 8px;
 }

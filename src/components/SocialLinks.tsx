@@ -1,28 +1,28 @@
-import { Github, Instagram, Linkedin } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail } from "lucide-react";
 
 export default function SocialLinks() {
   return (
-    <div className="flex gap-4 justify-center items-center">
+    <div className="flex gap-1 justify-center items-center">
       <a
         href="https://github.com/hassohamid"
         target="_blank"
-        className="hover:text-[#8400ff] transition-colors"
+        className="border-1 p-2 rounded-sm  hover:bg-[#333] hover:text-white "
       >
-        <Github size={20} />
+        <Github size={15} />
       </a>
       <a
         href="https://linkedin.com/in/hassohamid"
         target="_blank"
-        className="hover:text-[#8400ff] transition-colors"
+        className="border-1 p-2 rounded-sm  hover:bg-[#0077B5] hover:text-white "
       >
-        <Linkedin size={20} />
+        <Linkedin size={15} />
       </a>
       <a
         href="https://www.instagram.com/skhh___"
         target="_blank"
-        className="hover:text-[#8400ff] transition-colors"
+        className="border-1 p-2 rounded-sm  hover:bg-[#E4405F] hover:text-white "
       >
-        <Instagram size={20} />
+        <Instagram size={15} />
       </a>
     </div>
   );
