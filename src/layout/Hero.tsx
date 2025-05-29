@@ -11,7 +11,7 @@ import { Separator } from "@/components/ui/separator";
 export default function Hero() {
   return (
     <section
-      className="relative overflow-hidden flex items-center py-35 lg:py-42"
+      className="relative overflow-hidden flex items-center py-35 md:py-72"
       id="intro"
     >
       <ParticlesBackground />
