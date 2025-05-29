@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin, Mail } from "lucide-react";
+import { Github, Instagram, Linkedin } from "lucide-react";
 
 export default function SocialLinks() {
   return (
