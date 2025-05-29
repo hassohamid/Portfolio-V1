@@ -13,6 +13,7 @@ import {
 import { toast } from "sonner";
 import { useState } from "react";
 import { Toggle } from "@/components/ui/toggle";
+import { motion } from "motion/react";
 
 export default function About() {
   const [isHighlighted, setIsHighlighted] = useState(false);
@@ -20,7 +21,12 @@ export default function About() {
   return (
     <section id="about" className="py-25 bg-background">
       <div className="container mx-auto px-12 md:px-14">
-        <div className="max-w-3xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 0.6 }}
+          className="max-w-3xl mx-auto"
+        >
           <div className="border-b border-border/40 pb-1 mb-6 flex items-center justify-between ">
             <div className="flex items-center gap-1.5">
               <div className="w-3 h-3 rounded-full bg-red-500 opacity-50 hover:opacity-100 cursor-pointer"></div>
@@ -141,6 +147,16 @@ export default function About() {
               <span
                 className={`transition-all duration-500 ease-in-out ${
                   isHighlighted
+                    ? "bg-yellow-300/30 rounded text-foreground"
+                    : ""
+                }`}
+              >
+                TypeScript
+              </span>
+              ,{" "}
+              <span
+                className={`transition-all duration-500 ease-in-out ${
+                  isHighlighted
                     ? "bg-yellow-300/30  rounded text-foreground"
                     : ""
                 }`}
@@ -221,7 +237,7 @@ export default function About() {
               </AlertDialogContent>
             </div>
           </AlertDialog>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
