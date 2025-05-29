@@ -17,7 +17,7 @@ export default function Hero() {
 
       <div className="container mx-auto max-w-8xl px-4 z-10 sm:px-15 relative">
         <div className="max-w-3xl mx-auto">
-          <div className="dark:bg-background/50 backdrop-blur-xs md:border-dotted md:border-l-2 md:border-b-2 pt-6 md:p-6">
+          <div className="dark:bg-background/50 backdrop-blur-xs md:border-dotted md:border-l-2 md:border-b-2 pt-6 md:p-6 ">
             <div className="flex flex-col md:flex-row items-center gap-8 ">
               <Avatar className="size-32 md:size-36 ring-2 ring-white/10 ring-offset-2 ring-offset-background hover:ring-primary/20 transition-all duration-200">
                 <ReactCompareSlider
@@ -38,6 +38,7 @@ export default function Hero() {
                     hasso
                     <BadgeCheck className="text-primary size-6 md:size-7" />
                   </h1>
+
                   <span className="text-[12px] tracking-widest text-muted-foreground/90 font-semibold">
                     sweden | stockholm
                   </span>
