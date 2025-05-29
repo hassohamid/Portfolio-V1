@@ -1,5 +1,5 @@
 import { ParticlesBackground } from "@/components/Particles";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Heart, ArrowRight, BadgeCheck, Mail, Fingerprint } from "lucide-react";
 import SocialLinks from "@/components/SocialLinks";
@@ -11,6 +11,10 @@ import {
   DrawerHeader,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+import {
+  ReactCompareSlider,
+  ReactCompareSliderImage,
+} from "react-compare-slider";
 
 export default function Hero() {
   return (
@@ -25,13 +29,13 @@ export default function Hero() {
           <div className="dark:bg-background/50 backdrop-blur-xs sm:border-l p-6 md:p-8  ">
             <div className="flex flex-col sm:flex-row items-center gap-8 relative ">
               <Avatar className="size-32 sm:size-36 ring-2 ring-white/10 ring-offset-2 ring-offset-background hover:ring-primary/20 transition-all duration-200  ">
-                <AvatarImage
-                  src="Goku.webp"
-                  alt="HASSO"
-                  loading="eager"
-                  className=" object-cover pointer-events-none"
+                <ReactCompareSlider
+                  onlyHandleDraggable={true}
+                  changePositionOnHover={true}
+                  position={100}
+                  itemOne={<ReactCompareSliderImage src="Avat1.webp" />}
+                  itemTwo={<ReactCompareSliderImage src="moi.jpg" />}
                 />
-                <AvatarFallback>HH</AvatarFallback>
               </Avatar>
 
               <div className="flex flex-col items-center space-y-1 ">
