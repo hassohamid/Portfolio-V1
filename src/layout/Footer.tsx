@@ -9,7 +9,7 @@ export function Footer() {
           <a
             href="https://github.com/hassohamid"
             target="_blank"
-            className="text-primary hover:text-primary/80 "
+            className="hover:text-primary/80 "
           >
             hasso
           </a>
