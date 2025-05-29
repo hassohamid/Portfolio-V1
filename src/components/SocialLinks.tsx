@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 export default function SocialLinks() {
   return (
-    <div className="flex gap-2 md:gap-1 justify-center items-center">
+    <div className="flex gap-2 md:gap-1 justify-center items-center ">
       <motion.a
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}

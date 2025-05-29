@@ -39,7 +39,7 @@ export default function About() {
               pressed={isHighlighted}
               onPressedChange={setIsHighlighted}
               size="sm"
-              className="cursor-pointer h-auto w-auto p-1 data-[state=on]:bg-yellow-500/20 data-[state=on]:text-yellow-500"
+              className="cursor-pointer  h-auto w-auto p-1 data-[state=on]:bg-yellow-500/20 data-[state=on]:text-yellow-500"
             >
               <Highlighter size={14} />
             </Toggle>

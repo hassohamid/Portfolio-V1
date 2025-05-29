@@ -6,6 +6,7 @@ import {
   ReactCompareSlider,
   ReactCompareSliderImage,
 } from "react-compare-slider";
+import { Separator } from "@/components/ui/separator";
 
 export default function Hero() {
   return (
@@ -49,10 +50,11 @@ export default function Hero() {
                   </span>
                   <span className="font-mono text-sm">frontendDeveloper</span>
                 </div>
-
-                <div className="md:mt-1 mt-3 ">
+                <Separator className="md:hidden" />
+                <div className="md:mt-1 mt-3  ">
                   <SocialLinks />
                 </div>
+                <Separator className="md:hidden mt-3 " />
               </div>
 
               <div className="hidden md:block absolute top-3 right-2">
