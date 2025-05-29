@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+import { Download, Highlighter } from "lucide-react";
 import {
   AlertDialog,
   AlertDialogAction,
@@ -11,8 +11,12 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { toast } from "sonner";
+import { useState } from "react";
+import { Toggle } from "@/components/ui/toggle";
 
 export default function About() {
+  const [isHighlighted, setIsHighlighted] = useState(false);
+
   return (
     <section id="about" className="py-25 bg-background">
       <div className="container mx-auto px-12 md:px-14">
@@ -24,33 +28,136 @@ export default function About() {
               <div className="w-3 h-3 rounded-full bg-green-500 opacity-50 hover:opacity-100 cursor-pointer"></div>
             </div>
             <div className="text-xs text-muted-foreground ">about_me.md</div>
-            <div></div>
+
+            <Toggle
+              pressed={isHighlighted}
+              onPressedChange={setIsHighlighted}
+              size="sm"
+              className="cursor-pointer h-auto w-auto p-1 data-[state=on]:bg-yellow-500/20 data-[state=on]:text-yellow-500"
+            >
+              <Highlighter size={14} />
+            </Toggle>
           </div>
 
           <div className="pt-2 pb-8 space-y-4 ">
-            <p className="leading-loose text-muted-foreground/90">
-              I'm <span className="text-primary">Hasso</span>, a{" "}
-              <span className="text-primary/90">Frontend Developer</span>{" "}
-              specializing in <span className="text-primary/80">UI design</span>{" "}
-              and crafting engaging user experiences with great attention to
-              detail. It all began when I first experimented with{" "}
-              <span className="text-primary/90">HTML</span> and{" "}
-              <span className="text-primary/90">CSS</span>. I loved the feeling
-              of being "in control" of every detail.
+            <p
+              className={`leading-loose transition-opacity duration-500 ${
+                isHighlighted
+                  ? "text-muted-foreground/30"
+                  : "text-muted-foreground"
+              }`}
+            >
+              I'm{" "}
+              <span
+                className={`transition-all duration-500 ease-in-out ${
+                  isHighlighted
+                    ? "bg-yellow-300/30  rounded text-foreground"
+                    : ""
+                }`}
+              >
+                Hasso
+              </span>
+              , a{" "}
+              <span
+                className={`transition-all duration-500 ease-in-out ${
+                  isHighlighted
+                    ? "bg-yellow-300/30 rounded text-foreground"
+                    : ""
+                }`}
+              >
+                Frontend Developer
+              </span>{" "}
+              specializing in{" "}
+              <span
+                className={`transition-all duration-500 ease-in-out ${
+                  isHighlighted
+                    ? "bg-yellow-300/30  rounded text-foreground"
+                    : ""
+                }`}
+              >
+                UI design
+              </span>{" "}
+              and creating{" "}
+              <span
+                className={`transition-all duration-500 ease-in-out ${
+                  isHighlighted
+                    ? "bg-yellow-300/30 rounded text-foreground"
+                    : ""
+                }`}
+              >
+                engaging user experiences
+              </span>{" "}
+              with great attention to detail.
             </p>
 
-            <p className="leading-loose text-muted-foreground/90">
+            <p
+              className={`leading-loose transition-opacity duration-500 ${
+                isHighlighted
+                  ? "text-muted-foreground/30"
+                  : "text-muted-foreground"
+              }`}
+            >
               Early in my career, I built e-commerce sites on{" "}
-              <span className="text-primary/90">Shopify</span>. I enjoyed it,
-              but found the platform limiting. That pushed me to dive into web
-              development, where I could build anything my way.
+              <span
+                className={`transition-all duration-500 ease-in-out ${
+                  isHighlighted
+                    ? "bg-yellow-300/30  rounded text-foreground"
+                    : ""
+                }`}
+              >
+                Shopify
+              </span>
+              . I enjoyed it, but found the platform limiting. That pushed me to{" "}
+              <span
+                className={`transition-all duration-500 ease-in-out ${
+                  isHighlighted
+                    ? "bg-yellow-300/30  rounded text-foreground"
+                    : ""
+                }`}
+              >
+                dive into web development
+              </span>
+              , where I could build anything my way.
             </p>
 
-            <p className="leading-loose text-muted-foreground/90">
+            <p
+              className={`leading-loose transition-opacity duration-500 ${
+                isHighlighted
+                  ? "text-muted-foreground/30"
+                  : "text-muted-foreground"
+              }`}
+            >
               When coding, my favorite go-to stack is{" "}
-              <span className="font-medium text-primary/90">React</span>,{" "}
-              <span className="font-medium text-primary/90">TailwindCSS</span> &{" "}
-              <span className="font-medium text-primary/90">shadcn</span>.
+              <span
+                className={`transition-all duration-500 ease-in-out ${
+                  isHighlighted
+                    ? "bg-yellow-300/30  rounded text-foreground"
+                    : ""
+                }`}
+              >
+                React
+              </span>
+              ,{" "}
+              <span
+                className={`transition-all duration-500 ease-in-out ${
+                  isHighlighted
+                    ? "bg-yellow-300/30  rounded text-foreground"
+                    : ""
+                }`}
+              >
+                TailwindCSS
+              </span>{" "}
+              &{" "}
+              <span
+                className={`transition-all duration-500 ease-in-out ${
+                  isHighlighted
+                    ? "bg-yellow-300/30 rounded text-foreground"
+                    : ""
+                }`}
+              >
+                shadcn
+              </span>
+              .
             </p>
           </div>
 
