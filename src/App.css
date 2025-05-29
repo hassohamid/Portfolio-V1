@@ -10,3 +10,15 @@
 .react-photo-album--masonry img {
   border-radius: 8px;
 }
+
+.__rcs-handle-line {
+  opacity: 0.2 !important;
+  width: 2px !important;
+}
+
+.__rcs-handle-button {
+  height: 30px !important;
+  width: 30px !important;
+  padding: 22px !important;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
