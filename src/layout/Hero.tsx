@@ -28,11 +28,14 @@ export default function Hero() {
         <div className="max-w-3xl mx-auto">
           <div className="dark:bg-background/50 backdrop-blur-xs sm:border-l p-6 md:p-8  ">
             <div className="flex flex-col sm:flex-row items-center gap-8 relative ">
-              <Avatar className="size-32 sm:size-36 ring-2 ring-white/10 ring-offset-2 ring-offset-background hover:ring-primary/20 transition-all duration-200  ">
+              <Avatar className="size-32 sm:size-36 ring-2 ring-white/10 ring-offset-2 ring-offset-background hover:ring-primary/20 transition-all duration-200   ">
                 <ReactCompareSlider
                   onlyHandleDraggable={true}
                   changePositionOnHover={true}
                   position={100}
+                  style={{
+                    pointerEvents: "none",
+                  }}
                   itemOne={<ReactCompareSliderImage src="Avat1.webp" />}
                   itemTwo={<ReactCompareSliderImage src="moi.jpg" />}
                 />
