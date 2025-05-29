@@ -2,7 +2,7 @@ import { Github, Instagram, Linkedin } from "lucide-react";
 
 export default function SocialLinks() {
   return (
-    <div className="flex gap-1 justify-center items-center">
+    <div className="flex gap-3 md:gap-1 justify-center items-center">
       <a
         href="https://github.com/hassohamid"
         target="_blank"
