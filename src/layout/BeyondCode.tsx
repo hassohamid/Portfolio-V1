@@ -32,7 +32,7 @@ export default function BeyondCode() {
             <h1 className="mb-4 text-sm text-muted-foreground/50 tracking-widest ">
               INSIGHT
             </h1>
-            <h1 className="text-4xl  text-center font-bold mb-4 flex items-center gap-1 ">
+            <h1 className="text-3xl   text-center font-bold mb-4 flex items-center gap-1 ">
               Beyond the{" "}
               <span className="text-muted-foreground/70  ">Code</span>
               <PiBracketsAngleFill />
