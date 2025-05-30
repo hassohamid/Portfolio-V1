@@ -182,7 +182,7 @@ export default function About() {
               <AlertDialogTrigger>
                 <Button
                   variant="outline"
-                  className="cursor-pointer border-2 border-dashed   dark:bg-background !px-5 rounded-none hover:!bg-transparent hover:text-primary/90  shadow-none"
+                  className="cursor-pointer border-2 border-dashed dark:bg-background !px-5 rounded-none hover:!bg-transparent hover:text-primary/90 shadow-none hover:dark:border-primary/30 hover:border-primary/30  "
                 >
                   Download Resume
                   <Download />
