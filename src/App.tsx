@@ -12,7 +12,6 @@ import { useEffect } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 
 export default function App() {
-  // const [showSplash, setShowSplash] = useState(true);
   const locomotiveScroll = new LocomotiveScroll();
 
   useEffect(() => {
