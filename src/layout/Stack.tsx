@@ -9,7 +9,7 @@ import { BorderBeam } from "@/components/magicui/border-beam";
 export default function Stack() {
   return (
     <>
-      <section className="py-25 overflow-hidden px-4 ">
+      <section className="pb-20 pt-0 sm:pt-5  overflow-hidden px-4 ">
         <motion.div
           initial={{ opacity: 0, y: 90 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -17,16 +17,33 @@ export default function Stack() {
         >
           <Card className=" bg-background border-0 shadow-none container max-w-3xl mx-auto relative px-5 ">
             <BorderBeam
-              duration={20}
-              size={250}
-              className=" from-transparent via-neutral-400 dark:via-neutral-200 to-transparent"
+              size={300}
+              duration={30}
+              delay={0}
+              className="from-transparent via-purple-500/30 dark:via-purple-500/40 to-transparent"
             />
+
             <BorderBeam
-              duration={20}
-              delay={10}
-              size={250}
-              className="from-transparent via-neutral-400 dark:via-neutral-200 to-transparent"
+              size={300}
+              duration={30}
+              delay={7.5}
+              className="from-transparent via-blue-500/30 dark:via-blue-500/40 to-transparent"
             />
+
+            <BorderBeam
+              size={300}
+              duration={30}
+              delay={15}
+              className="from-transparent via-pink-400/20 dark:via-pink-400/30 to-transparent"
+            />
+
+            <BorderBeam
+              size={300}
+              duration={30}
+              delay={22.5}
+              className="from-transparent via-teal-500/25 dark:via-teal-500/35 to-transparent"
+            />
+
             <CardContent className=" mb-8">
               <div className=" mb-5 pt-5 text-center">
                 <h2 className="  text-muted-foreground/40 text-xs uppercase font-semibold ">
