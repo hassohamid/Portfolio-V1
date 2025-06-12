@@ -104,7 +104,16 @@ export default function About() {
                   : "text-muted-foreground"
               }`}
             >
-              Early in my career, I built e-commerce sites on{" "}
+              <span
+                className={`transition-all duration-500 ease-in-out ${
+                  isHighlighted
+                    ? "bg-yellow-300/30 rounded text-foreground"
+                    : ""
+                }`}
+              >
+                Early in my career
+              </span>
+              , I built e-commerce sites on{" "}
               <span
                 className={`transition-all duration-500 ease-in-out ${
                   isHighlighted
@@ -134,7 +143,7 @@ export default function About() {
                   : "text-muted-foreground"
               }`}
             >
-              When coding, my favorite go-to stack is{" "}
+              I focus mainly on
               <span
                 className={`transition-all duration-500 ease-in-out ${
                   isHighlighted
@@ -142,7 +151,8 @@ export default function About() {
                     : ""
                 }`}
               >
-                React
+                {" "}
+                AI-powered solutions
               </span>
               ,{" "}
               <span
@@ -152,7 +162,7 @@ export default function About() {
                     : ""
                 }`}
               >
-                TypeScript
+                user experience first
               </span>
               ,{" "}
               <span
@@ -162,7 +172,7 @@ export default function About() {
                     : ""
                 }`}
               >
-                TailwindCSS
+                innovation
               </span>{" "}
               &{" "}
               <span
@@ -172,72 +182,11 @@ export default function About() {
                     : ""
                 }`}
               >
-                shadcn
+                real-world Impact
               </span>
               .
             </p>
           </div>
-
-          <AlertDialog>
-            <div className="mt-15 flex justify-center">
-              <AlertDialogTrigger>
-                <Button
-                  variant="outline"
-                  className="cursor-pointer border-2 border-dashed dark:bg-background !px-5 rounded-none hover:!bg-transparent shadow-none hover:dark:border-primary/30 hover:border-primary/30  "
-                >
-                  <AnimatedShinyText>Download Resume</AnimatedShinyText>
-                  <Download color="gray" />
-                </Button>
-              </AlertDialogTrigger>
-              <AlertDialogContent className="flex flex-col justify-center ">
-                <AlertDialogHeader className="">
-                  <AlertDialogTitle>Choose preferred language</AlertDialogTitle>
-                  <AlertDialogDescription>
-                    The resume will be downloaded in PDF-format.
-                  </AlertDialogDescription>
-                  <AlertDialogCancel className="absolute top-2 right-2 text-xs cursor-pointer h-4 w-4 p-2.5">
-                    X
-                  </AlertDialogCancel>
-                </AlertDialogHeader>
-                <AlertDialogAction
-                  asChild
-                  className="cursor-pointer rounded-full  "
-                  onClick={() =>
-                    toast.success("Thank you for your interest in my work!", {
-                      icon: "📄",
-                      duration: 3000,
-                    })
-                  }
-                >
-                  <a
-                    href="Resume_ENG.pdf"
-                    download
-                    className="flex justify-center items-center gap-1"
-                  >
-                    ENG <img src="ENG.svg" className="h-3" />
-                  </a>
-                </AlertDialogAction>
-                <AlertDialogAction
-                  asChild
-                  className="cursor-pointer rounded-full "
-                  onClick={() =>
-                    toast.success("Thank you for your interest in my work!", {
-                      icon: "📄",
-                      duration: 3000,
-                    })
-                  }
-                >
-                  <a
-                    href="Resume_SWE.pdf"
-                    download
-                    className="flex justify-center items-center gap-1"
-                  >
-                    SWE <img src="SWE.svg" className="h-3" />
-                  </a>
-                </AlertDialogAction>
-              </AlertDialogContent>
-            </div>
-          </AlertDialog>
         </motion.div>
       </div>
     </section>

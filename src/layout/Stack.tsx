@@ -7,10 +7,7 @@ import { MagicCard } from "@/components/magicui/magic-card";
 export default function Stack() {
   return (
     <>
-      <section
-        id="stack"
-        className="pt-20 relative overflow-hidden bg-[#f8f8f8] dark:bg-[rgb(11,11,11)]"
-      >
+      <section id="stack" className="pt-10 relative overflow-hidden ">
         <motion.div
           initial={{ opacity: 0, y: 90 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -19,10 +16,14 @@ export default function Stack() {
         >
           <div className="max-w-5xl mx-auto">
             <div className="mb-20  text-center">
-              <div className="relative mb-8">
+              <div className="relative mb-8 border-t-1 max-w-3xl mx-auto pt-5">
                 <h2 className=" text-sm text-muted-foreground/50 tracking-widest ">
                   STACK
                 </h2>
+
+                <h1 className="tracking-tighter text-sm font-semibold text-muted-foreground/90 ">
+                  Building with
+                </h1>
               </div>
               <div className="grid grid-cols-4 max-w-3xl mx-auto gap-2">
                 {technologies.map((tech) => {
