@@ -3,38 +3,46 @@ import Expertise from "@/components/Expertise";
 import Pointers from "@/components/Pointers";
 import { motion } from "motion/react";
 import { MagicCard } from "@/components/magicui/magic-card";
+import { Card, CardContent } from "@/components/ui/card";
+import { BorderBeam } from "@/components/magicui/border-beam";
 
 export default function Stack() {
   return (
     <>
-      <section id="stack" className="pt-10 relative overflow-hidden ">
+      <section className="py-25 overflow-hidden px-4 ">
         <motion.div
           initial={{ opacity: 0, y: 90 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="container mx-auto px-6 sm:px-8 md:px-10 relative z-10"
         >
-          <div className="max-w-5xl mx-auto">
-            <div className="mb-20  text-center">
-              <div className="relative mb-8 border-t-1 max-w-3xl mx-auto pt-5">
-                <h2 className=" text-sm text-muted-foreground/50 tracking-widest ">
-                  STACK
+          <Card className=" bg-background border-0 shadow-none container max-w-3xl mx-auto relative px-5 ">
+            <BorderBeam
+              duration={20}
+              size={250}
+              className=" from-transparent via-neutral-400 dark:via-neutral-200 to-transparent"
+            />
+            <BorderBeam
+              duration={20}
+              delay={10}
+              size={250}
+              className="from-transparent via-neutral-400 dark:via-neutral-200 to-transparent"
+            />
+            <CardContent className=" mb-8">
+              <div className=" mb-5 pt-5 text-center">
+                <h2 className="  text-muted-foreground/40 text-xs uppercase font-semibold ">
+                  I build with
                 </h2>
-
-                <h1 className="tracking-tighter text-sm font-semibold text-muted-foreground/90 ">
-                  Building with
-                </h1>
               </div>
               <div className="grid grid-cols-4 max-w-3xl mx-auto gap-2">
                 {technologies.map((tech) => {
                   return (
                     <MagicCard
                       key={tech.name}
-                      className="rounded-md"
+                      className="rounded-md "
                       gradientSize={100}
                       gradientColor=""
                     >
-                      <div className="flex flex-col items-center justify-center gap-3 p-4">
+                      <div className="flex flex-col items-center justify-center gap-3 p-4 ">
                         <div className="transition-transform duration-300 ">
                           <tech.icon
                             size={26}
@@ -50,10 +58,10 @@ export default function Stack() {
                   );
                 })}
               </div>
-            </div>
+            </CardContent>
+          </Card>
 
-            <Pointers />
-          </div>
+          <Pointers />
         </motion.div>
       </section>
       <Expertise />
