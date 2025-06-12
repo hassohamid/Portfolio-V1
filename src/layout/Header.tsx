@@ -3,7 +3,7 @@ import Logo from "@/components/Logo";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 flex justify-between items-center px-6 py-4 backdrop-blur-md bg-background/70 border-b border-border/40  ">
+    <header className=" backdrop-blur-xs flex justify-between container max-w-3xl mx-auto px-5 pt-2  ">
       <Logo />
       <Nav />
     </header>

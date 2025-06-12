@@ -1,89 +1,16 @@
-import { Button } from "@/components/ui/button";
-import { AlignRight } from "lucide-react";
 import { ModeToggle } from "@/theme/ModeToggle";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { useState } from "react";
+import { WordRotate } from "@/components/magicui/word-rotate";
 
 export default function Nav() {
-  const [open, setOpen] = useState(false);
-
   return (
-    <nav className="flex items-center gap-4">
-      <div className="hidden md:flex items-center gap-4">
-        <a
-          href="#about"
-          className="hover:text-foreground/80 text-foreground/60  relative py-1 group"
-        >
-          about
-          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out"></span>
-        </a>
-        <a
-          href="#stack"
-          className="hover:text-foreground/80 text-foreground/60 relative py-1 group"
-        >
-          stack
-          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out"></span>
-        </a>
-        <a
-          href="#projects"
-          className="hover:text-foreground/80 text-foreground/60 relative py-1 group"
-        >
-          projects
-          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out"></span>
-        </a>
-        <a
-          href="#insight"
-          className="hover:text-foreground/80 text-foreground/60 relative py-1 group"
-        >
-          insight
-          <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300 ease-in-out"></span>
-        </a>
-      </div>
-      <div className="md:hidden">
-        <Sheet onOpenChange={setOpen} open={open}>
-          <SheetTrigger asChild>
-            <Button className="cursor-pointer !transition-none" variant="ghost">
-              <AlignRight />
-            </Button>
-          </SheetTrigger>
-
-          <SheetContent side="right" className="w-[200px] sm:w-[250px] ">
-            <div className="flex flex-col justify-center h-full gap-4 px-3  ">
-              <p className="text-xs text-muted-foreground/50 tracking-wider px-4">
-                GO TO
-              </p>
-              <a
-                onClick={() => setOpen(false)}
-                href="#about"
-                className=" px-4 py-2 hover:bg-primary/5 rounded-md transition-all duration-200 text-foreground/70 uppercase tracking-wide "
-              >
-                About
-              </a>
-              <a
-                onClick={() => setOpen(false)}
-                href="#stack"
-                className=" px-4 py-2 hover:bg-primary/5 rounded-md transition-all duration-200 text-foreground/70 uppercase tracking-wide "
-              >
-                Stack
-              </a>
-              <a
-                onClick={() => setOpen(false)}
-                href="#projects"
-                className="px-4 py-2 hover:bg-primary/5 rounded-md transition-all duration-200 text-foreground/70 uppercase tracking-wide "
-              >
-                projects
-              </a>
-              <a
-                onClick={() => setOpen(false)}
-                href="#insight"
-                className=" px-4 py-2 hover:bg-primary/5 rounded-md transition-all duration-200 text-foreground/70 uppercase tracking-wide "
-              >
-                insight
-              </a>
-            </div>
-          </SheetContent>
-        </Sheet>
-      </div>
+    <nav className="flex items-center gap-2 ">
+      <a href="mailto:hasso1999@hotmail.com">
+        <WordRotate
+          duration={4000}
+          words={["For inquiries", "Reach out"]}
+          className=" flex items-center gap-1  uppercase tracking-tighter text-xs sm:text-sm hover:text-primary/80 border-b-1 border-dotted "
+        />
+      </a>
       <ModeToggle />
     </nav>
   );
