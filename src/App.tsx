@@ -23,7 +23,9 @@ export default function App() {
   return (
     <>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <SmoothCursor />
+        <div className="hidden sm:block">
+          <SmoothCursor />
+        </div>
         <div className="min-h-screen bg-background transition-colors ">
           <Header />
           <ScrollProgress className="h-[2px] bg-primary/50" />
