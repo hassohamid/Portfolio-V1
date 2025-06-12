@@ -10,6 +10,8 @@ import { Toaster } from "./components/ui/sonner";
 import BeyondCode from "@/layout/BeyondCode";
 import { useEffect } from "react";
 import LocomotiveScroll from "locomotive-scroll";
+import { SmoothCursor } from "./components/ui/smooth-cursor";
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
 
 export default function App() {
   const locomotiveScroll = new LocomotiveScroll();
@@ -21,8 +23,11 @@ export default function App() {
   return (
     <>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <SmoothCursor />
+
         <div className="min-h-screen bg-background transition-colors ">
           <Header />
+          <ScrollProgress className="h-[2px] bg-primary/50" />
           <main>
             <Hero />
             <About />

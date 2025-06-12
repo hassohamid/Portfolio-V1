@@ -1,13 +1,5 @@
 export const ProjectList = [
   {
-    name: "RateIT",
-    description:
-      "Experimental project built to explore and practice Material UI components, featuring various UI elements, layouts, and design patterns. No authentication required to explore the interface.",
-    img: "MUI.png",
-    deployment: "https://goty-pi.vercel.app/",
-    technologies: ["React", "TailwindCSS", "MaterialUI"],
-  },
-  {
     name: "Hakim Livs",
     description:
       "Full-stack e-commerce platform for fresh groceries with user authentication, shopping cart functionality, and complete admin CMS for product management.",

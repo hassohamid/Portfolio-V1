@@ -14,6 +14,7 @@ import { toast } from "sonner";
 import { useState } from "react";
 import { Toggle } from "@/components/ui/toggle";
 import { motion } from "motion/react";
+import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
 
 export default function About() {
   const [isHighlighted, setIsHighlighted] = useState(false);
@@ -184,8 +185,8 @@ export default function About() {
                   variant="outline"
                   className="cursor-pointer border-2 border-dashed dark:bg-background !px-5 rounded-none hover:!bg-transparent shadow-none hover:dark:border-primary/30 hover:border-primary/30  "
                 >
-                  Download Resume
-                  <Download />
+                  <AnimatedShinyText>Download Resume</AnimatedShinyText>
+                  <Download color="gray" />
                 </Button>
               </AlertDialogTrigger>
               <AlertDialogContent className="flex flex-col justify-center ">

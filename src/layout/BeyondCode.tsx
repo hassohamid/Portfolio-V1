@@ -33,7 +33,7 @@ export default function BeyondCode() {
               INSIGHT
             </h1>
             <h1 className="text-3xl   text-center font-bold mb-4 flex items-center gap-1 ">
-              Beyond the{" "}
+              Beyond the
               <span className="text-muted-foreground/70  ">Code</span>
               <PiBracketsAngleFill />
             </h1>
@@ -93,6 +93,7 @@ export default function BeyondCode() {
                   })}
                 </CardContent>
               </Card>
+
               <Card className="w-full rounded-lg border border-border/20 shadow-sm backdrop-blur-sm bg-background/80">
                 <CardHeader className="relative">
                   <CardTitle className="text-2xl  tracking-widest ">

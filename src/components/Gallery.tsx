@@ -8,6 +8,7 @@ export default function Gallery() {
       <h1 className=" text-center py-20 text-sm text-muted-foreground/50 tracking-widest">
         GALLERY
       </h1>
+
       <MasonryPhotoAlbum columns={3} spacing={15} photos={Photos} />
     </>
   );

@@ -21,7 +21,7 @@ export default function Expertise() {
         <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
         <h1 className="font-medium"> MAINTAINABLE </h1>
         <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
-        <h1 className="font-medium"> SEARCH OPTIMIZED </h1>
+        <h1 className="font-medium"> AI-POWERED </h1>
         <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
         <h1></h1>
       </div>

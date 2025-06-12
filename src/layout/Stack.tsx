@@ -1,15 +1,15 @@
 import { technologies } from "@/data/Technologies";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Expertise from "@/components/Expertise";
 import Pointers from "@/components/Pointers";
 import { motion } from "motion/react";
+import { MagicCard } from "@/components/magicui/magic-card";
 
 export default function Stack() {
   return (
     <>
       <section
         id="stack"
-        className="py-24 md:py-32 relative overflow-hidden bg-[#f8f8f8] dark:bg-[#0e0e0e]"
+        className="pt-20 relative overflow-hidden bg-[#f8f8f8] dark:bg-[rgb(11,11,11)]"
       >
         <motion.div
           initial={{ opacity: 0, y: 90 }}
@@ -18,178 +18,38 @@ export default function Stack() {
           className="container mx-auto px-6 sm:px-8 md:px-10 relative z-10"
         >
           <div className="max-w-5xl mx-auto">
-            <div className="mb-16 px-4 text-center">
+            <div className="mb-20  text-center">
               <div className="relative mb-8">
-                <h2 className="text-3xl  font-extrabold tracking-tight">
-                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50">
-                    TECH
-                  </span>
-                  <span className="text-foreground">STACK</span>
+                <h2 className=" text-sm text-muted-foreground/50 tracking-widest ">
+                  STACK
                 </h2>
               </div>
+              <div className="grid grid-cols-4 max-w-3xl mx-auto gap-2">
+                {technologies.map((tech) => {
+                  return (
+                    <MagicCard
+                      key={tech.name}
+                      className="rounded-md"
+                      gradientSize={100}
+                      gradientColor=""
+                    >
+                      <div className="flex flex-col items-center justify-center gap-3 p-4">
+                        <div className="transition-transform duration-300 ">
+                          <tech.icon
+                            size={26}
+                            color={tech.color}
+                            className="dark:text-white text-black"
+                          />
+                        </div>
+                        <h3 className="hidden sm:flex text-[10px] sm:text-xs text-primary/80">
+                          {tech.name}
+                        </h3>
+                      </div>
+                    </MagicCard>
+                  );
+                })}
+              </div>
             </div>
-
-            <Tabs defaultValue="frontend">
-              <div className="flex justify-center mb-8">
-                <TabsList className="  dark:bg-neutral-950 w-full shadow-lg  ">
-                  <TabsTrigger
-                    className="cursor-pointer text-xs sm:text-sm "
-                    value="frontend"
-                  >
-                    Frontend
-                  </TabsTrigger>
-                  <TabsTrigger
-                    className="cursor-pointer text-xs sm:text-sm"
-                    value="backend"
-                  >
-                    Backend
-                  </TabsTrigger>
-                  <TabsTrigger
-                    className="cursor-pointer text-xs sm:text-sm"
-                    value="ui"
-                  >
-                    UI/UX
-                  </TabsTrigger>
-                  <TabsTrigger
-                    className="cursor-pointer text-xs sm:text-sm"
-                    value="tools"
-                  >
-                    Tools
-                  </TabsTrigger>
-                </TabsList>
-              </div>
-              <div className="min-h-[360px]">
-                <TabsContent
-                  value="frontend"
-                  className="grid grid-cols-2 gap-3 sm:grid-cols-3 "
-                >
-                  {technologies.frontend.map((tech, index) => (
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{
-                        delay: index * 0.05,
-                        duration: 0.3,
-                        ease: "easeOut",
-                      }}
-                      className="flex items-center py-4 sm:py-5 gap-1 bg-background/80 border border-border/40  px-3 rounded-lg shadow-sm  hover:border-l-7   transition-all ease-out  border-l-3 cursor-pointer overflow-hidden"
-                      style={{
-                        borderLeftColor: [
-                          "Next.js",
-                          "Three.js",
-                          "shadcn",
-                        ].includes(tech.name)
-                          ? "var(--foreground)"
-                          : tech.color,
-                      }}
-                    >
-                      <tech.icon
-                        className="h-4 w-4 sm:h-5 sm:w-5 "
-                        style={{ color: tech.color }}
-                      />
-                      <span className="text-[10px] sm:text-sm ">
-                        {tech.name}
-                      </span>
-                    </motion.div>
-                  ))}
-                </TabsContent>
-                <TabsContent
-                  value="backend"
-                  className="grid grid-cols-2 gap-3 sm:grid-cols-3  "
-                >
-                  {technologies.backend.map((tech, index) => (
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{
-                        delay: index * 0.05,
-                        duration: 0.3,
-                        ease: "easeOut",
-                      }}
-                      key={tech.name}
-                      className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm hover:border-l-7 transition-all ease-out  border-l-3 overflow-hidden cursor-pointer py-4 sm:py-5"
-                      style={{
-                        borderLeftColor: ["Express.js"].includes(tech.name)
-                          ? "var(--foreground)"
-                          : tech.color,
-                      }}
-                    >
-                      <tech.icon
-                        className="h-4 w-4 sm:h-5 sm:w-5"
-                        style={{ color: tech.color }}
-                      />
-                      <span className="text-[10px] sm:text-sm">
-                        {tech.name}
-                      </span>
-                    </motion.div>
-                  ))}
-                </TabsContent>
-
-                <TabsContent
-                  value="ui"
-                  className="grid grid-cols-2 gap-3 sm:grid-cols-3 "
-                >
-                  {technologies.ui.map((tech, index) => (
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{
-                        delay: index * 0.05,
-                        duration: 0.3,
-                        ease: "easeOut",
-                      }}
-                      key={tech.name}
-                      className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm hover:border-l-7 transition-all ease-out   border-l-3 overflow-hidden cursor-pointer py-4 sm:py-5"
-                      style={{
-                        borderLeftColor: tech.color,
-                      }}
-                    >
-                      <tech.icon
-                        className="h-4 w-4 sm:h-5 sm:w-5"
-                        style={{ color: tech.color }}
-                      />
-                      <span className="text-[10px] sm:text-sm">
-                        {tech.name}
-                      </span>
-                    </motion.div>
-                  ))}
-                </TabsContent>
-
-                <TabsContent
-                  value="tools"
-                  className="grid grid-cols-2 gap-3 sm:grid-cols-3 "
-                >
-                  {technologies.tools.map((tech, index) => (
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{
-                        delay: index * 0.05,
-                        duration: 0.3,
-                        ease: "easeOut",
-                      }}
-                      key={tech.name}
-                      className="flex items-center gap-2 bg-background/80 border border-border/40 p-2 px-3 rounded-lg shadow-sm hover:border-l-7 transition-all ease-out  border-l-3 overflow-hidden cursor-pointer py-4 sm:py-5"
-                      style={{
-                        borderLeftColor: ["GitHub", "Vercel"].includes(
-                          tech.name
-                        )
-                          ? "var(--foreground)"
-                          : tech.color,
-                      }}
-                    >
-                      <tech.icon
-                        className="h-4 w-4 sm:h-5 sm:w-5"
-                        style={{ color: tech.color }}
-                      />
-                      <span className="text-[10px] sm:text-sm">
-                        {tech.name}
-                      </span>
-                    </motion.div>
-                  ))}
-                </TabsContent>
-              </div>
-            </Tabs>
 
             <Pointers />
           </div>
