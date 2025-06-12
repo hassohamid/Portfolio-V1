@@ -1,20 +1,7 @@
-import { Button } from "@/components/ui/button";
-import { Download, Highlighter } from "lucide-react";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
-import { toast } from "sonner";
+import { Highlighter } from "lucide-react";
 import { useState } from "react";
 import { Toggle } from "@/components/ui/toggle";
 import { motion } from "motion/react";
-import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
 
 export default function About() {
   const [isHighlighted, setIsHighlighted] = useState(false);
