@@ -51,7 +51,7 @@ export function ParticlesBackground() {
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 1300,
             },
             value: isDark ? 30 : 40,
           },

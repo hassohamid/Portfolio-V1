@@ -130,48 +130,8 @@ export default function About() {
                   : "text-muted-foreground"
               }`}
             >
-              I focus mainly on
-              <span
-                className={`transition-all duration-500 ease-in-out ${
-                  isHighlighted
-                    ? "bg-yellow-300/30  rounded text-foreground"
-                    : ""
-                }`}
-              >
-                {" "}
-                AI-powered solutions
-              </span>
-              ,{" "}
-              <span
-                className={`transition-all duration-500 ease-in-out ${
-                  isHighlighted
-                    ? "bg-yellow-300/30 rounded text-foreground"
-                    : ""
-                }`}
-              >
-                user experience first
-              </span>
-              ,{" "}
-              <span
-                className={`transition-all duration-500 ease-in-out ${
-                  isHighlighted
-                    ? "bg-yellow-300/30  rounded text-foreground"
-                    : ""
-                }`}
-              >
-                innovation
-              </span>{" "}
-              &{" "}
-              <span
-                className={`transition-all duration-500 ease-in-out ${
-                  isHighlighted
-                    ? "bg-yellow-300/30 rounded text-foreground"
-                    : ""
-                }`}
-              >
-                real-world Impact
-              </span>
-              .
+              I focus mainly on AI-powered solutions, user experience first &
+              real-world Impact.
             </p>
           </div>
         </motion.div>
