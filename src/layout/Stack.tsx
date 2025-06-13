@@ -1,6 +1,5 @@
 import { technologies } from "@/data/Technologies";
 import Expertise from "@/components/Expertise";
-import Pointers from "@/components/Pointers";
 import { motion } from "motion/react";
 import { MagicCard } from "@/components/magicui/magic-card";
 import { Card, CardContent } from "@/components/ui/card";
@@ -77,8 +76,6 @@ export default function Stack() {
               </div>
             </CardContent>
           </Card>
-
-          <Pointers />
         </motion.div>
       </section>
       <div className="container max-w-3xl mx-auto">

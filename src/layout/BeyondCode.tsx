@@ -22,7 +22,7 @@ import { motion } from "motion/react";
 export default function BeyondCode() {
   return (
     <>
-      <section id="insight" className="py-30 bg-[#f8f8f8] dark:bg-[#0a0a0a]">
+      <section className="py-30 bg-[rgb(253,253,253)] dark:bg-[rgb(10,10,10)]">
         <motion.div
           initial={{ opacity: 0, y: 90 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -39,8 +39,8 @@ export default function BeyondCode() {
             </h1>
           </div>
 
-          <div className="container max-w-9xl mx-auto ">
-            <div className="flex flex-col sm:flex-row gap-4 p-4 sm:justify-center">
+          <div className="container max-w-3xl mx-auto ">
+            <div className="flex flex-col sm:flex-row gap-4 p-4 sm:justify-center sm:h-[620px] ">
               <Card className="w-full rounded-lg border border-border/20 shadow-sm backdrop-blur-sm bg-background/80">
                 <CardHeader className="relative ">
                   <ScanFace
@@ -48,8 +48,8 @@ export default function BeyondCode() {
                     size={22}
                   />
 
-                  <CardTitle className="text-2xl text-foreground/90 tracking-widest font-bold">
-                    <Badge className="p-2 dark:bg-teal-400  font-bold ">
+                  <CardTitle className="text-xl text-foreground/90 tracking-widest font-bold">
+                    <Badge className="p-2  font-bold ">
                       HOBBIES & INTERESTS
                     </Badge>
                   </CardTitle>
@@ -57,22 +57,19 @@ export default function BeyondCode() {
                     A big part of my life consists of
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="grid grid-cols-3 sm:grid-cols-2  gap-4 p-4">
+                <CardContent className="grid grid-cols-2 gap-4 p-4">
                   {Interests.map((interest, index) => {
                     return (
                       <motion.div
                         key={index}
-                        className="flex items-center flex-col justify-center p-5 rounded-xl 
+                        className="flex items-center flex-col justify-center p-4 rounded-xl 
                   bg-gradient-to-br from-background/90 to-background 
                   border border-border/30 shadow-sm hover:shadow-md 
-                  dark:hover:border-primary/30 transition-all duration-300"
+                  hover:border-primary/30 transition-all duration-300"
                         whileHover={{
                           y: -5,
                           transition: { duration: 0.2 },
                         }}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: index * 0.1 }}
                       >
                         <motion.div
                           className="text-primary/70 mb-2"
@@ -83,7 +80,7 @@ export default function BeyondCode() {
                             damping: 10,
                           }}
                         >
-                          <interest.icon size={32} />
+                          <interest.icon size={29} />
                         </motion.div>
                         <h3 className="text-sm font-medium text-foreground/90">
                           {interest.interest}
@@ -96,10 +93,8 @@ export default function BeyondCode() {
 
               <Card className="w-full rounded-lg border border-border/20 shadow-sm backdrop-blur-sm bg-background/80">
                 <CardHeader className="relative">
-                  <CardTitle className="text-2xl  tracking-widest ">
-                    <Badge className="p-2 dark:bg-teal-400  font-bold ">
-                      GET TO KNOW ME
-                    </Badge>
+                  <CardTitle className="text-xl  tracking-widest ">
+                    <Badge className="p-2   font-bold ">GET TO KNOW ME</Badge>
                   </CardTitle>
                   <CardDescription className="mt-2">
                     Who am I outside the techy world?
@@ -178,7 +173,7 @@ export default function BeyondCode() {
         </motion.div>
       </section>
 
-      <div className="pt-10 pb-20 container max-w-9xl mx-auto sm:px-2  px-5 ">
+      <div className="pt-10 pb-20 container max-w-3xl mx-auto sm:px-2  px-5 ">
         <Gallery />
       </div>
     </>
