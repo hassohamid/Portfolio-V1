@@ -12,6 +12,7 @@ import { useEffect } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import { SmoothCursor } from "./components/ui/smooth-cursor";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
+import Gallery from "./layout/Gallery";
 
 export default function App() {
   const locomotiveScroll = new LocomotiveScroll();
@@ -26,19 +27,17 @@ export default function App() {
         <div className="hidden sm:block">
           <SmoothCursor />
         </div>
-        <div className="min-h-screen bg-background transition-colors ">
-          <Header />
-          <ScrollProgress className="h-[2px] bg-primary/50" />
-          <main>
-            <Hero />
-            <About />
-            <Stack />
-            <Projects />
-            <BeyondCode />
-          </main>
-          <Footer />
-          <Toaster />
-        </div>
+
+        <Header />
+        <ScrollProgress className="h-[2px] bg-primary/50" />
+        <Hero />
+        <About />
+        <Stack />
+        <Projects />
+        <BeyondCode />
+        <Gallery />
+        <Footer />
+        <Toaster />
       </ThemeProvider>
     </>
   );

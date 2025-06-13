@@ -43,7 +43,7 @@ export default function Projects() {
 
   return (
     <>
-      <section className="container mx-auto relative py-20 px-8 md:px-0 overflow-hidden ">
+      <section className="relative py-20 overflow-hidden bg-gradient-to-b from-background to-[rgb(250,250,250)] dark:to-[rgb(12,12,12)]">
         <DotPattern
           cr={isDark ? 0.6 : 0.8}
           width={20}
@@ -55,6 +55,7 @@ export default function Projects() {
           initial={{ opacity: 0, y: 90 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
+          className="container mx-auto px-8 md:px-0 relative"
         >
           <div className="max-w-3xl px-2 mx-auto ">
             <TypingAnimation

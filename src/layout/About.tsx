@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 export default function About() {
   const [isHighlighted, setIsHighlighted] = useState(false);
   return (
-    <section className="py-20 ">
+    <section className="py-20 bg-gradient-to-b from-[rgb(250,250,250)] to-background dark:from-[rgb(12,12,12)] dark:to-background">
       <div className="container mx-auto px-8 md:px-14">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -29,7 +29,7 @@ export default function About() {
             </Toggle>
           </div>
 
-          <div className="pt-2 pb-8 space-y-4 ">
+          <div className="pt-2 pb-8 space-y-4 text-sm sm:text-lg tracking-tight ">
             <p
               className={`leading-loose transition-opacity duration-500 ${
                 isHighlighted

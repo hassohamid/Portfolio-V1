@@ -79,54 +79,14 @@ export function DotPattern({
   useEffect(() => {
     const updateDimensions = () => {
       if (containerRef.current) {
-        const rect = containerRef.current.getBoundingClientRect();
-        const parentRect =
-          containerRef.current.parentElement?.getBoundingClientRect();
-
-        // Use parent dimensions if available and larger, otherwise use container dimensions
-        const finalWidth =
-          parentRect?.width && parentRect.width > rect.width
-            ? parentRect.width
-            : rect.width;
-        const finalHeight =
-          parentRect?.height && parentRect.height > rect.height
-            ? parentRect.height
-            : rect.height;
-
-        setDimensions({
-          width: finalWidth || window.innerWidth,
-          height: finalHeight || window.innerHeight,
-        });
+        const { width, height } = containerRef.current.getBoundingClientRect();
+        setDimensions({ width, height });
       }
     };
 
-    // Initial update with a small delay to ensure DOM is ready
-    const initialTimeout = setTimeout(updateDimensions, 0);
-
-    // Update immediately
     updateDimensions();
-
-    // Set up ResizeObserver for better dimension tracking
-    const resizeObserver = new ResizeObserver(() => {
-      updateDimensions();
-    });
-
-    if (containerRef.current) {
-      resizeObserver.observe(containerRef.current);
-      // Also observe the parent element
-      if (containerRef.current.parentElement) {
-        resizeObserver.observe(containerRef.current.parentElement);
-      }
-    }
-
-    // Fallback resize listener
     window.addEventListener("resize", updateDimensions);
-
-    return () => {
-      clearTimeout(initialTimeout);
-      resizeObserver.disconnect();
-      window.removeEventListener("resize", updateDimensions);
-    };
+    return () => window.removeEventListener("resize", updateDimensions);
   }, []);
 
   const dots = Array.from(

@@ -10,12 +10,12 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden flex items-center py-35 md:py-50 2xl:py-75  ">
+    <section className="relative overflow-hidden flex items-center py-35 md:py-50 2xl:py-75  bg-gradient-to-b from-background to-[rgb(250,250,250)] dark:to-[rgb(12,12,12)]">
       <ParticlesBackground />
 
       <div className="container mx-auto max-w-8xl px-4 z-10 sm:px-15 relative">
         <div className="max-w-3xl mx-auto">
-          <div className="dark:bg-background/50 backdrop-blur-xs md:border-dotted md:border-l-2 md:border-b-2 pt-6 md:p-6 ">
+          <div className=" dark:bg-background/50 backdrop-blur-xs md:border-dotted md:border-l-2 md:border-b-2 pt-6 md:p-6  ">
             <div className="flex flex-col md:flex-row items-center gap-8 ">
               <Avatar className="size-32 md:size-36 ring-2 ring-white/10 ring-offset-2 ring-offset-background hover:ring-primary/20 transition-all duration-200">
                 <ReactCompareSlider

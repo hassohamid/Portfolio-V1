@@ -16,7 +16,6 @@ import { ScanFace } from "lucide-react";
 import { Interests } from "@/data/Interests";
 import { Badge } from "@/components/ui/badge";
 import { FaRegCommentAlt } from "react-icons/fa";
-import Gallery from "@/components/Gallery";
 import { motion } from "motion/react";
 
 export default function BeyondCode() {
@@ -172,10 +171,6 @@ export default function BeyondCode() {
           </div>
         </motion.div>
       </section>
-
-      <div className="pt-10 pb-20 container max-w-3xl mx-auto sm:px-2  px-5 ">
-        <Gallery />
-      </div>
     </>
   );
 }
