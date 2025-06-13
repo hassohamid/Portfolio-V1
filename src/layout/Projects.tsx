@@ -26,6 +26,7 @@ import {
 import { motion } from "motion/react";
 import { DotPattern } from "@/components/magicui/dot-pattern";
 import { useTheme } from "@/theme/ThemeProvider";
+import { TypingAnimation } from "@/components/magicui/typing-animation";
 
 export default function Projects() {
   const { theme } = useTheme();
@@ -58,9 +59,12 @@ export default function Projects() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <div className="max-w-3xl px-2 mx-auto ">
-            <h1 className=" border-l-5 p-2 text-xl sm:text-2xl  uppercase font-black tracking-tighter flex items-center gap-2 relative ">
+            <TypingAnimation
+              startOnView={true}
+              className=" border-l-5 p-2 text-xl sm:text-2xl  uppercase font-black tracking-tighter flex items-center gap-2  "
+            >
               Creations
-            </h1>
+            </TypingAnimation>
           </div>
 
           <Carousel
