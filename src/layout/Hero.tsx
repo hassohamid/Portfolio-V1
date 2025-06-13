@@ -18,7 +18,7 @@ export default function Hero() {
     <section className="relative overflow-hidden flex items-center py-35 md:py-50 2xl:py-75  bg-gradient-to-b from-background to-[#fafafa] dark:to-[rgb(12,12,12)]">
       <Particles
         color={isDark ? "#ffffff" : "black"}
-        className="absolute w-full h-full"
+        className="hidden md:block absolute w-full h-full"
       />
       <div className="container mx-auto max-w-8xl px-4 z-10 sm:px-15 relative">
         <div className="max-w-3xl mx-auto">
