@@ -44,14 +44,12 @@ export default function Projects() {
   return (
     <>
       <section className="container mx-auto relative py-20 px-8 md:px-0 overflow-hidden ">
-        <div>
-          <DotPattern
-            cr={isDark ? 0.6 : 0.8}
-            width={20}
-            height={20}
-            className="[mask-image:radial-gradient(circle_at_center,white,transparent)] "
-          />
-        </div>
+        <DotPattern
+          cr={isDark ? 0.6 : 0.8}
+          width={20}
+          height={20}
+          className="[mask-image:radial-gradient(circle_at_center,white,transparent)] "
+        />
 
         <motion.div
           initial={{ opacity: 0, y: 90 }}
