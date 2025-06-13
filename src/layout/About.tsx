@@ -2,12 +2,12 @@ import { Highlighter } from "lucide-react";
 import { useState } from "react";
 import { Toggle } from "@/components/ui/toggle";
 import { motion } from "motion/react";
+import { TypingAnimation } from "@/components/magicui/typing-animation";
 
 export default function About() {
   const [isHighlighted, setIsHighlighted] = useState(false);
-
   return (
-    <section className="py-25 bg-background">
+    <section className="py-20 ">
       <div className="container mx-auto px-12 md:px-14">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -15,19 +15,19 @@ export default function About() {
           transition={{ ease: "easeOut", duration: 0.6 }}
           className="max-w-3xl mx-auto"
         >
-          <div className="border-b border-border/40 pb-1 mb-6 flex items-center justify-between ">
-            <div className="flex items-center gap-1.5">
-              <div className="w-3 h-3 rounded-full bg-red-500 opacity-50 hover:opacity-100 cursor-pointer"></div>
-              <div className="w-3 h-3 rounded-full bg-yellow-500 opacity-50 hover:opacity-100 cursor-pointer"></div>
-              <div className="w-3 h-3 rounded-full bg-green-500 opacity-50 hover:opacity-100 cursor-pointer"></div>
-            </div>
-            <div className="text-xs text-muted-foreground ">about_me.md</div>
+          <div className=" pb-1 mb-6 flex items-center  ">
+            <TypingAnimation
+              startOnView={true}
+              className=" border-l-5 p-2 text-xl sm:text-2xl  uppercase font-black tracking-tighter flex items-center gap-2  "
+            >
+              Intro
+            </TypingAnimation>
 
             <Toggle
               pressed={isHighlighted}
               onPressedChange={setIsHighlighted}
               size="sm"
-              className="cursor-pointer  h-auto w-auto p-1 data-[state=on]:bg-yellow-500/20 data-[state=on]:text-yellow-500"
+              className="cursor-pointer bg-foreground/5 p-1 data-[state=on]:bg-yellow-500/20 data-[state=on]:text-yellow-500"
             >
               <Highlighter size={14} />
             </Toggle>
@@ -130,8 +130,8 @@ export default function About() {
                   : "text-muted-foreground"
               }`}
             >
-              I focus mainly on AI-powered solutions, user experience first &
-              real-world impact.
+              I focus mainly on AI-powered solutions, UX-first & real-world
+              impact.
             </p>
           </div>
         </motion.div>

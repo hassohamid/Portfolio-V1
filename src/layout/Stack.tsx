@@ -8,13 +8,13 @@ import { BorderBeam } from "@/components/magicui/border-beam";
 export default function Stack() {
   return (
     <>
-      <section className="pb-20 pt-0 sm:pt-5  overflow-hidden px-4 ">
+      <section className="py-20  overflow-hidden px-4  ">
         <motion.div
           initial={{ opacity: 0, y: 90 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <Card className=" bg-background border-0 shadow-none container max-w-3xl mx-auto relative px-5 ">
+          <Card className=" bg-background border-0 shadow-none container max-w-3xl mx-auto relative  ">
             <BorderBeam
               size={300}
               duration={30}
@@ -44,7 +44,7 @@ export default function Stack() {
             />
 
             <CardContent className=" mb-8">
-              <div className=" mb-5 pt-5 text-center">
+              <div className=" mb-5  text-center">
                 <h2 className="  text-muted-foreground/40 text-xs uppercase font-semibold ">
                   I build with
                 </h2>
@@ -78,7 +78,7 @@ export default function Stack() {
           </Card>
         </motion.div>
       </section>
-      <div className="container max-w-3xl mx-auto">
+      <div className="container max-w-3xl mx-auto ">
         <Expertise />
       </div>
     </>

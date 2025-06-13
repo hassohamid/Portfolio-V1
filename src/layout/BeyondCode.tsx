@@ -22,7 +22,7 @@ import { motion } from "motion/react";
 export default function BeyondCode() {
   return (
     <>
-      <section className="py-30 bg-[rgb(253,253,253)] dark:bg-[rgb(10,10,10)]">
+      <section className="py-20 bg-[rgb(250,250,250)] dark:bg-[rgb(11,11,11)]">
         <motion.div
           initial={{ opacity: 0, y: 90 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ export default function BeyondCode() {
         >
           <div className="flex flex-col items-center pb-10 pt-8">
             <h1 className="mb-4 text-sm text-muted-foreground/50 tracking-widest ">
-              INSIGHT
+              Q&A
             </h1>
             <h1 className="text-3xl   text-center font-bold mb-4 flex items-center gap-1 ">
               Beyond the
@@ -40,8 +40,8 @@ export default function BeyondCode() {
           </div>
 
           <div className="container max-w-3xl mx-auto ">
-            <div className="flex flex-col sm:flex-row gap-4 p-4 sm:justify-center sm:h-[620px] ">
-              <Card className="w-full rounded-lg border border-border/20 shadow-sm backdrop-blur-sm bg-background/80">
+            <div className="flex flex-col sm:flex-row gap-4 p-4 sm:justify-center  ">
+              <Card className="sm:hidden w-full rounded-lg border border-border/20 shadow-sm backdrop-blur-sm bg-background/80">
                 <CardHeader className="relative ">
                   <ScanFace
                     className="text-primary/70 absolute top-3 right-6"
@@ -57,7 +57,7 @@ export default function BeyondCode() {
                     A big part of my life consists of
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="grid grid-cols-2 gap-4 p-4">
+                <CardContent className="grid grid-cols-3 sm:grid-cols-2 gap-4 p-4">
                   {Interests.map((interest, index) => {
                     return (
                       <motion.div

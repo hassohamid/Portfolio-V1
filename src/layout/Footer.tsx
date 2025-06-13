@@ -2,10 +2,10 @@ import { Heart } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="py-6 border-t border-border/40 bg-background/70 backdrop-blur-sm">
+    <footer className="py-3 border-t border-border/40 bg-background/70 backdrop-blur-sm">
       <div className="container mx-auto  px-6">
-        <p className="flex justify-center items-center gap-1 text-center text-sm text-muted-foreground/80">
-          &lt; crafted with <Heart size={12} /> by
+        <p className="flex justify-center items-center gap-1 text-center tracking-tighter text-sm text-muted-foreground/60">
+          &lt; made with <Heart size={12} strokeWidth={1.5} /> by
           <a
             href="https://github.com/hassohamid"
             target="_blank"
