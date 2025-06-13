@@ -60,6 +60,7 @@ export default function Projects() {
           <div className="max-w-3xl px-2 mx-auto ">
             <TypingAnimation
               startOnView={true}
+              key={theme}
               className=" border-l-5 p-2 text-xl sm:text-2xl  uppercase font-black tracking-tighter flex items-center gap-2  "
             >
               Creations
