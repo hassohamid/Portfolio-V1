@@ -58,9 +58,8 @@ export default function Projects() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <div className="max-w-3xl px-2 mx-auto ">
-            <h1 className="text-3xl dark:text-muted-foreground/50 uppercase font-black tracking-tighter flex items-center gap-2 ">
+            <h1 className=" border-l-5 p-2 text-xl sm:text-2xl  uppercase font-black tracking-tighter flex items-center gap-2 relative ">
               Creations
-              <img src="minin.webp" alt="Animation" className="w-12 h-12" />
             </h1>
           </div>
 
