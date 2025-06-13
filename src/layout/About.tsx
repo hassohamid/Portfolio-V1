@@ -2,7 +2,6 @@ import { Highlighter } from "lucide-react";
 import { useState } from "react";
 import { Toggle } from "@/components/ui/toggle";
 import { motion } from "motion/react";
-import { TypingAnimation } from "@/components/magicui/typing-animation";
 
 export default function About() {
   const [isHighlighted, setIsHighlighted] = useState(false);
@@ -16,12 +15,9 @@ export default function About() {
           className="max-w-3xl mx-auto"
         >
           <div className=" pb-1 mb-6 flex items-center  ">
-            <TypingAnimation
-              startOnView={true}
-              className=" border-l-5 p-2 text-xl sm:text-2xl  uppercase font-black tracking-tighter flex items-center gap-2  "
-            >
+            <h1 className=" border-l-5 p-2 text-xl sm:text-2xl  uppercase font-black tracking-tighter flex items-center gap-2  ">
               Intro
-            </TypingAnimation>
+            </h1>
 
             <Toggle
               pressed={isHighlighted}
