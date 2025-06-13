@@ -48,7 +48,7 @@ export default function Projects() {
           cr={isDark ? 0.6 : 0.8}
           width={20}
           height={20}
-          className="[mask-image:radial-gradient(circle_at_center,white,transparent)] "
+          className="[mask-image:radial-gradient(ellipse_80%_60%_at_center,white_0%,rgba(255,255,255,0.6)_50%,transparent_85%)]"
         />
 
         <motion.div
