@@ -43,7 +43,7 @@ export default function Projects() {
 
   return (
     <>
-      <section className="relative py-20 overflow-hidden bg-gradient-to-b from-background to-[rgb(250,250,250)] dark:to-[rgb(12,12,12)]">
+      <section className="relative py-20 min-h-screen overflow-hidden bg-gradient-to-b from-background to-[rgb(250,250,250)] dark:to-[rgb(12,12,12)]">
         <DotPattern
           cr={isDark ? 0.6 : 0.8}
           width={20}
