@@ -1,18 +1,25 @@
-import { ParticlesBackground } from "@/components/Particles";
 import { Avatar } from "@/components/ui/avatar";
 import { BadgeCheck, Fingerprint } from "lucide-react";
 import SocialLinks from "@/components/SocialLinks";
+import { Particles } from "@/components/magicui/particles";
 import {
   ReactCompareSlider,
   ReactCompareSliderImage,
 } from "react-compare-slider";
 import { Separator } from "@/components/ui/separator";
+import { useTheme } from "@/theme/ThemeProvider";
 
 export default function Hero() {
-  return (
-    <section className="relative overflow-hidden flex items-center py-35 md:py-50 2xl:py-75  bg-gradient-to-b from-background to-[rgb(250,250,250)] dark:to-[rgb(12,12,12)]">
-      <ParticlesBackground />
+  const { theme } = useTheme();
 
+  const isDark = theme === "dark";
+
+  return (
+    <section className="relative overflow-hidden flex items-center py-35 md:py-50 2xl:py-75  bg-gradient-to-b from-background to-[#fafafa] dark:to-[rgb(12,12,12)]">
+      <Particles
+        color={isDark ? "#ffffff" : "black"}
+        className="absolute w-full h-full"
+      />
       <div className="container mx-auto max-w-8xl px-4 z-10 sm:px-15 relative">
         <div className="max-w-3xl mx-auto">
           <div className=" md:dark:bg-background/50 md:backdrop-blur-xs md:border-dotted md:border-l-2 md:border-b-2 pt-6 md:p-6  ">
