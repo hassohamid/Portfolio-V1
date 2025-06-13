@@ -24,8 +24,14 @@ import {
   DialogHeader,
 } from "@/components/ui/dialog";
 import { motion } from "motion/react";
+import { DotPattern } from "@/components/magicui/dot-pattern";
+import { useTheme } from "@/theme/ThemeProvider";
 
 export default function Projects() {
+  const { theme } = useTheme();
+
+  const isDark = theme === "dark";
+
   const autoplayPlugin = useRef(
     AutoPlay({
       delay: 3000,
@@ -36,32 +42,26 @@ export default function Projects() {
 
   return (
     <>
-      <section
-        id="projects"
-        className="container  mx-auto max-w-9xl  py-30 px-3 sm:px-0  relative overflow-hidden "
-      >
-        <div
-          className="absolute top-0 right-0 sm:right-20 w-50 h-50 pointer-events-none opacity-3 dark:opacity-3 dark:invert dark:brightness-200 dark:contrast-125"
-          style={{
-            backgroundImage: `url("jigsaw.svg")`,
-            backgroundRepeat: "repeat",
-            backgroundSize: "200px auto",
-          }}
-        ></div>
+      <section className="container mx-auto relative py-30 px-3 sm:px-0 overflow-hidden ">
+        <div>
+          <DotPattern
+            cr={isDark ? 0.3 : 0.6}
+            width={20}
+            height={20}
+            className="[mask-image:radial-gradient(circle_at_center,white,transparent)] "
+          />
+        </div>
+
         <motion.div
           initial={{ opacity: 0, y: 90 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <div className="mb-16 px-4 text-center">
-            <div className="relative mb-8">
-              <h2 className="text-3xl   font-extrabold tracking-tight">
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/50">
-                  MY
-                </span>
-                <span className="text-foreground">PROJECTS</span>
-              </h2>
-            </div>
+          <div className="max-w-3xl px-2 mx-auto ">
+            <h1 className="text-3xl dark:text-muted-foreground/50 uppercase font-black tracking-tighter flex items-center gap-2 ">
+              Creations
+              <img src="minin.webp" alt="Animation" className="w-12 h-12" />
+            </h1>
           </div>
 
           <Carousel
@@ -72,84 +72,86 @@ export default function Projects() {
               align: "start",
             }}
           >
-            <CarouselContent>
-              {ProjectList.map((project) => (
-                <CarouselItem
-                  key={project.name}
-                  className="sm:basis-full md:basis-1/2 lg:basis-1/3"
-                >
-                  <Card className="h-full flex flex-col overflow-hidden rounded-none dark:bg-[#080808] pt-0   ">
-                    <div className="relative overflow-hidden">
-                      <Dialog>
-                        <DialogTrigger>
-                          <img
-                            src={project.img}
-                            className="cursor-pointer transition-transform duration-300 hover:scale-105  "
-                            alt={project.name}
-                          />
-                        </DialogTrigger>
+            <div className="max-w-3xl mx-auto">
+              <CarouselContent>
+                {ProjectList.map((project) => (
+                  <CarouselItem
+                    key={project.name}
+                    className="basis-full max-w-2xl"
+                  >
+                    <Card className="h-full flex flex-col overflow-hidden rounded-none dark:bg-[#080808] pt-0    ">
+                      <div className="relative overflow-hidden">
+                        <Dialog>
+                          <DialogTrigger>
+                            <img
+                              src={project.img}
+                              className="cursor-pointer transition-transform duration-300 hover:scale-105  "
+                              alt={project.name}
+                            />
+                          </DialogTrigger>
 
-                        <DialogContent className=" max-w-[85vw] md:max-w-[75vw] lg:max-w-[65vw] p-0 overflow-hidden border-0  ">
-                          <DialogHeader className=" flex justify-center items-center py-2">
-                            <p className=" pt-2 "></p>
-                          </DialogHeader>
-                          <img
-                            src={project.img}
-                            alt={project.name}
-                            className="w-full h-auto object-contain"
-                          />
-                        </DialogContent>
-                      </Dialog>
+                          <DialogContent className=" max-w-[85vw] md:max-w-[75vw] lg:max-w-[65vw] p-0 overflow-hidden border-0  ">
+                            <DialogHeader className=" flex justify-center items-center py-2">
+                              <p className=" pt-2 "></p>
+                            </DialogHeader>
+                            <img
+                              src={project.img}
+                              alt={project.name}
+                              className="w-full h-auto object-contain"
+                            />
+                          </DialogContent>
+                        </Dialog>
 
-                      <div className="absolute top-3 right-3">
-                        <Button
-                          asChild
-                          variant="default"
-                          size="sm"
-                          className="rounded-full shadow-md"
-                        >
-                          <a
-                            target="_blank"
-                            href={project.deployment}
-                            className="flex items-center gap-1"
-                          >
-                            <span className="relative flex h-2 w-2 mr-1">
-                              <span className="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                              <span className="rounded-full h-full w-full bg-green-500"></span>
-                            </span>
-                            LIVE
-                          </a>
-                        </Button>
-                      </div>
-                    </div>
-
-                    <CardHeader className="px-4 pt-2 ">
-                      <CardTitle className="text-xl font-bold">
-                        {project.name}
-                      </CardTitle>
-                    </CardHeader>
-
-                    <CardContent className="flex-grow px-4 pt-2">
-                      <CardDescription className=" mb-4">
-                        {project.description}
-                      </CardDescription>
-
-                      <div className="flex flex-wrap gap-2 ">
-                        {project.technologies.map((tech, index) => (
-                          <Badge
-                            key={index}
+                        <div className="absolute top-3 right-3">
+                          <Button
+                            asChild
                             variant="default"
-                            className="text-xs rounded-full px-3 py-0.5 bg-primary/90 "
+                            size="sm"
+                            className="rounded-full shadow-md"
                           >
-                            {tech}
-                          </Badge>
-                        ))}
+                            <a
+                              target="_blank"
+                              href={project.deployment}
+                              className="flex items-center gap-1"
+                            >
+                              <span className="relative flex h-2 w-2 mr-1">
+                                <span className="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                <span className="rounded-full h-full w-full bg-green-500"></span>
+                              </span>
+                              LIVE
+                            </a>
+                          </Button>
+                        </div>
                       </div>
-                    </CardContent>
-                  </Card>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
+
+                      <CardHeader className="px-4 pt-2 ">
+                        <CardTitle className="text-xl font-bold">
+                          {project.name}
+                        </CardTitle>
+                      </CardHeader>
+
+                      <CardContent className="flex-grow px-4 pt-2">
+                        <CardDescription className=" mb-4">
+                          {project.description}
+                        </CardDescription>
+
+                        <div className="flex flex-wrap gap-2 ">
+                          {project.technologies.map((tech, index) => (
+                            <Badge
+                              key={index}
+                              variant="default"
+                              className="text-xs rounded-full px-3 py-0.5 bg-primary/90 "
+                            >
+                              {tech}
+                            </Badge>
+                          ))}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </div>
             <div className="flex justify-center gap-4 mt-12">
               <CarouselPrevious className="static cursor-pointer" />
               <CarouselNext className="static cursor-pointer " />

@@ -131,7 +131,7 @@ export default function About() {
               }`}
             >
               I focus mainly on AI-powered solutions, user experience first &
-              real-world Impact.
+              real-world impact.
             </p>
           </div>
         </motion.div>
