@@ -46,7 +46,7 @@ export default function Projects() {
       <section className="container mx-auto relative py-20 px-3 sm:px-0 overflow-hidden ">
         <div>
           <DotPattern
-            cr={isDark ? 0.3 : 0.6}
+            cr={isDark ? 0.6 : 0.8}
             width={20}
             height={20}
             className="[mask-image:radial-gradient(circle_at_center,white,transparent)] "

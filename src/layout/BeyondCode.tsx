@@ -22,7 +22,7 @@ import { motion } from "motion/react";
 export default function BeyondCode() {
   return (
     <>
-      <section className="py-20 bg-[rgb(250,250,250)] dark:bg-[rgb(11,11,11)]">
+      <section className="py-20 bg-[rgb(250,250,250)] dark:bg-[rgb(12,12,12)]">
         <motion.div
           initial={{ opacity: 0, y: 90 }}
           whileInView={{ opacity: 1, y: 0 }}

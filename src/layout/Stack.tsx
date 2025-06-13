@@ -78,7 +78,7 @@ export default function Stack() {
           </Card>
         </motion.div>
       </section>
-      <div className="container max-w-3xl mx-auto ">
+      <div className="container max-w-3xl mx-auto py-20 ">
         <Expertise />
       </div>
     </>
