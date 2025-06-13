@@ -81,7 +81,9 @@ export default function Stack() {
           <Pointers />
         </motion.div>
       </section>
-      <Expertise />
+      <div className="container max-w-3xl mx-auto">
+        <Expertise />
+      </div>
     </>
   );
 }

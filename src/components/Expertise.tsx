@@ -1,9 +1,21 @@
 import Marquee from "react-fast-marquee";
 import { Diamond } from "lucide-react";
+import { useTheme } from "@/theme/ThemeProvider";
 
 export default function Expertise() {
+  const { theme } = useTheme();
+
+  const isDark = theme === "dark";
+
   return (
-    <Marquee autoFill speed={30} className="py-4">
+    <Marquee
+      pauseOnHover
+      autoFill
+      gradient
+      gradientWidth={200}
+      gradientColor={isDark ? "#0a0a0a" : "#ffffff"}
+      speed={30}
+    >
       <div className="flex gap-10 text-muted-foreground/70 items-center text-xs tracking-wider">
         <h1 className="font-medium"> USER FRIENDLY </h1>
         <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
