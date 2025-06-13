@@ -7,7 +7,7 @@ export default function About() {
   const [isHighlighted, setIsHighlighted] = useState(false);
   return (
     <section className="py-20 ">
-      <div className="container mx-auto px-12 md:px-14">
+      <div className="container mx-auto px-8 md:px-14">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -43,7 +43,7 @@ export default function Projects() {
 
   return (
     <>
-      <section className="container mx-auto relative py-20 px-3 sm:px-0 overflow-hidden ">
+      <section className="container mx-auto relative py-20 px-8 md:px-0 overflow-hidden ">
         <div>
           <DotPattern
             cr={isDark ? 0.6 : 0.8}
