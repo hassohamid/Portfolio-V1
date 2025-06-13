@@ -10,7 +10,6 @@ import { Toaster } from "./components/ui/sonner";
 import BeyondCode from "@/layout/BeyondCode";
 import { useEffect } from "react";
 import LocomotiveScroll from "locomotive-scroll";
-import { SmoothCursor } from "./components/ui/smooth-cursor";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import Gallery from "./layout/Gallery";
 
@@ -24,10 +23,6 @@ export default function App() {
   return (
     <>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <div className="hidden sm:block">
-          <SmoothCursor />
-        </div>
-
         <Header />
         <ScrollProgress className="h-[2px] bg-primary/50" />
         <Hero />
