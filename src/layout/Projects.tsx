@@ -17,12 +17,6 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
-  DialogHeader,
-} from "@/components/ui/dialog";
 import { motion } from "motion/react";
 import { DotPattern } from "@/components/magicui/dot-pattern";
 import { useTheme } from "@/theme/ThemeProvider";
@@ -36,8 +30,7 @@ export default function Projects() {
   const autoplayPlugin = useRef(
     AutoPlay({
       delay: 3000,
-      stopOnInteraction: true,
-      stopOnMouseEnter: false,
+      stopOnMouseEnter: true,
     })
   );
 
@@ -61,7 +54,7 @@ export default function Projects() {
             <TypingAnimation
               startOnView={true}
               key={theme}
-              className=" border-l-5 p-2 text-xl sm:text-2xl  uppercase font-black tracking-tighter flex items-center gap-2  "
+              className="  border-l-5 p-2 text-xl sm:text-2xl  uppercase font-black tracking-tighter flex items-center gap-2  "
             >
               Creations
             </TypingAnimation>
@@ -84,26 +77,11 @@ export default function Projects() {
                   >
                     <Card className="h-full flex flex-col overflow-hidden rounded-none dark:bg-[#080808] pt-0    ">
                       <div className="relative overflow-hidden">
-                        <Dialog>
-                          <DialogTrigger>
-                            <img
-                              src={project.img}
-                              className="cursor-pointer transition-transform duration-300 hover:scale-105  "
-                              alt={project.name}
-                            />
-                          </DialogTrigger>
-
-                          <DialogContent className=" max-w-[85vw] md:max-w-[75vw] lg:max-w-[65vw] p-0 overflow-hidden border-0  ">
-                            <DialogHeader className=" flex justify-center items-center py-2">
-                              <p className=" pt-2 "></p>
-                            </DialogHeader>
-                            <img
-                              src={project.img}
-                              alt={project.name}
-                              className="w-full h-auto object-contain"
-                            />
-                          </DialogContent>
-                        </Dialog>
+                        <img
+                          src={project.img}
+                          className="cursor-pointer transition-transform duration-300 hover:scale-105  "
+                          alt={project.name}
+                        />
 
                         <div className="absolute top-3 right-3">
                           <Button

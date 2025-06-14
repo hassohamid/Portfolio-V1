@@ -1,7 +1,7 @@
 import { ModeToggle } from "@/theme/ModeToggle";
 import { WordRotate } from "@/components/magicui/word-rotate";
 
-export default function Nav() {
+export default function Contact() {
   return (
     <nav className="flex items-center gap-2 ">
       <a href="mailto:hasso1999@hotmail.com">
