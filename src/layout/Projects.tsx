@@ -14,6 +14,10 @@ import { DotPattern } from "@/components/magicui/dot-pattern";
 import { useTheme } from "@/theme/ThemeProvider";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
 import { Safari } from "@/components/magicui/safari";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Dock, DockIcon } from "@/components/magicui/dock";
+import { Separator } from "@/components/ui/separator";
 
 export default function Projects() {
   const { theme } = useTheme();
@@ -63,28 +67,30 @@ export default function Projects() {
           >
             <div className="max-w-3xl mx-auto">
               <CarouselContent>
-                {ProjectList.map((project) => (
-                  <CarouselItem className="max-w-2xl">
-                    <Card className="h-full flex flex-col overflow-hidden rounded-none  pt-0 bg-gradient-to-t dark:from-background from-[rgb(252,252,252)] to-[rgb(241,241,241)] dark:to-neutral-900 border-0  ">
-                      <div className="overflow-hidden">
-                        <motion.a
-                          initial={{ y: 20 }}
-                          whileHover={{ y: 0 }}
-                          transition={{ duration: 0.4, ease: "easeOut" }}
-                          href={project.deployment}
-                          target="_blank"
-                          className="block  "
-                        >
-                          <Safari
-                            imageSrc={project.img}
-                            url={project.name}
-                            className="cursor-pointer size-full px-5 pt-5   "
-                          />
-                        </motion.a>
-                      </div>
-                    </Card>
-                  </CarouselItem>
-                ))}
+                {ProjectList.map((project) => {
+                  return (
+                    <CarouselItem className="max-w-2xl">
+                      <Card className="h-full flex flex-col overflow-hidden  py-0 bg-gradient-to-t  dark:from-background from-[rgb(252,252,252)] to-[rgb(241,241,241)] dark:to-neutral-900 border-0 rounded-md sm:rounded-none  ">
+                        <div className="overflow-hidden">
+                          <motion.a
+                            initial={{ y: 20 }}
+                            whileHover={{ y: 0 }}
+                            transition={{ duration: 0.4, ease: "easeOut" }}
+                            href={project.deployment}
+                            target="_blank"
+                            className="block  "
+                          >
+                            <Safari
+                              imageSrc={project.img}
+                              url={project.name}
+                              className="cursor-pointer size-full px-5 pt-6   "
+                            />
+                          </motion.a>
+                        </div>
+                      </Card>
+                    </CarouselItem>
+                  );
+                })}
               </CarouselContent>
             </div>
             <div className="flex justify-center gap-4 mt-12">
@@ -98,25 +104,45 @@ export default function Projects() {
   );
 }
 
-{
-  /* <div className="absolute top-3 right-3">
-                          <Button
-                            asChild
-                            variant="default"
-                            size="sm"
-                            className="rounded-full shadow-md"
-                          >
-                            <a
-                              target="_blank"
-                              href={project.deployment}
-                              className="flex items-center gap-1"
-                            >
-                              <span className="relative flex h-2 w-2 mr-1">
-                                <span className="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                                <span className="rounded-full h-full w-full bg-green-500"></span>
-                              </span>
-                              LIVE
-                            </a>
-                          </Button>
-                        </div> */
-}
+//  <div className=" flex flex-col items-center justify-center  ">
+//                         <Dock
+//                           iconDistance={80}
+//                           className="scale-67 sm:scale-80 md:scale-100"
+//                         >
+//                           <h1 className="text-xs md:text-sm text-center text-primary/80 tracking-tighter whitespace-nowrap">
+//                             {project.name}
+//                           </h1>
+//                           <Separator
+//                             orientation="vertical"
+//                             className="h-full"
+//                           />
+//                           {project.technologies.map((tech) => (
+//                             <DockIcon className="">
+//                               <tech.icon className="size-5  " />
+//                             </DockIcon>
+//                           ))}
+//                           <Separator
+//                             orientation="vertical"
+//                             className="h-full"
+//                           />
+
+//                           <Button
+//                             asChild
+//                             variant="outline"
+//                             size="sm"
+//                             className="rounded-full shadow-md"
+//                           >
+//                             <a
+//                               target="_blank"
+//                               href={project.deployment}
+//                               className="flex items-center gap-1 tracking-tight shadow-none"
+//                             >
+//                               <span className="relative flex h-2 w-2 mr-1">
+//                                 <span className="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span>
+//                                 <span className="rounded-full h-full w-full bg-green-500"></span>
+//                               </span>
+//                               LIVE
+//                             </a>
+//                           </Button>
+//                         </Dock>
+//                       </div>
