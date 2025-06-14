@@ -5,9 +5,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
 import { motion } from "motion/react";
 import { CornerFrame } from "@/components/ui/cornerframe";
+import { AnimatedShinyText } from "@/components/magicui/animated-shiny-text";
 
 export default function BeyondCode() {
   return (
@@ -19,12 +19,12 @@ export default function BeyondCode() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <div className="container max-w-3xl mx-auto px-4 md:px-0  ">
-            <div className="flex justify-center mb-4">
-              <h1 className=" text-center  text-sm text-muted-foreground/50 tracking-widest">
-                Q&A
-              </h1>
-            </div>
             <CornerFrame>
+              <div className="flex justify-center ">
+                <AnimatedShinyText className=" text-xs tracking-tighter border-b-1 p-0.5 border-dashed">
+                  GET TO KNOW ME
+                </AnimatedShinyText>
+              </div>
               <Card className="w-full border-none rounded-none shadow-none bg-transparent">
                 <CardContent>
                   <Accordion
