@@ -14,7 +14,6 @@ import { DotPattern } from "@/components/magicui/dot-pattern";
 import { useTheme } from "@/theme/ThemeProvider";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
 import { Safari } from "@/components/magicui/safari";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { Separator } from "@/components/ui/separator";
