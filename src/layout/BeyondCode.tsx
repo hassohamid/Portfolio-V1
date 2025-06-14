@@ -18,14 +18,14 @@ export default function BeyondCode() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <div className="container max-w-3xl mx-auto px-3 md:px-0  ">
+          <div className="container max-w-3xl mx-auto px-4 md:px-0  ">
             <div className="flex justify-center mb-4">
               <h1 className=" text-center  text-sm text-muted-foreground/50 tracking-widest">
                 Q&A
               </h1>
             </div>
             <CornerFrame>
-              <Card className="w-full border-none shadow-none backdrop-blur-sm bg-transparent">
+              <Card className="w-full border-none rounded-none shadow-none bg-transparent">
                 <CardContent>
                   <Accordion
                     type="single"
