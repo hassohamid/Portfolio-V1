@@ -18,7 +18,7 @@ export default function BeyondCode() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <div className="container max-w-3xl mx-auto px-8 md:px-0  ">
+          <div className="container max-w-3xl mx-auto px-3 md:px-0  ">
             <div className="flex justify-center mb-4">
               <h1 className=" text-center  text-sm text-muted-foreground/50 tracking-widest">
                 Q&A
@@ -30,7 +30,7 @@ export default function BeyondCode() {
                   <Accordion
                     type="single"
                     collapsible
-                    className="text-muted-foreground "
+                    className="text-primary/80 "
                   >
                     <AccordionItem value="item 1">
                       <AccordionTrigger className="flex items-center cursor-pointer">
