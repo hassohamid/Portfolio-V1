@@ -17,11 +17,7 @@ export default function Expertise() {
       speed={30}
     >
       <div className="flex gap-10 text-muted-foreground/70 items-center text-xs tracking-wider">
-        <h1 className="font-medium"> USER FRIENDLY </h1>
-        <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
         <h1 className="font-medium"> RESPONSIVE </h1>
-        <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
-        <h1 className="font-medium"> MINIMALIST </h1>
         <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
         <h1 className="font-medium"> INTERACTIVE </h1>
         <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
@@ -29,7 +25,7 @@ export default function Expertise() {
         <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
         <h1 className="font-medium"> MODERN </h1>
         <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
-        <h1 className="font-medium"> SCALABLE </h1>
+        <h1 className="font-medium"> UX-FIRST </h1>
         <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
         <h1 className="font-medium"> MAINTAINABLE </h1>
         <Diamond size={10} strokeWidth={1.5} className="text-primary/60" />
