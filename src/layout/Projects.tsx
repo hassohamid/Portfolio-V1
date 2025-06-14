@@ -21,6 +21,7 @@ import { motion } from "motion/react";
 import { DotPattern } from "@/components/magicui/dot-pattern";
 import { useTheme } from "@/theme/ThemeProvider";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
+import { Safari } from "@/components/magicui/safari";
 
 export default function Projects() {
   const { theme } = useTheme();
@@ -71,19 +72,42 @@ export default function Projects() {
             <div className="max-w-3xl mx-auto">
               <CarouselContent>
                 {ProjectList.map((project) => (
-                  <CarouselItem
-                    key={project.name}
-                    className="basis-full max-w-2xl"
-                  >
-                    <Card className="h-full flex flex-col overflow-hidden rounded-none dark:bg-[#080808] pt-0    ">
-                      <div className="relative overflow-hidden">
-                        <img
-                          src={project.img}
-                          className="cursor-pointer transition-transform duration-300 hover:scale-105  "
-                          alt={project.name}
-                        />
+                  <CarouselItem className="max-w-2xl">
+                    <Card className="h-full flex flex-col overflow-hidden rounded-none  pt-0 bg-gradient-to-t dark:from-background from-[rgb(252,252,252)] to-[rgb(241,241,241)] dark:to-neutral-900 border-0  ">
+                      <div className="overflow-hidden">
+                        <motion.a
+                          initial={{ y: 20 }}
+                          whileHover={{ y: 0 }}
+                          transition={{ duration: 0.4, ease: "easeOut" }}
+                          href={project.deployment}
+                          target="_blank"
+                          className="block  "
+                        >
+                          <Safari
+                            imageSrc={project.img}
+                            url={project.name}
+                            className="cursor-pointer size-full px-5 pt-5   "
+                          />
+                        </motion.a>
+                      </div>
+                    </Card>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+            </div>
+            <div className="flex justify-center gap-4 mt-12">
+              <CarouselPrevious className="static cursor-pointer" />
+              <CarouselNext className="static cursor-pointer " />
+            </div>
+          </Carousel>
+        </motion.div>
+      </section>
+    </>
+  );
+}
 
-                        <div className="absolute top-3 right-3">
+{
+  /* <div className="absolute top-3 right-3">
                           <Button
                             asChild
                             variant="default"
@@ -102,44 +126,5 @@ export default function Projects() {
                               LIVE
                             </a>
                           </Button>
-                        </div>
-                      </div>
-
-                      <CardHeader className="px-4 pt-2 ">
-                        <CardTitle className="text-xl font-bold">
-                          {project.name}
-                        </CardTitle>
-                      </CardHeader>
-
-                      <CardContent className="flex-grow px-4 pt-2">
-                        <CardDescription className=" mb-4">
-                          {project.description}
-                        </CardDescription>
-
-                        <div className="flex flex-wrap gap-2 ">
-                          {project.technologies.map((tech, index) => (
-                            <Badge
-                              key={index}
-                              variant="default"
-                              className="text-xs rounded-full px-3 py-0.5 bg-primary/90 "
-                            >
-                              {tech}
-                            </Badge>
-                          ))}
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </div>
-            <div className="flex justify-center gap-4 mt-12">
-              <CarouselPrevious className="static cursor-pointer" />
-              <CarouselNext className="static cursor-pointer " />
-            </div>
-          </Carousel>
-        </motion.div>
-      </section>
-    </>
-  );
+                        </div> */
 }
