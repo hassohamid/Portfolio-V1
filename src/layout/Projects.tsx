@@ -69,8 +69,8 @@ export default function Projects() {
               <CarouselContent>
                 {ProjectList.map((project) => {
                   return (
-                    <CarouselItem className="max-w-2xl">
-                      <Card className="h-full flex flex-col overflow-hidden  py-0 bg-gradient-to-t  dark:from-background from-[rgb(252,252,252)] to-[rgb(241,241,241)] dark:to-neutral-900 border-0 rounded-md sm:rounded-none  ">
+                    <CarouselItem className="">
+                      <Card className=" flex flex-col overflow-hidden  py-0 bg-gradient-to-t  dark:from-background from-[rgb(252,252,252)] to-[rgb(241,241,241)] dark:to-neutral-900 border-0 rounded-md sm:rounded-none  ">
                         <div className="overflow-hidden">
                           <motion.a
                             initial={{ y: 20 }}
@@ -88,14 +88,56 @@ export default function Projects() {
                           </motion.a>
                         </div>
                       </Card>
+                      <div className=" flex items-center justify-center  ">
+                        <Dock
+                          iconDistance={80}
+                          className="scale-65 sm:scale-100 "
+                        >
+                          <h1 className="text-xs md:text-sm text-center text-primary/80 tracking-tighter whitespace-nowrap">
+                            {project.name}
+                          </h1>
+                          <Separator
+                            orientation="vertical"
+                            className="h-full"
+                          />
+                          {project.technologies.map((tech) => (
+                            <DockIcon className="">
+                              <tech.icon className="size-5 " />
+                            </DockIcon>
+                          ))}
+                          <Separator
+                            orientation="vertical"
+                            className="h-full"
+                          />
+
+                          <Button
+                            asChild
+                            variant="outline"
+                            size="sm"
+                            className="rounded-full shadow-md"
+                          >
+                            <a
+                              target="_blank"
+                              href={project.deployment}
+                              className="flex items-center gap-1 tracking-tight shadow-none"
+                            >
+                              <span className="relative flex h-2 w-2 mr-1">
+                                <span className="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                <span className="rounded-full h-full w-full bg-green-500"></span>
+                              </span>
+                              LIVE
+                            </a>
+                          </Button>
+                        </Dock>
+                      </div>
                     </CarouselItem>
                   );
                 })}
               </CarouselContent>
             </div>
             <div className="flex justify-center gap-4 mt-12">
-              <CarouselPrevious className="static cursor-pointer" />
-              <CarouselNext className="static cursor-pointer " />
+              <CarouselPrevious className="static cursor-pointer border-0" />
+              <CarouselNext className="static cursor-pointer border-0  " />
             </div>
           </Carousel>
         </motion.div>
@@ -103,46 +145,3 @@ export default function Projects() {
     </>
   );
 }
-
-//  <div className=" flex flex-col items-center justify-center  ">
-//                         <Dock
-//                           iconDistance={80}
-//                           className="scale-67 sm:scale-80 md:scale-100"
-//                         >
-//                           <h1 className="text-xs md:text-sm text-center text-primary/80 tracking-tighter whitespace-nowrap">
-//                             {project.name}
-//                           </h1>
-//                           <Separator
-//                             orientation="vertical"
-//                             className="h-full"
-//                           />
-//                           {project.technologies.map((tech) => (
-//                             <DockIcon className="">
-//                               <tech.icon className="size-5  " />
-//                             </DockIcon>
-//                           ))}
-//                           <Separator
-//                             orientation="vertical"
-//                             className="h-full"
-//                           />
-
-//                           <Button
-//                             asChild
-//                             variant="outline"
-//                             size="sm"
-//                             className="rounded-full shadow-md"
-//                           >
-//                             <a
-//                               target="_blank"
-//                               href={project.deployment}
-//                               className="flex items-center gap-1 tracking-tight shadow-none"
-//                             >
-//                               <span className="relative flex h-2 w-2 mr-1">
-//                                 <span className="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span>
-//                                 <span className="rounded-full h-full w-full bg-green-500"></span>
-//                               </span>
-//                               LIVE
-//                             </a>
-//                           </Button>
-//                         </Dock>
-//                       </div>
