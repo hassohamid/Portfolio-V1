@@ -21,8 +21,8 @@ export default function BeyondCode() {
           <div className="container max-w-3xl mx-auto px-4 md:px-0  ">
             <CornerFrame>
               <div className="flex justify-center ">
-                <AnimatedShinyText className=" text-xs tracking-tighter border-b-1 p-0.5 border-dashed">
-                  GET TO KNOW ME
+                <AnimatedShinyText className=" text-xs tracking-tighter border-b-1 p-0.5 border-dashed flex items-center gap-1">
+                  Beyond the Code
                 </AnimatedShinyText>
               </div>
               <Card className="w-full border-none rounded-none shadow-none bg-transparent">
@@ -33,7 +33,7 @@ export default function BeyondCode() {
                     className="text-primary/80 "
                   >
                     <AccordionItem value="item 1">
-                      <AccordionTrigger className="flex items-center cursor-pointer">
+                      <AccordionTrigger className="flex items-center cursor-pointer ">
                         My go-to productivity hack?
                       </AccordionTrigger>
                       <AccordionContent className="leading-relaxed tracking-tight  ">
