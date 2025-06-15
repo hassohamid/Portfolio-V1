@@ -69,7 +69,7 @@ export default function Projects() {
                 {ProjectList.map((project) => {
                   return (
                     <CarouselItem className="">
-                      <Card className=" flex flex-col overflow-hidden  py-0 bg-gradient-to-t  dark:from-background from-[rgb(252,252,252)] to-[rgb(241,241,241)] dark:to-neutral-900 border-0 rounded-md sm:rounded-none  ">
+                      <Card className=" flex flex-col overflow-hidden  py-0 bg-gradient-to-t shadow-none  dark:from-background from-[rgb(252,252,252)] to-[rgb(241,241,241)] dark:to-[rgb(17,17,17)] border-0 rounded-md sm:rounded-none  ">
                         <div className="overflow-hidden">
                           <motion.a
                             initial={{ y: 20 }}
@@ -87,12 +87,16 @@ export default function Projects() {
                           </motion.a>
                         </div>
                       </Card>
-                      <div className=" flex items-center justify-center  ">
+                      {/* <p className=" tracking-tighter text-center  text-primary/40 ">
+                        {project.description}
+                      </p> */}
+                      <div className=" items-center justify-center hidden sm:flex  ">
                         <Dock
-                          iconDistance={80}
-                          className="scale-65 sm:scale-100 "
+                          iconDistance={100}
+                          iconMagnification={50}
+                          iconSize={40}
                         >
-                          <h1 className="text-xs md:text-sm text-center text-primary/80 tracking-tighter whitespace-nowrap">
+                          <h1 className="text-sm px-5 text-center tracking-tighter ">
                             {project.name}
                           </h1>
                           <Separator
@@ -100,8 +104,11 @@ export default function Projects() {
                             className="h-full"
                           />
                           {project.technologies.map((tech) => (
-                            <DockIcon className="">
-                              <tech.icon className="size-5 " />
+                            <DockIcon className="hover:bg-primary/5">
+                              <tech.icon
+                                color={tech.color}
+                                className="size-5"
+                              />
                             </DockIcon>
                           ))}
                           <Separator
@@ -113,12 +120,12 @@ export default function Projects() {
                             asChild
                             variant="outline"
                             size="sm"
-                            className="rounded-full shadow-md"
+                            className="border-none shadow-md px-3"
                           >
                             <a
                               target="_blank"
                               href={project.deployment}
-                              className="flex items-center gap-1 tracking-tight shadow-none"
+                              className="flex items-center gap-1 tracking-tight font-semibold shadow-none "
                             >
                               <span className="relative flex h-2 w-2 mr-1">
                                 <span className="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span>
