@@ -17,6 +17,7 @@ import { Safari } from "@/components/magicui/safari";
 import { Button } from "@/components/ui/button";
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { Separator } from "@/components/ui/separator";
+import { Badge } from "@/components/ui/badge";
 
 export default function Projects() {
   const { theme } = useTheme();
@@ -26,7 +27,8 @@ export default function Projects() {
   const autoplayPlugin = useRef(
     AutoPlay({
       delay: 3000,
-      stopOnMouseEnter: true,
+      stopOnMouseEnter: false,
+      stopOnInteraction: false,
     })
   );
 
@@ -69,8 +71,8 @@ export default function Projects() {
                 {ProjectList.map((project) => {
                   return (
                     <CarouselItem className="">
-                      <Card className=" flex flex-col overflow-hidden  py-0 bg-gradient-to-t shadow-none  dark:from-[rgb(12,12,12)] from-[rgb(252,252,252)] to-[rgb(241,241,241)] dark:to-[rgb(19,19,19)] border-0 rounded-md sm:rounded-none  ">
-                        <div className="overflow-hidden">
+                      <Card className=" flex flex-col overflow-hidden  py-0 bg-gradient-to-t shadow-none  dark:from-[rgb(12,12,12)] from-[rgb(252,252,252)] to-[rgb(241,241,241)] dark:to-[rgb(19,19,19)] sm:border-0 rounded-sm sm:rounded-none  ">
+                        <div className="overflow-hidden hidden sm:flex">
                           <motion.a
                             initial={{ y: 20 }}
                             whileHover={{ y: 0 }}
@@ -86,9 +88,50 @@ export default function Projects() {
                             />
                           </motion.a>
                         </div>
-                        <p className=" tracking-tighter px-5 pb-3  text-primary/50 ">
+                        <a href={project.deployment} target="_blank">
+                          <Safari
+                            imageSrc={project.img}
+                            url={project.name}
+                            className="cursor-pointer size-full sm:hidden pt-4  px-2 "
+                          />
+                        </a>
+                        <h1 className="sm:hidden px-2 font-bold tracking-tight">
+                          <Badge variant="outline" className="px-3 py-1 ">
+                            {project.name}
+                          </Badge>
+                        </h1>
+                        <p className=" sm:text-center  tracking-tighter px-2 text-[13.5px] sm:px-5 pb-3 text-primary/50 ">
                           {project.description}
                         </p>
+                        <Separator />
+                        <div className="sm:hidden flex items-center gap-4 px-2">
+                          <p className="text-xs border-r-1 p-2 tracking-tighter text-muted-foreground/70">
+                            Created with
+                          </p>
+
+                          {project.technologies.map((tech) => {
+                            return <tech.icon color={tech.color} size={15} />;
+                          })}
+                        </div>
+
+                        <Button
+                          asChild
+                          size="sm"
+                          variant="outline"
+                          className="border-none shadow-md rounded-none  sm:hidden"
+                        >
+                          <a
+                            target="_blank"
+                            href={project.deployment}
+                            className="flex items-center gap-1 tracking-tight font-semibold shadow-none "
+                          >
+                            <span className="relative flex h-2 w-2 mr-1">
+                              <span className="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                              <span className="rounded-full h-full w-full bg-green-500"></span>
+                            </span>
+                            LIVE
+                          </a>
+                        </Button>
                       </Card>
                       <div className=" items-center justify-center hidden sm:flex  ">
                         <Dock
@@ -141,7 +184,7 @@ export default function Projects() {
                 })}
               </CarouselContent>
             </div>
-            <div className="flex justify-center gap-4 mt-10">
+            <div className="flex justify-center gap-4 mt-10 sm:hidden">
               <CarouselPrevious className="static cursor-pointer  " />
               <CarouselNext className="static cursor-pointer   " />
             </div>
