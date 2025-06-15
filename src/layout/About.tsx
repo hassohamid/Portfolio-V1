@@ -29,9 +29,9 @@ export default function About() {
             </Toggle>
           </div>
 
-          <div className="pt-2 pb-8 space-y-4 text-sm sm:text-lg tracking-tight ">
+          <div className="pt-2 pb-8 space-y-6 text-sm sm:text-base tracking-tight max-w-3xl   ">
             <p
-              className={`leading-loose transition-opacity duration-500 ${
+              className={`leading-relaxed transition-opacity duration-500 ${
                 isHighlighted
                   ? "text-muted-foreground/30"
                   : "text-muted-foreground"
@@ -81,7 +81,7 @@ export default function About() {
             </p>
 
             <p
-              className={`leading-loose transition-opacity duration-500 ${
+              className={`leading-relaxed transition-opacity duration-500 ${
                 isHighlighted
                   ? "text-muted-foreground/30"
                   : "text-muted-foreground"
@@ -120,7 +120,7 @@ export default function About() {
             </p>
 
             <p
-              className={`leading-loose transition-opacity duration-500 ${
+              className={`leading-relaxed transition-opacity duration-500 ${
                 isHighlighted
                   ? "text-muted-foreground/30"
                   : "text-muted-foreground"
