@@ -68,7 +68,6 @@ export default function Projects() {
             plugins={[autoplayPlugin.current]}
             opts={{
               loop: true,
-              align: "start",
             }}
           >
             <div className="max-w-3xl mx-auto">
@@ -76,7 +75,7 @@ export default function Projects() {
                 {ProjectList.map((project) => {
                   return (
                     <CarouselItem className="">
-                      <Card className=" flex flex-col  overflow-hidden  py-0 bg-gradient-to-t shadow-none  dark:from-[rgb(12,12,12)] from-[rgb(252,252,252)] to-[rgb(241,241,241)] dark:to-[rgb(19,19,19)] border-0  rounded-none  ">
+                      <Card className=" flex flex-col  overflow-hidden  py-0 bg-gradient-to-t shadow-none  dark:from-[rgb(11,11,11)] from-[rgb(252,252,252)] to-[rgb(241,241,241)] dark:to-[rgb(19,19,19)] border-0  rounded-none  ">
                         <div className="overflow-hidden hidden sm:flex">
                           <motion.a
                             initial={{ y: 20 }}
@@ -108,7 +107,7 @@ export default function Projects() {
                             {project.name}
                           </Badge>
                         </div>
-                        <p className=" sm:text-center  tracking-tighter px-2 text-[13.5px] sm:px-5 pb-3 text-primary/50 ">
+                        <p className=" sm:text-center  tracking-tighter px-2 text-[13.5px]  sm:px-5 pb-3 text-primary/50  sm:text-primary/40  ">
                           {project.description}
                         </p>
                         <Separator className="sm:hidden" />
