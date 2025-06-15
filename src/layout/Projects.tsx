@@ -118,7 +118,7 @@ export default function Projects() {
                           asChild
                           size="sm"
                           variant="outline"
-                          className="border-none dark:bg-[rgb(19,19,19)] shadow-md rounded-none  sm:hidden"
+                          className="border-none dark:bg-[rgb(12,12,12)] shadow-md rounded-none  sm:hidden"
                         >
                           <a
                             target="_blank"
