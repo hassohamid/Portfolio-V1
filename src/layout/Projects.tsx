@@ -71,7 +71,7 @@ export default function Projects() {
                 {ProjectList.map((project) => {
                   return (
                     <CarouselItem className="">
-                      <Card className=" flex flex-col overflow-hidden  py-0 bg-gradient-to-t shadow-none  dark:from-[rgb(12,12,12)] from-[rgb(252,252,252)] to-[rgb(241,241,241)] dark:to-[rgb(19,19,19)] sm:border-0 rounded-sm sm:rounded-none  ">
+                      <Card className=" flex flex-col overflow-hidden  py-0 bg-gradient-to-t shadow-none  dark:from-[rgb(12,12,12)] from-[rgb(252,252,252)] to-[rgb(241,241,241)] dark:to-[rgb(19,19,19)] sm:border-0  sm:rounded-none  ">
                         <div className="overflow-hidden hidden sm:flex">
                           <motion.a
                             initial={{ y: 20 }}
@@ -118,7 +118,7 @@ export default function Projects() {
                           asChild
                           size="sm"
                           variant="outline"
-                          className="border-none shadow-md rounded-none  sm:hidden"
+                          className="border-none dark:bg-black shadow-md rounded-none  sm:hidden"
                         >
                           <a
                             target="_blank"
