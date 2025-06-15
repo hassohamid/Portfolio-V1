@@ -71,7 +71,7 @@ export default function Projects() {
                 {ProjectList.map((project) => {
                   return (
                     <CarouselItem className="">
-                      <Card className=" flex flex-col overflow-hidden  py-0 bg-gradient-to-t shadow-none  dark:from-[rgb(12,12,12)] from-[rgb(252,252,252)] to-[rgb(241,241,241)] dark:to-[rgb(19,19,19)] border-0  rounded-none  ">
+                      <Card className=" flex flex-col  overflow-hidden  py-0 bg-gradient-to-t shadow-none  dark:from-[rgb(12,12,12)] from-[rgb(252,252,252)] to-[rgb(241,241,241)] dark:to-[rgb(19,19,19)] border-0  rounded-none  ">
                         <div className="overflow-hidden hidden sm:flex">
                           <motion.a
                             initial={{ y: 20 }}
@@ -106,7 +106,7 @@ export default function Projects() {
                         <p className=" sm:text-center  tracking-tighter px-2 text-[13.5px] sm:px-5 pb-3 text-primary/50 ">
                           {project.description}
                         </p>
-                        <Separator />
+                        <Separator className="sm:hidden" />
                         <div className="sm:hidden flex items-center gap-4 px-2">
                           <p className="text-xs border-r-1 p-2 tracking-tighter text-muted-foreground/70">
                             Created with
@@ -177,7 +177,7 @@ export default function Projects() {
                                 <span className="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span>
                                 <span className="rounded-full h-full w-full bg-green-500"></span>
                               </span>
-                              LIVE
+                              DEMO
                             </a>
                           </Button>
                         </Dock>
