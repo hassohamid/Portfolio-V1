@@ -95,11 +95,14 @@ export default function Projects() {
                             className="cursor-pointer size-full sm:hidden pt-4  px-2 "
                           />
                         </a>
-                        <h1 className="sm:hidden px-2 font-bold tracking-tight">
-                          <Badge variant="outline" className="px-3 py-1 ">
+                        <div className="sm:hidden px-2  ">
+                          <Badge
+                            variant="default"
+                            className="px-3 py-1 font-bold  tracking-tight  "
+                          >
                             {project.name}
                           </Badge>
-                        </h1>
+                        </div>
                         <p className=" sm:text-center  tracking-tighter px-2 text-[13.5px] sm:px-5 pb-3 text-primary/50 ">
                           {project.description}
                         </p>
@@ -117,8 +120,8 @@ export default function Projects() {
                         <Button
                           asChild
                           size="sm"
-                          variant="outline"
-                          className="border-none dark:bg-[rgb(12,12,12)] shadow-md rounded-none  sm:hidden"
+                          variant="default"
+                          className="border-none shadow-md sm:hidden"
                         >
                           <a
                             target="_blank"
@@ -129,7 +132,7 @@ export default function Projects() {
                               <span className="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span>
                               <span className="rounded-full h-full w-full bg-green-500"></span>
                             </span>
-                            LIVE
+                            View Site
                           </a>
                         </Button>
                       </Card>
