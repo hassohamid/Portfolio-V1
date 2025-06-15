@@ -18,6 +18,11 @@ import { Button } from "@/components/ui/button";
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export default function Projects() {
   const { theme } = useTheme();
@@ -151,12 +156,17 @@ export default function Projects() {
                             className="h-full"
                           />
                           {project.technologies.map((tech) => (
-                            <DockIcon className="hover:bg-primary/5">
-                              <tech.icon
-                                color={tech.color}
-                                className="size-5"
-                              />
-                            </DockIcon>
+                            <Tooltip>
+                              <TooltipTrigger>
+                                <DockIcon className="hover:bg-primary/5">
+                                  <tech.icon
+                                    color={tech.color}
+                                    className="size-5"
+                                  />
+                                </DockIcon>
+                              </TooltipTrigger>
+                              <TooltipContent>{tech.name}</TooltipContent>
+                            </Tooltip>
                           ))}
                           <Separator
                             orientation="vertical"
