@@ -69,7 +69,7 @@ export default function Projects() {
                 {ProjectList.map((project) => {
                   return (
                     <CarouselItem className="">
-                      <Card className=" flex flex-col overflow-hidden  py-0 bg-gradient-to-t shadow-none  dark:from-background from-[rgb(252,252,252)] to-[rgb(241,241,241)] dark:to-[rgb(17,17,17)] border-0 rounded-md sm:rounded-none  ">
+                      <Card className=" flex flex-col overflow-hidden  py-0 bg-gradient-to-t shadow-none  dark:from-[rgb(12,12,12)] from-[rgb(252,252,252)] to-[rgb(241,241,241)] dark:to-[rgb(19,19,19)] border-0 rounded-md sm:rounded-none  ">
                         <div className="overflow-hidden">
                           <motion.a
                             initial={{ y: 20 }}
@@ -86,17 +86,17 @@ export default function Projects() {
                             />
                           </motion.a>
                         </div>
+                        <p className=" tracking-tighter px-5 pb-3  text-primary/50 ">
+                          {project.description}
+                        </p>
                       </Card>
-                      {/* <p className=" tracking-tighter text-center  text-primary/40 ">
-                        {project.description}
-                      </p> */}
                       <div className=" items-center justify-center hidden sm:flex  ">
                         <Dock
                           iconDistance={100}
                           iconMagnification={50}
                           iconSize={40}
                         >
-                          <h1 className="text-sm px-5 text-center tracking-tighter ">
+                          <h1 className="text-sm px-5  text-center tracking-wide ">
                             {project.name}
                           </h1>
                           <Separator
@@ -118,7 +118,7 @@ export default function Projects() {
 
                           <Button
                             asChild
-                            variant="outline"
+                            variant="ghost"
                             size="sm"
                             className="border-none shadow-md px-3"
                           >
@@ -141,9 +141,9 @@ export default function Projects() {
                 })}
               </CarouselContent>
             </div>
-            <div className="flex justify-center gap-4 mt-12">
-              <CarouselPrevious className="static cursor-pointer border-0" />
-              <CarouselNext className="static cursor-pointer border-0  " />
+            <div className="flex justify-center gap-4 mt-10">
+              <CarouselPrevious className="static cursor-pointer  " />
+              <CarouselNext className="static cursor-pointer   " />
             </div>
           </Carousel>
         </motion.div>
