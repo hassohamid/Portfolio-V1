@@ -26,7 +26,7 @@ export default function Projects() {
 
   const autoplayPlugin = useRef(
     AutoPlay({
-      delay: 3000,
+      delay: 5000,
       stopOnMouseEnter: false,
       stopOnInteraction: false,
     })
