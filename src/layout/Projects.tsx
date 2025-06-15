@@ -142,9 +142,10 @@ export default function Projects() {
                           iconMagnification={50}
                           iconSize={40}
                         >
-                          <h1 className="text-sm px-5  text-center tracking-wide ">
+                          <h1 className="text-sm px-5  text-center tracking-tighter font-bold  ">
                             {project.name}
                           </h1>
+
                           <Separator
                             orientation="vertical"
                             className="h-full"
@@ -165,13 +166,12 @@ export default function Projects() {
                           <Button
                             asChild
                             variant="ghost"
-                            size="sm"
-                            className="border-none shadow-md px-3"
+                            className=" text-xs border-none px-3"
                           >
                             <a
                               target="_blank"
                               href={project.deployment}
-                              className="flex items-center gap-1 tracking-tight font-semibold shadow-none "
+                              className="flex items-center gap-1 tracking-tight  "
                             >
                               <span className="relative flex h-2 w-2 mr-1">
                                 <span className="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span>
