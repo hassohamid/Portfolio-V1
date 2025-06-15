@@ -97,7 +97,7 @@ export default function Projects() {
                         </a>
                         <div className="sm:hidden px-2  ">
                           <Badge
-                            variant="default"
+                            variant="outline"
                             className="px-3 py-1 font-bold  tracking-tight  "
                           >
                             {project.name}
@@ -126,7 +126,7 @@ export default function Projects() {
                           <a
                             target="_blank"
                             href={project.deployment}
-                            className="flex items-center gap-1 tracking-tight font-semibold shadow-none "
+                            className="flex items-center gap-1 tracking-tight shadow-none text-xs  "
                           >
                             <span className="relative flex h-2 w-2 mr-1">
                               <span className="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span>
