@@ -109,14 +109,15 @@ export default function Projects() {
                           {project.description}
                         </p>
                         <Separator className="sm:hidden" />
-                        <div className="sm:hidden flex items-center gap-4 px-2">
-                          <p className="text-xs border-r-1 p-2 tracking-tighter text-muted-foreground/70">
+                        <div className="sm:hidden flex items-center px-3 ">
+                          <p className="text-xs pr-2 py-2 border-r-1 tracking-tighter text-muted-foreground/70 whitespace-nowrap">
                             Created with
                           </p>
-
-                          {project.technologies.map((tech) => {
-                            return <tech.icon color={tech.color} size={15} />;
-                          })}
+                          <div className=" flex items-center flex-wrap  gap-3 px-3">
+                            {project.technologies.map((tech) => {
+                              return <tech.icon color={tech.color} size={15} />;
+                            })}
+                          </div>
                         </div>
 
                         <Button
