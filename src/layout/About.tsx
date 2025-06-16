@@ -88,8 +88,17 @@ export default function About() {
               }`}
             >
               I aim to build solutions that are powered by AI. Solutions that
-              has real-world impact, that not only look great but also feel
-              right to use.
+              has{" "}
+              <span
+                className={`transition-all duration-500 ease-in-out ${
+                  isHighlighted
+                    ? "bg-yellow-300/30  rounded text-foreground"
+                    : ""
+                }`}
+              >
+                real-world impact
+              </span>
+              , that not only look great but also feel right to use.
             </p>
           </div>
         </motion.div>
