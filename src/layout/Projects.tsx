@@ -70,8 +70,8 @@ export default function Projects() {
             }}
           >
             <div className="max-w-3xl mx-auto relative ">
-              <CarouselPrevious className=" cursor-pointer  !bg-transparent border-none pl-5 sm:pl-5 " />
-              <CarouselNext className=" cursor-pointer !bg-transparent border-none pr-5 sm:pr-0  " />
+              <CarouselPrevious className=" cursor-pointer  !bg-transparent border-none pl-5 sm:pl-5 shadow-none  " />
+              <CarouselNext className=" cursor-pointer !bg-transparent border-none pr-5 sm:pr-0 shadow-none " />
               <CarouselContent>
                 {ProjectList.map((project) => {
                   return (
