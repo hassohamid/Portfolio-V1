@@ -70,7 +70,9 @@ export default function Projects() {
               loop: true,
             }}
           >
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-3xl mx-auto relative ">
+              <CarouselPrevious className=" cursor-pointer  !bg-transparent border-none pl-5 sm:pl-5 " />
+              <CarouselNext className=" cursor-pointer !bg-transparent border-none pr-5 sm:pr-0  " />
               <CarouselContent>
                 {ProjectList.map((project) => {
                   return (
@@ -88,7 +90,7 @@ export default function Projects() {
                             <Safari
                               imageSrc={project.img}
                               url={project.name}
-                              className="cursor-pointer size-full px-5 pt-6   "
+                              className="cursor-pointer size-full px-5 pt-6  "
                             />
                           </motion.a>
                         </div>
@@ -140,6 +142,7 @@ export default function Projects() {
                           </a>
                         </Button>
                       </Card>
+
                       <div className=" items-center justify-center hidden sm:flex  ">
                         <Dock
                           iconDistance={100}
@@ -195,10 +198,6 @@ export default function Projects() {
                   );
                 })}
               </CarouselContent>
-            </div>
-            <div className="flex justify-center gap-4 mt-10 sm:hidden">
-              <CarouselPrevious className="static cursor-pointer  " />
-              <CarouselNext className="static cursor-pointer   " />
             </div>
           </Carousel>
         </motion.div>
