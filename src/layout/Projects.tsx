@@ -102,14 +102,11 @@ export default function Projects() {
                           />
                         </a>
                         <div className="sm:hidden px-2  ">
-                          <Badge
-                            variant="outline"
-                            className="px-3 py-1 font-bold  tracking-tight  "
-                          >
+                          <h1 className="px-1 py-1 font-bold text-base tracking-tight  ">
                             {project.name}
-                          </Badge>
+                          </h1>
                         </div>
-                        <p className=" sm:text-center  tracking-tighter px-2 text-[13.5px]  sm:px-5 pb-3 text-primary/50  sm:text-primary/40  ">
+                        <p className="   sm:text-center  tracking-tighter px-3 text-[13.5px]  sm:px-5 sm:pb-5  text-primary/50  sm:text-primary/40  ">
                           {project.description}
                         </p>
                         <Separator className="sm:hidden" />
