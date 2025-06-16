@@ -17,7 +17,6 @@ import { Safari } from "@/components/magicui/safari";
 import { Button } from "@/components/ui/button";
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { Separator } from "@/components/ui/separator";
-import { Badge } from "@/components/ui/badge";
 import {
   Tooltip,
   TooltipContent,
