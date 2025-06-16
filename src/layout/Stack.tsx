@@ -8,7 +8,7 @@ import { BorderBeam } from "@/components/magicui/border-beam";
 export default function Stack() {
   return (
     <>
-      <section className="py-20  overflow-hidden px-4  ">
+      <section className="sm:py-20 pb-20 pt-8 overflow-hidden px-4  ">
         <motion.div
           initial={{ opacity: 0, y: 90 }}
           whileInView={{ opacity: 1, y: 0 }}

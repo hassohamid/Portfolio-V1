@@ -87,47 +87,9 @@ export default function About() {
                   : "text-muted-foreground"
               }`}
             >
-              <span
-                className={`transition-all duration-500 ease-in-out ${
-                  isHighlighted
-                    ? "bg-yellow-300/30 rounded text-foreground"
-                    : ""
-                }`}
-              >
-                Early in my career
-              </span>
-              , I built e-commerce sites on{" "}
-              <span
-                className={`transition-all duration-500 ease-in-out ${
-                  isHighlighted
-                    ? "bg-yellow-300/30  rounded text-foreground"
-                    : ""
-                }`}
-              >
-                Shopify
-              </span>
-              . I enjoyed it, but found the platform limiting. That pushed me to{" "}
-              <span
-                className={`transition-all duration-500 ease-in-out ${
-                  isHighlighted
-                    ? "bg-yellow-300/30  rounded text-foreground"
-                    : ""
-                }`}
-              >
-                dive into web development
-              </span>
-              , where I could build anything my way.
-            </p>
-
-            <p
-              className={`leading-loose sm:leading-relaxed transition-opacity duration-500 ${
-                isHighlighted
-                  ? "text-muted-foreground/30"
-                  : "text-muted-foreground"
-              }`}
-            >
-              I focus mainly on AI-powered solutions, UX-first & real-world
-              impact.
+              I aim to build solutions that are powered by AI. Solutions that
+              has real-world impact, that not only look great but also feel
+              right to use.
             </p>
           </div>
         </motion.div>
