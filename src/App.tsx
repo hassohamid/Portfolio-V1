@@ -1,5 +1,4 @@
 import "@/App.css";
-import { useEffect } from "react";
 import { ThemeProvider } from "@/theme/ThemeProvider";
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import { Header } from "@/layout/Header";
@@ -13,11 +12,7 @@ import Gallery from "./layout/Gallery";
 import LocomotiveScroll from "locomotive-scroll";
 
 export default function App() {
-  const locomotiveScroll = new LocomotiveScroll();
-
-  useEffect(() => {
-    locomotiveScroll;
-  }, []);
+  new LocomotiveScroll();
 
   return (
     <>
