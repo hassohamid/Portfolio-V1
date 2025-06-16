@@ -48,12 +48,7 @@ export default function Hero() {
                     sweden | stockholm
                   </span>
                 </div>
-                <div className="flex items-center px-2.5 py-1 rounded-md bg-muted/30 mb-3 md:mb-2">
-                  <span className="text-primary/90 mr-1.5 font-mono text-xs opacity-70">
-                    role
-                  </span>
-                  <span className="font-mono text-sm">frontendDeveloper</span>
-                </div>
+
                 <Separator className="md:hidden" />
                 <div className="md:mt-1 mt-3  ">
                   <SocialLinks />

@@ -29,7 +29,7 @@ export const ProjectList = [
   {
     name: "Portfolio",
     description: "A fast and lightweight portfolio site made to showcase work.",
-    img: "DarkPF.png",
+    img: "DarkPortfolio.png",
     deployment: "https://hassohamid.com",
     technologies: [
       { icon: SiReact, name: "React", color: "#61DAFB" },

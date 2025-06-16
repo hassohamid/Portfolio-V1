@@ -3,7 +3,7 @@ import Logo from "@/components/Logo";
 
 export function Header() {
   return (
-    <header className=" border-b ">
+    <header className=" border-b border-dashed ">
       <div className="flex max-w-3xl mx-auto px-5 pt-2 justify-between">
         <Logo />
         <Contact />
