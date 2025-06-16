@@ -126,8 +126,8 @@ export default function Projects() {
                         <Button
                           asChild
                           size="sm"
-                          variant="default"
-                          className="border-none shadow-md sm:hidden"
+                          variant={isDark ? "outline" : "default"}
+                          className="sm:hidden border-0   "
                         >
                           <a
                             target="_blank"
