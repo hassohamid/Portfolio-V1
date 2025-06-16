@@ -38,7 +38,7 @@ export default function Projects() {
 
   return (
     <>
-      <section className="relative py-20 min-h-[900px] overflow-hidden bg-gradient-to-b from-background to-[rgb(250,250,250)] dark:to-[rgb(12,12,12)]">
+      <section className="relative py-20 sm:min-h-[1000px] min-h-[900px] overflow-hidden bg-gradient-to-b from-background to-[rgb(250,250,250)] dark:to-[rgb(12,12,12)]">
         <DotPattern
           cr={isDark ? 0.6 : 0.8}
           width={20}
@@ -70,8 +70,8 @@ export default function Projects() {
             }}
           >
             <div className="max-w-3xl mx-auto relative ">
-              <CarouselPrevious className=" cursor-pointer  !bg-transparent border-none pl-5 sm:pl-5 shadow-none  " />
-              <CarouselNext className=" cursor-pointer !bg-transparent border-none pr-5 sm:pr-0 shadow-none " />
+              <CarouselPrevious className=" cursor-pointer text-primary/50 !bg-transparent border-none pl-5 sm:pl-5 shadow-none  " />
+              <CarouselNext className=" cursor-pointer !bg-transparent border-none pr-5 sm:pr-0 shadow-none text-primary/50 " />
               <CarouselContent>
                 {ProjectList.map((project) => {
                   return (
@@ -105,7 +105,7 @@ export default function Projects() {
                             {project.name}
                           </h1>
                         </div>
-                        <p className="   sm:text-center  tracking-tighter px-3 text-[13.5px]  sm:px-5 sm:pb-5  text-primary/50  sm:text-primary/40  ">
+                        <p className="   sm:text-center  tracking-tighter px-3 text-[13.5px]  sm:px-5 sm:-mb-4  text-primary/50  sm:text-primary/40  ">
                           {project.description}
                         </p>
                         <Separator className="sm:hidden" />
@@ -138,59 +138,58 @@ export default function Projects() {
                             View Site
                           </a>
                         </Button>
-                      </Card>
-
-                      <div className=" items-center justify-center hidden sm:flex  ">
-                        <Dock
-                          iconDistance={100}
-                          iconMagnification={50}
-                          iconSize={40}
-                        >
-                          <h1 className="text-sm px-5  text-center tracking-tighter font-bold  ">
-                            {project.name}
-                          </h1>
-
-                          <Separator
-                            orientation="vertical"
-                            className="h-full"
-                          />
-                          {project.technologies.map((tech) => (
-                            <Tooltip>
-                              <TooltipTrigger>
-                                <DockIcon className="hover:bg-primary/5">
-                                  <tech.icon
-                                    color={tech.color}
-                                    className="size-5"
-                                  />
-                                </DockIcon>
-                              </TooltipTrigger>
-                              <TooltipContent>{tech.name}</TooltipContent>
-                            </Tooltip>
-                          ))}
-                          <Separator
-                            orientation="vertical"
-                            className="h-full"
-                          />
-
-                          <Button
-                            asChild
-                            variant="ghost"
-                            className=" text-xs border-none px-3"
+                        <div className=" items-center justify-center hidden sm:flex pb-5  ">
+                          <Dock
+                            iconDistance={100}
+                            iconMagnification={50}
+                            iconSize={40}
                           >
-                            <a
-                              target="_blank"
-                              href={project.deployment}
-                              className="flex items-center gap-1 tracking-tight  "
+                            <h1 className="text-sm px-5  text-center tracking-tighter font-bold  ">
+                              {project.name}
+                            </h1>
+
+                            <Separator
+                              orientation="vertical"
+                              className="h-full"
+                            />
+                            {project.technologies.map((tech) => (
+                              <Tooltip>
+                                <TooltipTrigger>
+                                  <DockIcon className="hover:bg-primary/5">
+                                    <tech.icon
+                                      color={tech.color}
+                                      className="size-5"
+                                    />
+                                  </DockIcon>
+                                </TooltipTrigger>
+                                <TooltipContent>{tech.name}</TooltipContent>
+                              </Tooltip>
+                            ))}
+                            <Separator
+                              orientation="vertical"
+                              className="h-full"
+                            />
+
+                            <Button
+                              asChild
+                              variant="ghost"
+                              className=" text-xs border-none px-3"
                             >
-                              <span className="relative flex h-2 w-2 mr-1">
-                                <span className="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                                <span className="rounded-full h-full w-full bg-green-500"></span>
-                              </span>
-                              DEMO
-                            </a>
-                          </Button>
-                        </Dock>
-                      </div>
+                              <a
+                                target="_blank"
+                                href={project.deployment}
+                                className="flex items-center gap-1 tracking-tight  "
+                              >
+                                <span className="relative flex h-2 w-2 mr-1">
+                                  <span className="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                  <span className="rounded-full h-full w-full bg-green-500"></span>
+                                </span>
+                                DEMO
+                              </a>
+                            </Button>
+                          </Dock>
+                        </div>
+                      </Card>
                     </CarouselItem>
                   );
                 })}
