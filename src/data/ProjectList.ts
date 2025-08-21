@@ -9,6 +9,7 @@ import {
   SiTailwindcss,
   SiShadcnui,
   SiFramer,
+  SiOpenai,
 } from "react-icons/si";
 
 export const ProjectList = [
@@ -52,6 +53,22 @@ export const ProjectList = [
       { icon: SiTailwindcss, name: "TailwindCSS", color: "#06B6D4" },
       { icon: SiFramer, name: "Motion", color: "#0055FF" },
       { icon: SiSupabase, name: "Supabase", color: "#3ECF8E" },
+    ],
+  },
+  {
+    name: "Skilltree",
+    description:
+      "AI-powered SaaS that creates personalized learning roadmaps based on what users want to learn.",
+    img: "Skilltree.png",
+    deployment: "https://skilltree-skhh.vercel.app/",
+    technologies: [
+      { icon: SiReact, name: "React", color: "#61DAFB" },
+      { icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
+      { icon: SiShadcnui, name: "shadcn" },
+      { icon: SiTailwindcss, name: "TailwindCSS", color: "#06B6D4" },
+      { icon: SiFramer, name: "Motion", color: "#0055FF" },
+      { icon: SiSupabase, name: "Supabase", color: "#3ECF8E" },
+      { icon: SiOpenai, name: "OpenAI", color: "#412991" },
     ],
   },
 ];

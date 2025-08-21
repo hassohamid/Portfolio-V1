@@ -37,20 +37,16 @@ export default function BeyondCode() {
                         My go-to productivity hack?
                       </AccordionTrigger>
                       <AccordionContent className="leading-relaxed tracking-tight  ">
-                        I might sound crazy but when I feel like I'm falling
-                        behind, I drink half a Redbull and nap for 15-30 min.
-                        It's actually a real thing, called "The Coffee Nap".
-                        Makes me super concentrated for longer periods 😁
+                        Drink coffee. Go to bed. Nap for 30min. Wake up feeling
+                        more energized than ever. Sounds crazy but works.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item 2">
                       <AccordionTrigger className="cursor-pointer">
-                        Three apps I can't live without?
+                        Three apps that makes my life easier?
                       </AccordionTrigger>
                       <AccordionContent className="leading-relaxed tracking-tight ">
-                        I don't really know about not being able to LIVE without
-                        them but they definitely make my life easier - Spotify,
-                        Notes & Discord.
+                        ChatGPT, Notes & Spotify.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item 3">
@@ -58,10 +54,8 @@ export default function BeyondCode() {
                         Early bird or night owl?
                       </AccordionTrigger>
                       <AccordionContent className="leading-relaxed tracking-tight ">
-                        When I'm in my "training phase" I'd definitely say early
-                        bird. However when I work with something I truly enjoy
-                        then most definitely a night owl. I also feel more
-                        productive during nights.
+                        Depends on which phase I'm in. When I work on something
+                        with passion definitely a night owl.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item 4">
@@ -69,7 +63,7 @@ export default function BeyondCode() {
                         The most beautiful place I've ever visited?
                       </AccordionTrigger>
                       <AccordionContent className="leading-relaxed tracking-tight ">
-                        Phi Phi Islands in Thailand. Felt like a dream!
+                        Phi Phi Islands in Thailand, no doubt.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item 5">
@@ -77,9 +71,8 @@ export default function BeyondCode() {
                         My favorite movie?
                       </AccordionTrigger>
                       <AccordionContent className="leading-relaxed tracking-tight ">
-                        One that I will never forget is Whiplash (2014). There
-                        wasn't a second where I didn't feel the crazy tension it
-                        brought. Amazing movie!
+                        Current fav is Whiplash (2014). Crazy tension throughout
+                        the entire movie.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item 6">
@@ -87,7 +80,7 @@ export default function BeyondCode() {
                         Goals I want to achieve?
                       </AccordionTrigger>
                       <AccordionContent className="leading-relaxed tracking-tight ">
-                        Beating 3km under 12 minutes.
+                        Shipping at warp speed.
                       </AccordionContent>
                     </AccordionItem>
                     <AccordionItem value="item 7">
@@ -104,7 +97,7 @@ export default function BeyondCode() {
                         My biggest regret?
                       </AccordionTrigger>
                       <AccordionContent className="leading-relaxed tracking-tight ">
-                        Not getting into web developing earlier.
+                        Not getting into coding earlier.
                       </AccordionContent>
                     </AccordionItem>
                   </Accordion>

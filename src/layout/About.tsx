@@ -87,8 +87,17 @@ export default function About() {
                   : "text-muted-foreground"
               }`}
             >
-              I aim to build solutions that are powered by AI. Solutions that
-              has{" "}
+              My current focus is building smart and creative solutions that are{" "}
+              <span
+                className={`transition-all duration-500 ease-in-out ${
+                  isHighlighted
+                    ? "bg-yellow-300/30  rounded text-foreground"
+                    : ""
+                }`}
+              >
+                AI-integrated
+              </span>
+              . Solutions that has{" "}
               <span
                 className={`transition-all duration-500 ease-in-out ${
                   isHighlighted
