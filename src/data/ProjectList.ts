@@ -10,6 +10,7 @@ import {
   SiShadcnui,
   SiFramer,
   SiOpenai,
+  SiNextdotjs,
 } from "react-icons/si";
 
 export const ProjectList = [
@@ -69,6 +70,20 @@ export const ProjectList = [
       { icon: SiFramer, name: "Motion", color: "#0055FF" },
       { icon: SiSupabase, name: "Supabase", color: "#3ECF8E" },
       { icon: SiOpenai, name: "OpenAI", color: "#412991" },
+    ],
+  },
+  {
+    name: "MinLIA",
+    description:
+      "Full-stack application for organizing and tracking Intership applications for students.",
+    img: "MinLIAWhiteBG.png",
+    deployment: "https://minlia.vercel.app/",
+    technologies: [
+      { icon: SiNextdotjs, name: "Next.js" },
+      { icon: SiTypescript, name: "TypeScript", color: "#3178C6" },
+      { icon: SiTailwindcss, name: "TailwindCSS", color: "#06B6D4" },
+      { icon: SiShadcnui, name: "shadcn" },
+      { icon: SiSupabase, name: "Supabase", color: "#3ECF8E" },
     ],
   },
 ];
